@@ -1,0 +1,1544 @@
+{
+  "title": "Cristiano Ronaldo — Từ Madeira đến huyền thoại bóng đá thế giới",
+  "topic": "Cuộc đời và sự nghiệp Cristiano Ronaldo",
+  "language": "vi",
+  "sources": [
+    {
+      "id": "childhood",
+      "title": "UEFA · Ronaldo về thời thơ ấu, Sporting và ngày ra mắt United",
+      "url": "https://pt.uefa.com/uefaeuro/history/news/0253-0d815c554c46-7e78fa5356cb-1000--cristiano-ronaldo-sobre-o-destino-a-infancia-e-portugal/"
+    },
+    {
+      "id": "sporting",
+      "title": "Sporting CP · Aurélio Pereira và thời học viện",
+      "url": "https://www.sporting.pt/en/news/football/youth-football/2016-09-12/we-give-our-young-players-creative-liberty"
+    },
+    {
+      "id": "united",
+      "title": "UEFA · Ronaldo và những năm đầu ở Manchester United",
+      "url": "https://www.uefa.com/uefachampionsleague/news/025a-0ea959409b48-2ed479925c63-1000--ronaldo-ready-to-face-up-to-his-united-past/"
+    },
+    {
+      "id": "moscow",
+      "title": "UEFA · Chung kết Champions League 2008",
+      "url": "https://www.uefa.com/uefachampionsleague/match/301604--man-utd-vs-chelsea/"
+    },
+    {
+      "id": "gold08",
+      "title": "UEFA · Quả bóng vàng 2008",
+      "url": "https://www.uefa.com/uefachampionsleague/news/01d4-0e707fe4919f-772c18bc5bc3-1000--ballon-d-or-crowns-ronaldo-s-golden-year/"
+    },
+    {
+      "id": "madrid",
+      "title": "Real Madrid · Hồ sơ và danh hiệu Ronaldo tại câu lạc bộ",
+      "url": "https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/cristiano-ronaldo-dos-santos-aveiro/"
+    },
+    {
+      "id": "messi",
+      "title": "UEFA · Đối đầu của Ronaldo và Messi",
+      "url": "https://www.uefa.com/news/0262-10821d427dc2-6986c38c670b-1000--when-lionel-met-cristiano/"
+    },
+    {
+      "id": "bdo",
+      "title": "UEFA · Ronaldo san bằng số Quả bóng vàng của Messi năm 2017",
+      "url": "https://www.uefa.com/uefachampionsleague/news/0240-0e981a776a76-ff51876b4b2c-1000--cristiano-ronaldo-retains-ballon-d-or-to-match-messi/"
+    },
+    {
+      "id": "bicycle",
+      "title": "Real Madrid · Hồ sơ cú ngả bàn đèn tại Turin",
+      "url": "https://play.realmadrid.com/playlist/14029?language=es-ES"
+    },
+    {
+      "id": "juve",
+      "title": "Juventus · Ba mùa giải và những con số lúc chia tay",
+      "url": "https://www.juventus.com/en/news/articles/juventus-says-goodbye-to-cristiano-ronaldo"
+    },
+    {
+      "id": "newcastle",
+      "title": "Manchester United · Biên bản trận gặp Newcastle ngày 11/09/2021",
+      "url": "https://www.manutd.com/en/matches/mens-team/manchester-united-v-newcastle-united-fc-premier-league-20210911"
+    },
+    {
+      "id": "departure",
+      "title": "Manchester United · Thông báo chia tay ngày 22/11/2022",
+      "url": "https://www.manutd.com/en/news/man-utd-official-statement-on-cristiano-ronaldo-22-november-2022"
+    },
+    {
+      "id": "euro04",
+      "title": "UEFA · Chung kết EURO 2004",
+      "url": "https://www.uefa.com/uefaeuro/history/news/0254-0d7b673abd33-d04e3bb2cd62-1000--greece-are-crowned-kings-of-europe/"
+    },
+    {
+      "id": "euro",
+      "title": "UEFA · Chung kết EURO 2016",
+      "url": "https://www.uefa.com/uefaeuro/match/2017907--portugal-vs-france/"
+    },
+    {
+      "id": "euro-report",
+      "title": "UEFA · Biên bản Bồ Đào Nha – Pháp",
+      "url": "https://www.uefa.com/newsfiles/EURO/2016/2017907_FR.pdf"
+    },
+    {
+      "id": "unl19",
+      "title": "UEFA · Biên bản chung kết Nations League 2019",
+      "url": "https://www.uefa.com/newsfiles/UNL/2019/2024422_FR.pdf"
+    },
+    {
+      "id": "unl25",
+      "title": "UEFA · Chung kết Nations League 2025",
+      "url": "https://www.uefa.com/uefanationsleague/news/029a-1df5b00bcf70-60bbbcb2fb30-1000--cristiano-ronaldo-and-nuno-mendes-on-portugal-s-uefa-nations/"
+    },
+    {
+      "id": "record",
+      "title": "UEFA · Kỷ lục ghi bàn quốc tế và chia tay đội tuyển",
+      "url": "https://www.uefa.com/uefaeuro/history/news/026a-1297500e1b34-a17bbbcad258-1000--relentless-ronaldo-equals-international-goals-world-record/"
+    },
+    {
+      "id": "fifa",
+      "title": "FIFA · Tổng kết sự nghiệp đội tuyển Ronaldo, tháng 11/2026",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cristiano-ronaldo-portugal-retirement-career-tribute"
+    },
+    {
+      "id": "nassr",
+      "title": "Saudi Pro League · Mốc đến Al Nassr và bàn thắng đầu tiên",
+      "url": "https://www.spl.com.sa/en/news/milestone-mark-celebrating-two-years-since-ronaldo-opened-his-rsl-account"
+    },
+    {
+      "id": "saudiscore",
+      "title": "Saudi Pro League · Mốc 35 bàn mùa 2023/24",
+      "url": "https://www.spl.com.sa/en/news/how-cristiano-ronaldo-broke-the-rsl-scoring-record"
+    }
+  ],
+  "music": {
+    "path": "ronaldo/score.m4a",
+    "credit": "Nhạc nền và hiệu ứng tổng hợp nguyên bản của dự án Cinema",
+    "license": "Original project composition; no external samples"
+  },
+  "scenes": [
+    {
+      "sceneId": "bat-dau",
+      "chapter": "I · MADEIRA",
+      "title": "Cristiano Ronaldo",
+      "kicker": "TỪ MADEIRA ĐẾN ĐỈNH CAO",
+      "displayNote": "Ronaldo ở tứ kết EURO 2016 gặp Ba Lan",
+      "narration": "Cristiano Ronaldo rời sân trên cáng. Trận chung kết vẫn còn hơn một giờ. Cuối đêm ấy, anh nâng chiếc cúp đầu tiên cùng tuyển Bồ Đào Nha. Để hiểu vì sao khoảnh khắc ấy nặng đến vậy, hãy trở về hòn đảo nơi mọi thứ bắt đầu.",
+      "visualDescription": "Ảnh tư liệu Ronaldo ở tứ kết EURO 2016 gặp Ba Lan. Máy dolly chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 16,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Hoài niệm và tiếng gió",
+        "tempo": 0.94,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "EURO 2016"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0d101b",
+          "#625041",
+          "#f6cf91"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/euro-a.jpg",
+          "Ronaldo ở tứ kết EURO 2016 gặp Ba Lan"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/euro-a.jpg",
+        "credit": "Chensiyuan · CC BY-SA 4.0",
+        "license": "CC BY-SA 4.0",
+        "objectPosition": "50% 17%"
+      },
+      "sourceIds": [
+        "euro",
+        "fifa"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA ghi Ronaldo rời sân trong hiệp một. FIFA xác nhận EURO 2016 là danh hiệu đầu tiên của anh với đội tuyển."
+        }
+      ],
+      "portrait": true
+    },
+    {
+      "sceneId": "madeira",
+      "chapter": "I · MADEIRA",
+      "title": "Một hòn đảo nhỏ",
+      "kicker": "FUNCHAL · MADEIRA",
+      "displayNote": "Funchal lúc hoàng hôn, ảnh năm 2017",
+      "narration": "Funchal nằm bên sườn núi, nhìn ra Đại Tây Dương. Cristiano Ronaldo sinh ở đây năm một nghìn chín trăm tám mươi lăm, trong một gia đình có điều kiện khiêm tốn. Bóng đá sớm chiếm phần lớn thời gian của cậu. Sân bóng trên đảo cho cậu một nơi để chơi, trước khi môn thể thao ấy đưa cậu xa nhà.",
+      "visualDescription": "Ảnh tư liệu Funchal lúc hoàng hôn, ảnh năm 2017. Máy ken-burns chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 21,
+      "cameraMovement": "ken-burns",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Hoài niệm và tiếng gió",
+        "tempo": 0.94,
+        "cue": "ronaldo/wind.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "BÓNG ĐÁ"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0d101b",
+          "#625041",
+          "#f6cf91"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/funchal-b.jpg",
+          "Funchal lúc hoàng hôn, ảnh năm 2017"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/funchal-b.jpg",
+        "credit": "muffinn · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "50% 56%"
+      },
+      "sourceIds": [
+        "childhood",
+        "madrid"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Real Madrid ghi nơi và năm sinh. UEFA phỏng vấn Ronaldo về tuổi thơ và quyết định của gia đình."
+        }
+      ]
+    },
+    {
+      "sceneId": "san-bong",
+      "chapter": "I · MADEIRA",
+      "title": "Những buổi đá bóng đầu tiên",
+      "kicker": "MADEIRA · TUỔI THƠ",
+      "displayNote": "",
+      "narration": "Trong những cuộc phỏng vấn sau này, Ronaldo kể về niềm háo hức được chơi bóng và được xem bóng đá cùng gia đình. Cậu muốn trở thành cầu thủ chuyên nghiệp từ rất sớm. Để có cơ hội tiến xa hơn, cậu phải rời hòn đảo quen thuộc. Đó cũng là một quyết định khó khăn với cha mẹ.",
+      "visualDescription": "MINH HỌA SÂN BÓNG. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 20,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Hoài niệm và tiếng gió",
+        "tempo": 0.94,
+        "cue": "ronaldo/wind.wav"
+      },
+      "sportGraphic": {
+        "kind": "pitch",
+        "heading": "MINH HỌA SÂN BÓNG",
+        "items": [
+          {
+            "label": "Địa điểm",
+            "value": "MADEIRA"
+          }
+        ]
+      },
+      "keywords": [
+        "CẦU THỦ"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0d101b",
+          "#625041",
+          "#f6cf91"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "childhood",
+        "sporting"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Lời dẫn diễn giải phỏng vấn về bóng đá thời nhỏ và quyết định rời Madeira."
+        }
+      ]
+    },
+    {
+      "sceneId": "roi-dao",
+      "chapter": "II · SPORTING",
+      "title": "Rời khỏi Madeira",
+      "kicker": "LISBON · HỌC VIỆN SPORTING",
+      "displayNote": "Funchal lúc hoàng hôn, ảnh năm 2017",
+      "narration": "Ronaldo còn rất trẻ khi rời Madeira để tới học viện Sporting ở Lisbon. Cha mẹ đã cho cậu cơ hội đi, dù tương lai khi ấy chưa có gì bảo đảm. Ở đất liền, cậu phải làm quen với một môi trường mới và cạnh tranh cho từng suất tập. Khoảng cách với gia đình là phần ít người thấy trong hành trình ấy.",
+      "visualDescription": "Ảnh tư liệu Funchal lúc hoàng hôn, ảnh năm 2017. Máy zoom-out chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 22,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Piano và nhịp chuyển nhẹ",
+        "tempo": 0.94,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "MADEIRA"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0c1920",
+          "#245648",
+          "#b9e7b6"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/funchal-b.jpg",
+          "Funchal lúc hoàng hôn, ảnh năm 2017"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/funchal-b.jpg",
+        "credit": "muffinn · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "50% 56%"
+      },
+      "sourceIds": [
+        "childhood",
+        "sporting"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Sporting và lời kể Ronaldo xác nhận anh gia nhập học viện khi còn rất trẻ, xa cha mẹ."
+        }
+      ]
+    },
+    {
+      "sceneId": "sporting",
+      "chapter": "II · SPORTING",
+      "title": "Từ học viện đến đội một",
+      "kicker": "SPORTING CP",
+      "displayNote": "Sân José Alvalade trong trận Sporting – Schalke, 2014",
+      "narration": "Ở Sporting, cậu được tập cùng những cầu thủ lớn tuổi hơn. Ronaldo kể rằng mình tập với đội dự bị ở tuổi mười lăm, rồi tập với đội một ở tuổi mười sáu. Tốc độ thăng tiến ấy mở ra cơ hội gặp những đối thủ mạnh hơn. Một trong số đó là đội bóng của Sir Alex Ferguson.",
+      "visualDescription": "Ảnh tư liệu Sân José Alvalade trong trận Sporting – Schalke, 2014. Máy pan-left chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 21,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Piano và nhịp chuyển nhẹ",
+        "tempo": 1.04,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "SPORTING"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0c1920",
+          "#245648",
+          "#b9e7b6"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/sporting-a.jpg",
+          "Sân José Alvalade trong trận Sporting – Schalke, 2014"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/sporting-a.jpg",
+        "credit": "Jose Hidalgo · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "58% 46%"
+      },
+      "sourceIds": [
+        "childhood",
+        "sporting"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Tuổi tập với đội dự bị và đội một theo lời chính Ronaldo kể với UEFA."
+        }
+      ]
+    },
+    {
+      "sceneId": "loi-moi",
+      "chapter": "II · SPORTING",
+      "title": "Cánh cửa sang nước Anh",
+      "kicker": "LISBON · 2003",
+      "displayNote": "",
+      "narration": "Mùa hè năm hai nghìn không trăm lẻ ba, Ronaldo chuyển từ Sporting đến Manchester United. Ở tuổi mười tám, anh mang theo tốc độ và sự tự tin khi đối mặt hậu vệ. Giải đấu mới đòi hỏi quyết định nhanh hơn và những pha xử lý có ích cho cả đội. Đó là bài học mở đầu cho sáu mùa giải đầu tiên ở Anh.",
+      "visualDescription": "TỪ LISBON ĐẾN MANCHESTER. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 22,
+      "cameraMovement": "ken-burns",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Piano và nhịp chuyển nhẹ",
+        "tempo": 1.04,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": {
+        "kind": "timeline",
+        "heading": "TỪ LISBON ĐẾN MANCHESTER",
+        "items": [
+          {
+            "label": "Học viện",
+            "value": "SPORTING"
+          },
+          {
+            "label": "Chuyển đến United",
+            "value": "2003"
+          }
+        ]
+      },
+      "keywords": [
+        "MANCHESTER UNITED"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#0c1920",
+          "#245648",
+          "#b9e7b6"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "united",
+        "childhood"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA xác nhận chuyển nhượng từ Sporting năm 2003 ở tuổi 18."
+        }
+      ]
+    },
+    {
+      "sceneId": "so-bay",
+      "chapter": "III · MANCHESTER UNITED",
+      "title": "Chiếc áo số bảy",
+      "kicker": "OLD TRAFFORD · 2003",
+      "displayNote": "Old Trafford nhìn từ trên cao, 2023",
+      "narration": "Ronaldo từng muốn mặc áo số hai mươi tám như ở Sporting. Ferguson giao cho anh số bảy, chiếc áo David Beckham vừa để lại. Ngày ra mắt gặp Bolton, một cầu thủ vừa đặt chân đến Anh đã phải chơi dưới sức nặng của kỳ vọng ấy. Những bước chạy đầu tiên cho thấy vì sao Ferguson muốn trao cho anh cơ hội.",
+      "visualDescription": "Ảnh tư liệu Old Trafford nhìn từ trên cao, 2023. Máy dolly chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 22,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp trống",
+        "tempo": 1.04,
+        "cue": "ronaldo/crowd.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "SỐ BẢY"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#181019",
+          "#712734",
+          "#ffd2b0"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/trafford-a.jpg",
+          "Old Trafford nhìn từ trên cao, 2023"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/trafford-a.jpg",
+        "credit": "Arne Müseler · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "54% 47%"
+      },
+      "sourceIds": [
+        "united",
+        "childhood"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA xác nhận số áo 28 mong muốn, số áo 7 được giao và trận ra mắt gặp Bolton."
+        }
+      ]
+    },
+    {
+      "sceneId": "ferguson",
+      "chapter": "III · MANCHESTER UNITED",
+      "title": "Học cách quyết định",
+      "kicker": "MANCHESTER UNITED",
+      "displayNote": "Ronaldo trong màu áo Manchester United, 2006",
+      "narration": "Ferguson có trong tay một cầu thủ thích rê bóng và sẵn sàng thử điều khó. Qua từng mùa, những pha đi bóng ngày càng đi kèm những đường chuyền và cú dứt điểm trực tiếp hơn. Mùa hai nghìn không trăm lẻ bảy đến hai nghìn không trăm lẻ tám, Ronaldo ghi bốn mươi hai bàn trên mọi đấu trường. United tiến tới chung kết châu Âu.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong màu áo Manchester United, 2006. Máy pan-left chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 23,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp trống",
+        "tempo": 1.04,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "BỐN MƯƠI HAI BÀN"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#181019",
+          "#712734",
+          "#ffd2b0"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/united.jpg",
+          "Ronaldo trong màu áo Manchester United, 2006"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/united.jpg",
+        "credit": "AtilaTheHun · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "57% 29%"
+      },
+      "sourceIds": [
+        "united",
+        "gold08"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA xác nhận 42 bàn trên mọi đấu trường mùa 2007/08. Phần tiến bộ chiến thuật là diễn giải lối chơi."
+        }
+      ]
+    },
+    {
+      "sceneId": "moscow",
+      "chapter": "III · MANCHESTER UNITED",
+      "title": "Đêm mưa ở Moskva",
+      "kicker": "CHUNG KẾT CHAMPIONS LEAGUE · 2008",
+      "displayNote": "",
+      "narration": "Trong trận chung kết với Chelsea, Ronaldo bật cao đánh đầu mở tỷ số. Khi trận đấu kéo đến loạt luân lưu, chính anh lại hỏng lượt sút của mình. Các đồng đội giữ United trong cuộc đua cho đến khi Van der Sar cản cú đá quyết định. Ronaldo có chiếc cúp châu Âu đầu tiên, sau một đêm cần đến cả tập thể.",
+      "visualDescription": "CHUNG KẾT · MOSKVA. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 23,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp trống",
+        "tempo": 1.04,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": {
+        "kind": "score",
+        "heading": "CHUNG KẾT · MOSKVA",
+        "items": [
+          {
+            "label": "Manchester United",
+            "value": "1"
+          },
+          {
+            "label": "Chelsea",
+            "value": "1"
+          },
+          {
+            "label": "Luân lưu · United thắng",
+            "value": "6–5"
+          }
+        ]
+      },
+      "keywords": [
+        "LUÂN LƯU"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#181019",
+          "#712734",
+          "#ffd2b0"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "moscow"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Biên bản UEFA xác nhận trận hòa 1–1, bàn của Ronaldo, cú luân lưu hỏng và United thắng 6–5."
+        }
+      ]
+    },
+    {
+      "sceneId": "bong-vang",
+      "chapter": "III · MANCHESTER UNITED",
+      "title": "Quả bóng vàng đầu tiên",
+      "kicker": "MANCHESTER · 2008",
+      "displayNote": "Ronaldo gặp Blackburn tại Old Trafford, 2009",
+      "narration": "Cuối năm hai nghìn không trăm lẻ tám, Ronaldo giành Quả bóng vàng đầu tiên. Anh đến Manchester như một cầu thủ trẻ chơi rộng, rồi rời đi với khả năng quyết định trận đấu bằng bàn thắng. Thành công ở Anh đưa anh tới một câu hỏi mới. Anh có thể giữ phong độ ấy ở nơi đòi hỏi chiến thắng mỗi tuần hay không?",
+      "visualDescription": "Ảnh tư liệu Ronaldo gặp Blackburn tại Old Trafford, 2009. Máy zoom-in chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 20,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp trống",
+        "tempo": 1.04,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "QUẢ BÓNG VÀNG"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#181019",
+          "#712734",
+          "#ffd2b0"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/united-night.jpg",
+          "Ronaldo gặp Blackburn tại Old Trafford, 2009"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/united-night.jpg",
+        "credit": "Paolo Camera · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "50% 24%"
+      },
+      "sourceIds": [
+        "gold08",
+        "united"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA và France Football ghi Quả bóng vàng đầu tiên năm 2008."
+        }
+      ],
+      "portrait": true
+    },
+    {
+      "sceneId": "bernabeu",
+      "chapter": "IV · REAL MADRID",
+      "title": "Ra mắt ở Bernabéu",
+      "kicker": "MADRID · 2009",
+      "displayNote": "Santiago Bernabéu, 2009",
+      "narration": "Mùa hè năm hai nghìn không trăm lẻ chín, Ronaldo gia nhập Real Madrid. Buổi ra mắt diễn ra tại Santiago Bernabéu, với hai huyền thoại Eusébio và Alfredo Di Stéfano bên cạnh. Những lời chào ở buổi lễ sớm nhường chỗ cho đòi hỏi quen thuộc của Madrid. Mỗi mùa giải, đội bóng lại phải chứng minh mình ở cả Tây Ban Nha lẫn châu Âu.",
+      "visualDescription": "Ảnh tư liệu Santiago Bernabéu, 2009. Máy ken-burns chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 22,
+      "cameraMovement": "ken-burns",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp cao trào",
+        "tempo": 1.04,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "REAL MADRID"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#090f22",
+          "#2f4572",
+          "#e1eaff"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/bernabeu-a.jpg",
+          "Santiago Bernabéu, 2009"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/bernabeu-a.jpg",
+        "credit": "Pedro Alcaina Aguilar · CC BY 3.0",
+        "license": "CC BY 3.0",
+        "objectPosition": "56% 44%"
+      },
+      "sourceIds": [
+        "madrid"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Real Madrid ghi buổi ra mắt ngày 6/7/2009 tại Bernabéu cùng Eusébio và Di Stéfano."
+        }
+      ]
+    },
+    {
+      "sceneId": "hai-doi-thu",
+      "chapter": "IV · REAL MADRID",
+      "title": "Hai đối thủ, hai cách chơi",
+      "kicker": "RONALDO & MESSI",
+      "displayNote": "Ronaldo gặp Celta Vigo, 2016",
+      "narration": "Ở Tây Ban Nha, Lionel Messi và Barcelona là đối thủ mà Ronaldo gặp hết mùa này qua mùa khác. Khi một người vừa đặt ra một chuẩn mới, người kia lại có cả mùa giải để đáp lời. Cuộc đua hiện lên qua những trận đối đầu, những bàn thắng và những lá phiếu Quả bóng vàng. Hai lối chơi khác nhau cùng định hình một thời kỳ.",
+      "visualDescription": "Ảnh tư liệu Ronaldo gặp Celta Vigo, 2016. Máy pan-right chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 22,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp cao trào",
+        "tempo": 1.04,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "LIONEL MESSI"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#090f22",
+          "#2f4572",
+          "#e1eaff"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/madrid-b.jpg",
+          "Ronaldo gặp Celta Vigo, 2016"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/madrid-b.jpg",
+        "credit": "Ruben Ortega · CC BY-SA 4.0",
+        "license": "CC BY-SA 4.0",
+        "objectPosition": "50% 32%"
+      },
+      "sourceIds": [
+        "messi",
+        "bdo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA ghi các đối đầu và cuộc đua Quả bóng vàng; hình sử dụng là ảnh Ronaldo trong màu áo Madrid."
+        }
+      ]
+    },
+    {
+      "sceneId": "bon-chiec-cup",
+      "chapter": "IV · REAL MADRID",
+      "title": "Bốn đêm đăng quang",
+      "kicker": "REAL MADRID · 2014–2018",
+      "displayNote": "",
+      "narration": "Tại Madrid, Ronaldo giành bốn chức vô địch Champions League. Danh hiệu năm hai nghìn không trăm mười bốn mở đầu giai đoạn thăng hoa, trước ba mùa liên tiếp đăng quang từ hai nghìn không trăm mười sáu. Anh rời câu lạc bộ với vị trí chân sút số một trong lịch sử đội. Những bàn thắng đó đi cùng cả một thế hệ đồng đội.",
+      "visualDescription": "CHAMPIONS LEAGUE CÙNG REAL MADRID. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 23,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp cao trào",
+        "tempo": 1.04,
+        "cue": "ronaldo/crowd.wav"
+      },
+      "sportGraphic": {
+        "kind": "trophy",
+        "heading": "CHAMPIONS LEAGUE CÙNG REAL MADRID",
+        "items": [
+          {
+            "label": "Danh hiệu đầu tiên",
+            "value": "2014"
+          },
+          {
+            "label": "Ba mùa liên tiếp",
+            "value": "2016–2018"
+          }
+        ]
+      },
+      "keywords": [
+        "CHAMPIONS LEAGUE"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#090f22",
+          "#2f4572",
+          "#e1eaff"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "madrid"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Real Madrid ghi bốn Champions League và vị trí dẫn đầu danh sách ghi bàn lịch sử câu lạc bộ."
+        }
+      ]
+    },
+    {
+      "sceneId": "cu-nga-ban-den",
+      "chapter": "IV · REAL MADRID",
+      "title": "Một cú sút và tràng vỗ tay",
+      "kicker": "TURIN · 2018",
+      "displayNote": "Ronaldo trong trận Real Madrid – Celta Vigo, 2016",
+      "narration": "Tháng tư năm hai nghìn không trăm mười tám, Ronaldo tung cú ngả bàn đèn vào lưới Juventus tại Turin. Một số cổ động viên đội chủ nhà đã đứng lên vỗ tay. Vài tháng sau, anh đổi màu áo và trở lại thành phố ấy với tư cách cầu thủ Juventus. Lần này, những người từng chứng kiến cú sút sẽ cổ vũ cho anh.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong trận Real Madrid – Celta Vigo, 2016. Máy dolly chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 20,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Dàn dây và nhịp cao trào",
+        "tempo": 1.04,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "JUVENTUS"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#090f22",
+          "#2f4572",
+          "#e1eaff"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/madrid-a.jpg",
+          "Ronaldo trong trận Real Madrid – Celta Vigo, 2016"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/madrid-a.jpg",
+        "credit": "Ruben Ortega · CC BY-SA 4.0",
+        "license": "CC BY-SA 4.0",
+        "objectPosition": "50% 29%"
+      },
+      "sourceIds": [
+        "bicycle",
+        "madrid"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Real Madrid lưu trận Juventus 0–3 Real Madrid ngày 3/4/2018 với cú ngả bàn đèn."
+        }
+      ]
+    },
+    {
+      "sceneId": "turin",
+      "chapter": "V · JUVENTUS VÀ TRỞ LẠI",
+      "title": "Ba mùa ở Turin",
+      "kicker": "JUVENTUS · 2018–2021",
+      "displayNote": "Ronaldo trong màu áo Juventus, 2019",
+      "narration": "Ở Juventus, Ronaldo lại phải làm quen với một giải đấu và một tập thể mới. Trong ba mùa, anh ghi một trăm lẻ một bàn sau một trăm ba mươi ba trận. Juventus giành năm danh hiệu trong thời gian ấy. Tuy vậy, hành trình ở châu Âu của anh với đội bóng dừng lại trước trận chung kết. Năm hai nghìn không trăm hai mươi mốt, Manchester lại gọi.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong màu áo Juventus, 2019. Máy pan-left chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 23,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp trầm và không gian sân vận động",
+        "tempo": 0.98,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "MỘT TRĂM LẺ MỘT BÀN"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#111723",
+          "#465264",
+          "#e1d5ac"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/juve.jpg",
+          "Ronaldo trong màu áo Juventus, 2019"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/juve.jpg",
+        "credit": "Anton Zaitsev · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "51% 21%"
+      },
+      "sourceIds": [
+        "juve"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Juventus xác nhận 133 trận, 101 bàn và năm danh hiệu từ năm 2018 đến 2021."
+        }
+      ]
+    },
+    {
+      "sceneId": "tro-lai",
+      "chapter": "V · JUVENTUS VÀ TRỞ LẠI",
+      "title": "Tiếng reo khi trở về",
+      "kicker": "OLD TRAFFORD · 2021",
+      "displayNote": "Old Trafford nhìn từ trên cao, 2023",
+      "narration": "Tháng chín năm hai nghìn không trăm hai mươi mốt, Ronaldo trở lại sân Old Trafford trong màu áo đỏ. Trước Newcastle, anh ghi hai bàn và Manchester United thắng bốn một. Một buổi chiều khiến quá khứ có vẻ như vừa quay về. Nhưng sau trận đấu ấy vẫn là một mùa giải mới, với những vấn đề của một đội bóng đang tìm lại sự ổn định.",
+      "visualDescription": "Ảnh tư liệu Old Trafford nhìn từ trên cao, 2023. Máy dolly chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 23,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp trầm và không gian sân vận động",
+        "tempo": 0.98,
+        "cue": "ronaldo/crowd.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "NEWCASTLE"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#111723",
+          "#465264",
+          "#e1d5ac"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/trafford-a.jpg",
+          "Old Trafford nhìn từ trên cao, 2023"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/trafford-a.jpg",
+        "credit": "Arne Müseler · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "54% 47%"
+      },
+      "sourceIds": [
+        "newcastle",
+        "juve"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Biên bản Manchester United xác nhận hai bàn của Ronaldo trong chiến thắng 4–1 ngày 11/9/2021."
+        }
+      ]
+    },
+    {
+      "sceneId": "chia-tay",
+      "chapter": "V · JUVENTUS VÀ TRỞ LẠI",
+      "title": "Lần chia tay thứ hai",
+      "kicker": "MANCHESTER · 2022",
+      "displayNote": "",
+      "narration": "Lần trở lại mở đầu bằng tiếng reo, rồi khép lại khi mùa giải sau còn đang diễn ra. Tháng mười một năm hai nghìn không trăm hai mươi hai, Manchester United thông báo hai bên đồng thuận chấm dứt hợp đồng. Sự nghiệp ở Old Trafford dừng ở đó. Câu chuyện với đội tuyển quê hương, bắt đầu gần hai thập kỷ trước, còn đi tiếp.",
+      "visualDescription": "HAI GIAI ĐOẠN Ở MANCHESTER. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 21,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp trầm và không gian sân vận động",
+        "tempo": 0.98,
+        "cue": null
+      },
+      "sportGraphic": {
+        "kind": "timeline",
+        "heading": "HAI GIAI ĐOẠN Ở MANCHESTER",
+        "items": [
+          {
+            "label": "Lần đầu",
+            "value": "2003–2009"
+          },
+          {
+            "label": "Trở lại",
+            "value": "2021–2022"
+          }
+        ]
+      },
+      "keywords": [
+        "OLD TRAFFORD"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#111723",
+          "#465264",
+          "#e1d5ac"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "departure",
+        "newcastle"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Manchester United xác nhận chia tay theo thỏa thuận tháng 11/2022."
+        }
+      ]
+    },
+    {
+      "sceneId": "euro-2004",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Nỗi đau trên sân nhà",
+      "kicker": "BỒ ĐÀO NHA · EURO 2004",
+      "displayNote": "",
+      "narration": "Hãy quay về mùa hè năm hai nghìn không trăm lẻ bốn. Bồ Đào Nha vào chung kết giải vô địch châu Âu ngay trên sân nhà. Họ thua Hy Lạp với cách biệt một bàn, trong giải đấu lớn đầu tiên của Ronaldo. Phải mười hai năm sau, anh và đội tuyển mới lại đứng trước một cơ hội như thế.",
+      "visualDescription": "CHUNG KẾT · LISBON. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 20,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 1,
+        "cue": null
+      },
+      "sportGraphic": {
+        "kind": "score",
+        "heading": "CHUNG KẾT · LISBON",
+        "items": [
+          {
+            "label": "Bồ Đào Nha",
+            "value": "0"
+          },
+          {
+            "label": "Hy Lạp",
+            "value": "1"
+          }
+        ]
+      },
+      "keywords": [
+        "HY LẠP"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "fifa",
+        "euro04"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA xác nhận Hy Lạp thắng chủ nhà Bồ Đào Nha 1–0 ở chung kết năm 2004."
+        }
+      ]
+    },
+    {
+      "sceneId": "euro-2016",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Chiếc cúp của cả đội",
+      "kicker": "BỒ ĐÀO NHA · EURO 2016",
+      "displayNote": "",
+      "narration": "Trong trận chung kết năm hai nghìn không trăm mười sáu, Ronaldo chấn thương và phải rời sân ở phút hai mươi lăm. Pháp vẫn ép sân, nhưng Bồ Đào Nha kéo trận đấu vào hiệp phụ. Éder sút xa ghi bàn duy nhất ở phút một trăm lẻ chín. Khi tiếng còi mãn cuộc vang lên, chiếc cúp đầu tiên của đội tuyển thuộc về cả đội.",
+      "visualDescription": "CHUNG KẾT · SAINT-DENIS. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 24,
+      "cameraMovement": "ken-burns",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 1.03,
+        "cue": "ronaldo/crowd.wav"
+      },
+      "sportGraphic": {
+        "kind": "score",
+        "heading": "CHUNG KẾT · SAINT-DENIS",
+        "items": [
+          {
+            "label": "Bồ Đào Nha",
+            "value": "1"
+          },
+          {
+            "label": "Pháp",
+            "value": "0"
+          },
+          {
+            "label": "Bàn thắng · Hiệp phụ",
+            "value": "ÉDER 109′"
+          }
+        ]
+      },
+      "keywords": [
+        "ÉDER"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "euro",
+        "euro-report"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Biên bản UEFA ghi Ronaldo rời sân phút 25, Éder ghi bàn phút 109, tỷ số 1–0."
+        }
+      ]
+    },
+    {
+      "sceneId": "nations-2019",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Lần nữa trên đỉnh châu Âu",
+      "kicker": "NATIONS LEAGUE · 2019 & 2025",
+      "displayNote": "",
+      "narration": "Năm hai nghìn không trăm mười chín, Bồ Đào Nha thắng Hà Lan một không nhờ bàn của Gonçalo Guedes, giành chức vô địch Nations League đầu tiên. Sáu năm sau, Ronaldo ghi bàn gỡ hòa trước Tây Ban Nha trong trận chung kết. Bồ Đào Nha thắng bằng luân lưu. Khoảng cách giữa hai chiếc cúp cho thấy sự bền bỉ của cả một thế hệ.",
+      "visualDescription": "UEFA NATIONS LEAGUE. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 23,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 1,
+        "cue": "ronaldo/impact.wav"
+      },
+      "sportGraphic": {
+        "kind": "trophy",
+        "heading": "UEFA NATIONS LEAGUE",
+        "items": [
+          {
+            "label": "Thắng Hà Lan",
+            "value": "2019"
+          },
+          {
+            "label": "Thắng Tây Ban Nha",
+            "value": "2025"
+          }
+        ]
+      },
+      "keywords": [
+        "NATIONS LEAGUE"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "unl19",
+        "unl25"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA xác nhận hai danh hiệu, bàn quyết định của Guedes năm 2019 và bàn gỡ của Ronaldo năm 2025."
+        }
+      ]
+    },
+    {
+      "sceneId": "sau-ba-muoi-lam",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Tiếp tục sau tuổi ba lăm",
+      "kicker": "KỶ LỤC ĐỘI TUYỂN · 2021",
+      "displayNote": "Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018",
+      "narration": "Khi đã ba mươi sáu tuổi, Ronaldo ghi hai bàn muộn trước Cộng hòa Ireland để vượt kỷ lục ghi bàn quốc tế của Ali Daei. Hai bàn ấy đến trong một trận vòng loại mà Bồ Đào Nha từng bị dẫn. Ở giai đoạn này, giá trị của anh thường hiện rõ trong vòng cấm, khi một nhịp di chuyển vừa đủ có thể đổi kết quả.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018. Máy pan-left chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 23,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 1,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "ALI DAEI"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/portugal.jpg",
+          "Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/portugal.jpg",
+        "credit": "Anna Nessi · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "50% 24%"
+      },
+      "sourceIds": [
+        "record",
+        "fifa"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA ghi Ronaldo vượt Ali Daei bằng hai bàn trước Ireland ngày 1/9/2021, tuổi 36."
+        }
+      ],
+      "portrait": true
+    },
+    {
+      "sceneId": "al-nassr",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Một giải đấu mới",
+      "kicker": "AL NASSR · TỪ CUỐI NĂM 2022",
+      "displayNote": "Ronaldo trong trận Al Nassr – Persepolis, 2023",
+      "narration": "Cuối năm hai nghìn không trăm hai mươi hai, Ronaldo ký hợp đồng với Al Nassr. Rời châu Âu, anh làm quen một giải đấu và những đồng đội mới. Mùa hai nghìn không trăm hai mươi ba đến hai nghìn không trăm hai mươi tư, anh ghi ba mươi lăm bàn ở giải vô địch Ả Rập Xê Út. Đó là kỷ lục ghi bàn trong một mùa của giải vào thời điểm ấy.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong trận Al Nassr – Persepolis, 2023. Máy pan-right chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 22,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 1,
+        "cue": null
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "BA MƯƠI LĂM BÀN"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/nassr-a.jpg",
+          "Ronaldo trong trận Al Nassr – Persepolis, 2023"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/nassr-a.jpg",
+        "credit": "Mehrdad Esfahani · CC BY 4.0",
+        "license": "CC BY 4.0",
+        "objectPosition": "49% 24%"
+      },
+      "sourceIds": [
+        "nassr",
+        "saudiscore"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Saudi Pro League xác nhận ký cuối 2022, 35 bàn mùa 2023/24 là kỷ lục vào thời điểm đó."
+        }
+      ],
+      "portrait": true
+    },
+    {
+      "sceneId": "doi-tuyen",
+      "chapter": "VI · BỒ ĐÀO NHA",
+      "title": "Khép lại màu áo đội tuyển",
+      "kicker": "BỒ ĐÀO NHA · THÁNG 11 NĂM 2026",
+      "displayNote": "Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018",
+      "narration": "Ngày năm tháng mười một năm hai nghìn không trăm hai mươi sáu, Ronaldo thông báo chia tay đội tuyển Bồ Đào Nha. Anh dừng ở hai trăm ba mươi tư lần ra sân và một trăm bốn mươi sáu bàn thắng quốc tế. Sau hơn hai thập kỷ, cậu cầu thủ từ Madeira đã đi qua sáu kỳ World Cup cùng đội tuyển.",
+      "visualDescription": "Ảnh tư liệu Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018. Máy zoom-out chậm, giữ chủ thể ở vùng phải và chừa chân khung cho phụ đề.",
+      "duration": 21,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Nhịp khán đài và dàn dây",
+        "tempo": 0.94,
+        "cue": "ronaldo/wind.wav"
+      },
+      "sportGraphic": null,
+      "keywords": [
+        "BỒ ĐÀO NHA"
+      ],
+      "visualDirection": {
+        "shotType": "Toàn cảnh hoặc trung cảnh ảnh tư liệu",
+        "cameraAngle": "Góc tư liệu gốc",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#141b20",
+          "#42533b",
+          "#f1d679"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Ảnh tư liệu chuyển động Ken Burns",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "ronaldo/portugal.jpg",
+          "Ronaldo trong màu áo Bồ Đào Nha, World Cup 2018"
+        ]
+      },
+      "image": {
+        "path": "ronaldo/portugal.jpg",
+        "credit": "Anna Nessi · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "50% 24%"
+      },
+      "sourceIds": [
+        "fifa",
+        "record"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UEFA và FIFA xác nhận công bố ngày 5/11/2026, 234 trận và 146 bàn; UEFA xác nhận sáu vòng chung kết World Cup."
+        }
+      ],
+      "portrait": true
+    },
+    {
+      "sceneId": "di-san",
+      "chapter": "VII · DI SẢN",
+      "title": "Điều còn lại khi đèn tắt",
+      "kicker": "CRISTIANO RONALDO · DI SẢN",
+      "displayNote": "",
+      "narration": "Từ Madeira đến những sân vận động lớn nhất, Ronaldo nhiều lần phải học lại cách mình có thể giúp một đội bóng. Có lúc đó là một pha tăng tốc, có lúc chỉ là chọn đúng vị trí để chạm bóng. Kỷ luật nằm trong những việc nhỏ được lặp lại, kể cả ngày hôm sau một thất bại. Một hành trình dài có thể bắt đầu bằng buổi tập tiếp theo.",
+      "visualDescription": "HÀNH TRÌNH QUA CÁC CÂU LẠC BỘ. Đồ họa nguyên bản trên nền sân vận động cách điệu, các hàng số xuất hiện theo nhịp đầu cảnh.",
+      "duration": 24,
+      "cameraMovement": "drift",
+      "transition": "fade",
+      "visualType": "abstract",
+      "soundDesign": {
+        "mood": "Piano kết phim",
+        "tempo": 0.94,
+        "cue": "ronaldo/wind.wav"
+      },
+      "sportGraphic": {
+        "kind": "timeline",
+        "heading": "HÀNH TRÌNH QUA CÁC CÂU LẠC BỘ",
+        "items": [
+          {
+            "label": "Sporting",
+            "value": "LISBON"
+          },
+          {
+            "label": "Manchester United",
+            "value": "2003"
+          },
+          {
+            "label": "Real Madrid",
+            "value": "2009"
+          },
+          {
+            "label": "Juventus",
+            "value": "2018"
+          },
+          {
+            "label": "Al Nassr",
+            "value": "2022"
+          }
+        ]
+      },
+      "keywords": [
+        "KỶ LUẬT"
+      ],
+      "visualDirection": {
+        "shotType": "Đồ họa chuyển động",
+        "cameraAngle": "Chính diện",
+        "lighting": "Đèn viền màu theo chương, đối lập nền tối và chi tiết sáng",
+        "colorPalette": [
+          "#121b29",
+          "#4d515e",
+          "#f7d184"
+        ],
+        "composition": "Tiêu đề bên trái, tư liệu hoặc đồ họa bên phải, chân khung dành cho phụ đề",
+        "foreground": "Hạt bụi và điểm sáng đèn",
+        "midground": "Bảng dữ liệu, sân hoặc cúp minh họa",
+        "background": "Lớp bóng tối và đường cong khán đài",
+        "visualAssets": [
+          "Đồ họa Remotion nguyên bản"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "fifa",
+        "united",
+        "madrid"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Tổng kết biên tập trên hành trình đội tuyển, United và Madrid; lời kết là lời dẫn nguyên bản."
+        }
+      ]
+    }
+  ]
+}

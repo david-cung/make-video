@@ -1,0 +1,394 @@
+{
+  "title": "Bí ẩn về những nền văn minh cổ đại biến mất",
+  "topic": "Bí ẩn về những nền văn minh cổ đại biến mất",
+  "language": "vi",
+  "sources": [
+    {
+      "id": "tikal-unesco",
+      "title": "Tikal và đô thị Maya",
+      "url": "https://whc.unesco.org/en/list/64/"
+    },
+    {
+      "id": "maya-climate",
+      "title": "Khí hậu và bất ổn chính trị Maya",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4426404/"
+    },
+    {
+      "id": "living-maya",
+      "title": "Các cộng đồng Maya ngày nay",
+      "url": "https://maya.nmai.si.edu/the-maya/maya-people"
+    },
+    {
+      "id": "mohenjo-daro-unesco",
+      "title": "Di tích Mohenjo-daro",
+      "url": "https://whc.unesco.org/en/list/138/"
+    },
+    {
+      "id": "indus-monsoon",
+      "title": "Cư trú và gió mùa ở lưu vực sông Ấn",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22645375/"
+    },
+    {
+      "id": "angkor-unesco",
+      "title": "Quần thể Angkor",
+      "url": "https://whc.unesco.org/en/list/668/"
+    },
+    {
+      "id": "angkor-contraction",
+      "title": "Quá trình thu hẹp của Angkor",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30804175/"
+    },
+    {
+      "id": "angkor-climate",
+      "title": "Hạn hán và mưa cực đoan ở Angkor",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20351244/"
+    }
+  ],
+  "music": {
+    "path": "ancient/score.m4a",
+    "credit": "Nhạc nền tổng hợp nguyên bản của dự án Cinema",
+    "license": "Original project composition; no external samples"
+  },
+  "scenes": [
+    {
+      "sceneId": "opening",
+      "title": "Bí ẩn về những nền văn minh cổ đại biến mất",
+      "kicker": "Một câu hỏi từ những kinh đô xưa",
+      "displayNote": "Angkor Wat, Campuchia",
+      "narration": "Điều gì đã biến mất? Bình minh rọi lên những ngọn tháp đá, dấu tích của một kinh đô từng đông đúc.",
+      "visualDescription": "Cắt vào Angkor Wat lúc bình minh. Khung hình tiến nhẹ theo đường chéo về cụm tháp bên phải khi câu hỏi cất lên.",
+      "duration": 9,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Toàn cảnh mở",
+        "cameraAngle": "Chính diện, ngang tầm mắt",
+        "lighting": "Ánh bình minh viền nhẹ cụm tháp",
+        "colorPalette": [
+          "#140F0D",
+          "#78563D",
+          "#E9D5A4"
+        ],
+        "composition": "Cụm tháp lệch phải, cây thốt nốt làm nền tối cho nhan đề bên trái. Phụ đề ở dải tối phía dưới.",
+        "foreground": "Màn sương mỏng và bụi sáng trôi riêng qua góc phải dưới.",
+        "midground": "Ảnh Angkor Wat tiến nhẹ theo đường chéo, giữ đỉnh tháp bên phải.",
+        "background": "Sắc trời bình minh xa gần như đứng yên sau lớp ảnh.",
+        "visualAssets": [
+          "Ảnh Angkor Wat lúc bình minh",
+          "Sương mỏng và bụi sáng"
+        ]
+      },
+      "image": {
+        "path": "ancient/dawn.jpg",
+        "credit": "Christophe95 · CC BY-SA 4.0",
+        "license": "CC BY-SA 4.0",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "angkor-unesco"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "UNESCO ghi nhận Angkor Wat thuộc quần thể di tích của các kinh đô Khmer."
+        },
+        {
+          "status": "needs-verification",
+          "note": "Theo nhịp dự kiến, câu hỏi kết thúc trong năm giây đầu. Cần đối chiếu lời đọc và vị trí phụ đề trên bản dựng."
+        }
+      ]
+    },
+    {
+      "sceneId": "maya",
+      "title": "Tháp đá trên tán rừng",
+      "kicker": "Các thành bang Maya",
+      "displayNote": "Tikal, Guatemala",
+      "narration": "Trên tán rừng nhô lên những ngọn tháp đá của một thành phố Maya. Cuối thời Cổ điển, nhiều thành bang ở vùng đất thấp phía nam dần mất quyền lực.",
+      "visualDescription": "Pan chậm sang trái qua tán rừng. Giữ ngọn tháp nổi trên đường chân trời ở nửa phải để thấy tương quan giữa thành phố và rừng.",
+      "duration": 12,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Đại cảnh tán rừng",
+        "cameraAngle": "Từ cao, nhìn thoải qua tán cây",
+        "lighting": "Ánh khuếch tán, đá nhuốm vàng nhạt",
+        "colorPalette": [
+          "#11130F",
+          "#5F5D48",
+          "#E0CFA5"
+        ],
+        "composition": "Ngọn tháp nhô ở phần ba phải. Giữ chữ bên trái và phụ đề dưới đường tán cây nổi bật.",
+        "foreground": "Bụi mịn và sương loãng trôi ngang mép phải.",
+        "midground": "Ảnh Tikal lướt ngang chậm, giữ ngọn tháp trong nửa phải.",
+        "background": "Khí quyển tối xa dịch nhẹ sau lớp ảnh.",
+        "visualAssets": [
+          "Ảnh toàn cảnh Tikal",
+          "Sương loãng và bụi mịn"
+        ]
+      },
+      "image": {
+        "path": "ancient/tikal.jpg",
+        "credit": "JurriaanH · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "tikal-unesco",
+        "maya-climate"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Tikal là một trung tâm Maya. Nhiều thành bang miền đất thấp phía nam suy yếu vào cuối thời Cổ điển."
+        }
+      ]
+    },
+    {
+      "sceneId": "maya-evidence",
+      "title": "Những đợt hạn thời Maya",
+      "kicker": "Khí hậu và chính trị",
+      "displayNote": "Quảng trường lớn ở Tikal",
+      "narration": "Dấu vết khí hậu cho thấy nhiều đợt hạn hán. Khô hạn và căng thẳng chính trị có thể đã tác động lẫn nhau. Mỗi vùng có diễn biến riêng. Người Maya vẫn sống đến nay.",
+      "visualDescription": "Tiến chậm về bậc tháp bên phải. Giữ phần sân và những người tụ lại ở mép phải trong khung hình.",
+      "duration": 13,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Trung toàn cảnh quảng trường",
+        "cameraAngle": "Nhìn chếch xuống từ rìa quảng trường",
+        "lighting": "Ánh dịu lướt qua mặt bậc đá",
+        "colorPalette": [
+          "#16120F",
+          "#786853",
+          "#E5D5B0"
+        ],
+        "composition": "Bậc đá ở nửa phải. Dành khoảng sân bên trái cho chữ và chừa mép dưới thoáng.",
+        "foreground": "Làn sương mỏng và bụi li ti trôi qua rìa dưới.",
+        "midground": "Ảnh quảng trường tiến nhẹ, bậc đá bên phải lớn dần.",
+        "background": "Sắc khói nâu xa dịch rất ít sau ảnh.",
+        "visualAssets": [
+          "Ảnh Quảng trường lớn và khu đền phía bắc Tikal",
+          "Sương mỏng và bụi li ti"
+        ]
+      },
+      "image": {
+        "path": "ancient/plaza.jpg",
+        "credit": "Bjørn Christian Tørrissen · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "72% 50%"
+      },
+      "sourceIds": [
+        "maya-climate",
+        "living-maya"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Các chỉ dấu khí hậu cho thấy những đợt hạn hán. Các cộng đồng Maya vẫn hiện diện ngày nay."
+        },
+        {
+          "status": "open-question",
+          "note": "Mức độ hạn hán và căng thẳng chính trị tác động lẫn nhau còn tùy vùng và thời điểm."
+        }
+      ]
+    },
+    {
+      "sceneId": "indus",
+      "title": "Thành phố xây bằng gạch",
+      "kicker": "Văn minh lưu vực sông Ấn",
+      "displayNote": "Mohenjo-daro, Pakistan",
+      "narration": "Thành phố ở lưu vực sông Ấn có những dãy nhà gạch và đường phố được quy hoạch. Dọc các tuyến phố, những đường cống xây bằng gạch dẫn nước thải đi.",
+      "visualDescription": "Pan chậm sang phải dọc các dãy tường. Dùng một góc tường gạch bên phải để người xem nhận ra trật tự của các khu phố.",
+      "duration": 13,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Toàn cảnh di tích đô thị",
+        "cameraAngle": "Chếch cao, nhìn dọc các dãy tường",
+        "lighting": "Ánh chiều nhẹ làm rõ gờ gạch",
+        "colorPalette": [
+          "#19110D",
+          "#875C43",
+          "#EDD7AE"
+        ],
+        "composition": "Chỗ hai dãy tường gạch giao nhau ở nửa phải. Dùng vùng lối đi tối bên trái cho chữ, giữ phụ đề dưới chỗ giao tường.",
+        "foreground": "Sương nhẹ và hạt bụi thưa trôi ở rìa khung.",
+        "midground": "Ảnh các dãy tường trượt chậm, giữ góc tường trọng tâm bên phải.",
+        "background": "Khí quyển nâu đất xa chuyển chậm sau ảnh.",
+        "visualAssets": [
+          "Ảnh các dãy tường gạch Mohenjo-daro",
+          "Sương nhẹ và bụi thưa"
+        ]
+      },
+      "image": {
+        "path": "ancient/indus.jpg",
+        "credit": "Usman Ghani · CC BY-SA 3.0",
+        "license": "CC BY-SA 3.0",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "mohenjo-daro-unesco"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Mohenjo-daro có kiến trúc gạch, đường phố quy hoạch và hệ thống thoát nước."
+        }
+      ]
+    },
+    {
+      "sceneId": "indus-evidence",
+      "title": "Khi các đô thị thu hẹp",
+      "kicker": "Dấu vết cư trú ở lưu vực sông Ấn",
+      "displayNote": "Bể tắm lớn ở Mohenjo-daro",
+      "narration": "Khoảng ba nghìn chín trăm năm trước, các đô thị thu hẹp và điểm cư trú dịch dần về phía đông. Gió mùa thay đổi có thể góp phần. Nguyên nhân cụ thể vẫn bỏ ngỏ.",
+      "visualDescription": "Zoom ra chậm từ mép bể bên phải để hé lộ mặt bằng xung quanh khi lời đọc chuyển sang các điểm cư trú.",
+      "duration": 13,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Trung toàn cảnh bể xây gạch",
+        "cameraAngle": "Chếch xuống lòng bể",
+        "lighting": "Ánh tản nhẹ, gờ bể sáng hơn lòng bể",
+        "colorPalette": [
+          "#17130F",
+          "#7D6C55",
+          "#E8D3A7"
+        ],
+        "composition": "Viền bể nằm ở nửa phải. Chừa cột trái cho chữ và giữ phụ đề dưới viền bể.",
+        "foreground": "Sương loãng và bụi trôi ngang sát mép dưới.",
+        "midground": "Ảnh bể thu nhỏ từ từ, hé dần các mép tường quanh bể.",
+        "background": "Sắc đá xa gần như đứng yên sau lớp ảnh.",
+        "visualAssets": [
+          "Ảnh bể tắm lớn ở Mohenjo-daro",
+          "Sương loãng và bụi mịn"
+        ]
+      },
+      "image": {
+        "path": "ancient/great-bath.jpg",
+        "credit": "Aakashaliraza · CC BY-SA 4.0",
+        "license": "CC BY-SA 4.0",
+        "objectPosition": "50% 58%"
+      },
+      "sourceIds": [
+        "mohenjo-daro-unesco",
+        "indus-monsoon"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Khảo cổ ghi nhận quá trình giảm tập trung đô thị và dịch chuyển phân bố cư trú về phía đông bắt đầu khoảng ba nghìn chín trăm năm trước."
+        },
+        {
+          "status": "open-question",
+          "note": "Biến đổi gió mùa có thể góp phần. Vai trò tương đối của khí hậu và các yếu tố khác vẫn chưa rõ."
+        }
+      ]
+    },
+    {
+      "sceneId": "angkor",
+      "title": "Kinh đô và dòng nước",
+      "kicker": "Hồ chứa và kênh đào của người Khmer",
+      "displayNote": "Quần thể Angkor, Campuchia",
+      "narration": "Angkor từng là kinh đô Khmer thời trung đại. Hồ chứa và kênh đào điều tiết nước. Hạn kéo dài và mưa dữ dội có thể góp phần làm đô thị suy yếu. Khu trung tâm dần thưa người. Văn hóa Khmer vẫn tiếp diễn.",
+      "visualDescription": "Tiến rất chậm về dãy hành lang bên phải và giữ bóng đền trong mặt nước. Ánh ngày cho thấy rõ các tầng đá.",
+      "duration": 17,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Toàn cảnh quần thể đền",
+        "cameraAngle": "Chính diện từ bờ đối diện",
+        "lighting": "Ánh vàng nhạt làm nổi các tầng đá",
+        "colorPalette": [
+          "#120F0D",
+          "#74604C",
+          "#EAD5A9"
+        ],
+        "composition": "Hành lang đá bên phải làm điểm nhấn. Chữ nằm trên nền tối bên trái, phụ đề nằm thấp trên khoảng nước.",
+        "foreground": "Sương mỏng và hạt bụi trôi chậm ở rìa phải.",
+        "midground": "Ảnh dãy hành lang và bóng đền trên mặt nước phóng lớn từ từ.",
+        "background": "Khí quyển xám nâu xa dịch nhẹ sau ảnh.",
+        "visualAssets": [
+          "Ảnh quần thể Angkor",
+          "Sương mỏng và hạt bụi"
+        ]
+      },
+      "image": {
+        "path": "ancient/angkor.jpg",
+        "credit": "Supanut Arunoprayote · CC BY 4.0",
+        "license": "CC BY 4.0",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "angkor-unesco",
+        "angkor-contraction",
+        "angkor-climate"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Kinh đô Khmer có mạng lưới hồ chứa và kênh đào. Dấu tích trầm tích cho thấy hoạt động ở khu trung tâm giảm dần."
+        },
+        {
+          "status": "verified",
+          "note": "Nghiên cứu khí hậu ghi nhận những đợt hạn kéo dài và mưa gió mùa dữ dội. Angkor tiếp tục có ý nghĩa văn hóa và tín ngưỡng."
+        },
+        {
+          "status": "open-question",
+          "note": "Các cực đoan khí hậu có thể góp phần vào sự suy yếu. Mức độ ảnh hưởng còn chưa rõ."
+        }
+      ]
+    },
+    {
+      "sceneId": "legacy",
+      "title": "Sau thời kinh đô",
+      "kicker": "Di sản qua nhiều thế hệ",
+      "displayNote": "Đền Ta Prohm, Campuchia",
+      "narration": "Rễ cây bám vào từng kẽ đá. Điều gì đã biến mất? Quyền lực năm xưa đã tàn. Lịch sử của một dân tộc dài hơn tuổi đời của một kinh đô.",
+      "visualDescription": "Pan chậm sang trái qua chỗ rễ cây bám vào tường. Nhịp lướt chậm dần để giữ mối tiếp giáp giữa rễ và đá ở câu cuối.",
+      "duration": 13,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Trung cảnh rễ cây trên tường đền",
+        "cameraAngle": "Hơi ngước từ sân đền theo thân cây",
+        "lighting": "Ánh tản ấm trên vân rễ và gờ đá",
+        "colorPalette": [
+          "#14110E",
+          "#73614C",
+          "#E4D0A6"
+        ],
+        "composition": "Chỗ rễ giao với tường ở phần ba phải. Dành nền trái cho chữ và giữ dải phụ đề dưới điểm bám của rễ.",
+        "foreground": "Bụi vàng thưa và sương mỏng trôi qua mép ngoài.",
+        "midground": "Ảnh rễ cây lướt ngang chậm rồi dịu lại trên khối đá.",
+        "background": "Khí quyển tối xa gần như đứng yên sau ảnh.",
+        "visualAssets": [
+          "Ảnh rễ cây trên tường đền Ta Prohm",
+          "Sương mỏng và bụi vàng thưa"
+        ]
+      },
+      "image": {
+        "path": "ancient/roots.jpg",
+        "credit": "David Sim · CC BY 2.0",
+        "license": "CC BY 2.0",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "angkor-unesco"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Ta Prohm thuộc quần thể Angkor. Di sản Angkor vẫn có ý nghĩa văn hóa và tín ngưỡng với cộng đồng Khmer."
+        }
+      ]
+    }
+  ]
+}

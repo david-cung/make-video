@@ -1,0 +1,343 @@
+{
+  "title": "Những bí ẩn dưới đáy đại dương",
+  "topic": "5 bí ẩn dưới đáy đại dương mà con người chưa khám phá hết",
+  "language": "vi",
+  "sources": [
+    {
+      "id": "depth",
+      "title": "NOAA Ocean Exploration — How deep is the ocean?",
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/ocean-depth/"
+    },
+    {
+      "id": "hadal",
+      "title": "Tim Shank / NOAA Ocean Exploration — The Hadal Zone: Aqua Incognita",
+      "url": "https://oceanexplorer.noaa.gov/expedition-feature/okeanos-ex2102-features-hadalzone/"
+    },
+    {
+      "id": "vent",
+      "title": "NOAA Ocean Exploration — Hydrothermal Systems in Escanaba Trough",
+      "url": "https://oceanexplorer.noaa.gov/expedition-feature/22escanaba-features-hydrothermal-systems/"
+    },
+    {
+      "id": "brine",
+      "title": "NOAA Ocean Exploration — Brine Pool in the Gulf of Mexico",
+      "url": "https://oceanexplorer.noaa.gov/multimedia/daily-image-media-20200917/"
+    },
+    {
+      "id": "seep",
+      "title": "NOAA Ocean Exploration — Exploring Cold Seeps Off Southern California",
+      "url": "https://oceanexplorer.noaa.gov/expedition-feature/23seascapes-features-cold-seeps/"
+    },
+    {
+      "id": "whale",
+      "title": "NOAA National Ocean Service — What is a whale fall?",
+      "url": "https://oceanservice.noaa.gov/facts/whale-fall.html"
+    }
+  ],
+  "music": {
+    "path": "ocean/score.m4a",
+    "credit": "Âm nhạc nguyên bản do project Cinema tổng hợp",
+    "license": "Original project composition; no external samples"
+  },
+  "scenes": [
+    {
+      "sceneId": "descent",
+      "title": "Những bí ẩn dưới đáy đại dương",
+      "kicker": "HỒ SƠ BIỂN SÂU",
+      "displayNote": "5 CÂU HỎI CÒN BỎ NGỎ",
+      "narration": "Có những hồ nước nằm ngay dưới đáy biển. Đại dương còn giấu điều gì?",
+      "visualDescription": "Một vệt sáng cuối cùng từ mặt nước lướt qua mép vực khi thiết bị lặn chìm xuống.",
+      "duration": 7,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "surface",
+      "visualDirection": {
+        "shotType": "Toàn cảnh thiết lập",
+        "cameraAngle": "Nhìn chéo lên mặt nước",
+        "lighting": "Tia thể tích xanh ngọc xuyên qua mặt nước",
+        "colorPalette": [
+          "#041424",
+          "#126D87",
+          "#A6E3E9"
+        ],
+        "composition": "Tiêu đề nửa trái, thiết bị lặn trên phần ba phải",
+        "foreground": "Bụi biển và sườn đá",
+        "midground": "Thiết bị lặn có đèn",
+        "background": "Mặt nước và địa hình mờ",
+        "visualAssets": [
+          "Minh họa mặt nước, thiết bị lặn và tia sáng"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "brine"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Nước muối đậm đặc có thể đọng thành hồ dưới đáy biển."
+        }
+      ]
+    },
+    {
+      "sceneId": "hadal",
+      "title": "Vực Mariana",
+      "kicker": "01 / RÃNH ĐẠI DƯƠNG",
+      "displayNote": "CHALLENGER DEEP · XẤP XỈ 10,9 KM",
+      "narration": "Điểm sâu nhất của rãnh Mariana nằm cách mặt biển gần mười một ki lô mét. Sự sống vẫn hiện diện dưới áp suất khổng lồ. Ta chưa biết các quần thể trong những rãnh sâu kết nối với nhau ra sao.",
+      "visualDescription": "Mở rộng vách vực và vệt quét địa hình lệch tâm.",
+      "duration": 12,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "trench",
+      "visualDirection": {
+        "shotType": "Toàn rộng",
+        "cameraAngle": "Nhìn chéo xuống vực",
+        "lighting": "Tia xanh lạnh từ góc phải",
+        "colorPalette": [
+          "#030D21",
+          "#113755",
+          "#7ABFE1"
+        ],
+        "composition": "Vách đá tạo đường chéo tới khe vực bên phải",
+        "foreground": "Mép đá sẫm và hạt phù du",
+        "midground": "Đường địa hình dốc xuống",
+        "background": "Vực xanh thẫm",
+        "visualAssets": [
+          "Minh họa rãnh và bản đồ địa hình cách điệu"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "depth",
+        "hadal"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "NOAA nêu độ sâu khoảng 10.935 m ở Challenger Deep. Sự sống tồn tại trong vùng hadal."
+        },
+        {
+          "status": "open-question",
+          "note": "Sự kết nối giữa các quần thể ở những rãnh khác nhau vẫn cần dữ liệu."
+        }
+      ]
+    },
+    {
+      "sceneId": "vents",
+      "title": "Sự sống quanh ống khói",
+      "kicker": "02 / MIỆNG PHUN THỦY NHIỆT",
+      "displayNote": "HÓA TỔNG HỢP",
+      "narration": "Từ các ống khói thủy nhiệt, nước nóng giàu khoáng trào ra. Một số vi sinh vật dùng năng lượng hóa học để tạo chất hữu cơ. Chúng ta vẫn đang tìm hiểu hệ sinh thái này hình thành thế nào.",
+      "visualDescription": "Đẩy máy về cụm ống khói với cột khoáng lan trong nước lạnh.",
+      "duration": 12,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "vents",
+      "visualDirection": {
+        "shotType": "Trung rộng",
+        "cameraAngle": "Thấp sát nền đá",
+        "lighting": "Ánh lạnh hai bên và hắt cam dưới đáy",
+        "colorPalette": [
+          "#100E1C",
+          "#665148",
+          "#E5AD80"
+        ],
+        "composition": "Ống khói chính ở một phần ba phải",
+        "foreground": "Đá và cụm sinh vật",
+        "midground": "Ống khói và luồng khoáng",
+        "background": "Nền đại dương sâu",
+        "visualAssets": [
+          "Minh họa ống khói và hạt khoáng"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "vent"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Dịch nóng giàu khoáng có thể tạo ống khói. Cộng đồng hóa tổng hợp tận dụng năng lượng hóa học."
+        },
+        {
+          "status": "open-question",
+          "note": "Các điều kiện và diễn biến hình thành hệ thống thủy nhiệt vẫn đang được khảo sát."
+        }
+      ]
+    },
+    {
+      "sceneId": "brine",
+      "title": "Hồ nằm dưới biển",
+      "kicker": "03 / HỒ NƯỚC MUỐI",
+      "displayNote": "NƯỚC MUỐI ĐẬM ĐẶC",
+      "narration": "Khi nước chứa nhiều muối hơn, nó có thể chìm xuống và đọng thành hồ ngay dưới biển. Ở mép hồ, những sinh vật nào chịu được điều kiện khắc nghiệt ấy?",
+      "visualDescription": "Lướt ngang một mặt hồ mờ xanh ôm bởi bờ khoáng sáng.",
+      "duration": 11,
+      "cameraMovement": "ken-burns",
+      "transition": "fade",
+      "visualType": "brine",
+      "visualDirection": {
+        "shotType": "Toàn rộng",
+        "cameraAngle": "Chếch xuống mặt hồ",
+        "lighting": "Ánh xiên dịu vẽ đường ranh mặt hồ",
+        "colorPalette": [
+          "#031924",
+          "#216B66",
+          "#A5D9B9"
+        ],
+        "composition": "Vành hồ lớn ở nửa phải, nhìn thấy ranh với nền đá",
+        "foreground": "Nền đá và mép muối",
+        "midground": "Lớp ranh và lòng hồ",
+        "background": "Đáy biển lùi vào nước mờ",
+        "visualAssets": [
+          "Ảnh hồ nước muối vịnh Mexico từ NOAA Ocean Exploration, Exploration of the Gulf of Mexico 2014"
+        ]
+      },
+      "image": {
+        "path": "ocean/brine.jpg",
+        "credit": "NOAA Ocean Exploration · Gulf of Mexico 2014",
+        "license": "Public domain per NOAA Ocean Exploration media policy",
+        "objectPosition": "64% 50%"
+      },
+      "sourceIds": [
+        "brine"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Nước muối đậm đặc có mật độ cao và có thể tích tụ thành hồ."
+        },
+        {
+          "status": "open-question",
+          "note": "Khả năng thích nghi ở ranh giới hồ là câu hỏi quan sát, không phải tuyên bố chưa từng có nghiên cứu."
+        }
+      ]
+    },
+    {
+      "sceneId": "seeps",
+      "title": "Dòng khí từ lòng đất",
+      "kicker": "04 / ĐIỂM RÒ RỈ LẠNH",
+      "displayNote": "MÊ TAN · VI SINH VẬT",
+      "narration": "Mê tan có thể thoát qua các khe đáy biển. Một phần khí được vi sinh vật tiêu thụ. Đo được lượng khí chúng giữ lại ở từng nơi vẫn là một thách thức.",
+      "visualDescription": "Cận cảnh chuỗi bọt thoát khỏi khe nứt giữa các lớp đáy biển.",
+      "duration": 11,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "seep",
+      "visualDirection": {
+        "shotType": "Cận cảnh",
+        "cameraAngle": "Ngang sát nền",
+        "lighting": "Ánh ngọc lục bảo từ phải",
+        "colorPalette": [
+          "#061A20",
+          "#2D6560",
+          "#ABE5B9"
+        ],
+        "composition": "Chuỗi bọt dựng trục dọc phía phải",
+        "foreground": "Mảng nền và vỏ nhuyễn thể",
+        "midground": "Khe nứt và bọt khí",
+        "background": "Các tầng đá lùi dần",
+        "visualAssets": [
+          "Minh họa điểm rò rỉ và bọt"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "seep"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Mê tan có thể thoát từ đáy biển và bị vi sinh vật tiêu thụ."
+        },
+        {
+          "status": "open-question",
+          "note": "Cần khảo sát tại chỗ để ước lượng mức giữ lại của từng hệ thống."
+        }
+      ]
+    },
+    {
+      "sceneId": "whale",
+      "title": "Khi cá voi chìm xuống",
+      "kicker": "05 / XÁC CÁ VOI",
+      "displayNote": "MỘT HỆ SINH THÁI TẠM THỜI",
+      "narration": "Xác cá voi chìm có thể nuôi cả một cộng đồng dưới đáy biển. Xương còn cung cấp chất dinh dưỡng sau khi phần thịt đã mất. Một hệ sinh thái như thế tồn tại được bao lâu?",
+      "visualDescription": "Lộ dần cấu trúc bộ xương nằm nghiêng trên nền trầm tích.",
+      "duration": 12,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "whale",
+      "visualDirection": {
+        "shotType": "Trung cảnh mở ra toàn",
+        "cameraAngle": "Chếch ngang xuống nền",
+        "lighting": "Đèn dò lạnh viền các cung xương",
+        "colorPalette": [
+          "#081423",
+          "#6C7778",
+          "#DED7C1"
+        ],
+        "composition": "Bộ xương chéo trong nửa phải",
+        "foreground": "Trầm tích và sinh vật nhỏ",
+        "midground": "Các cung xương và đốt sống",
+        "background": "Rìa tầm sáng thiết bị lặn",
+        "visualAssets": [
+          "Minh họa bộ xương cá voi"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "whale"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Bộ xương có thể duy trì cộng đồng trong nhiều năm, đôi khi nhiều thập kỷ."
+        },
+        {
+          "status": "open-question",
+          "note": "Thời gian tồn tại phụ thuộc từng xác và điều kiện tại chỗ."
+        }
+      ]
+    },
+    {
+      "sceneId": "return",
+      "title": "Phần chìm của Trái Đất",
+      "kicker": "HỒ SƠ BIỂN SÂU",
+      "displayNote": "HẾT",
+      "narration": "Mỗi lần bật đèn dưới đáy biển, ta chỉ nhìn thấy một góc nhỏ. Ngoài rìa ánh sáng, vẫn còn cả một thế giới để khám phá.",
+      "visualDescription": "Ánh đèn thiết bị lặn chậm rãi quét qua đáy sâu rồi rời khỏi khung.",
+      "duration": 10,
+      "cameraMovement": "drift",
+      "transition": "fade",
+      "visualType": "abyss",
+      "visualDirection": {
+        "shotType": "Toàn cảnh kết",
+        "cameraAngle": "Ngang hướng về vực",
+        "lighting": "Vệt đèn xanh bạc trên biển sâu",
+        "colorPalette": [
+          "#030B18",
+          "#164364",
+          "#91CDE4"
+        ],
+        "composition": "Thiết bị nhỏ ở phải giúp đọc quy mô",
+        "foreground": "Hạt lắng xuống",
+        "midground": "Thiết bị lặn và quầng sáng",
+        "background": "Địa hình ngoài vùng chiếu sáng",
+        "visualAssets": [
+          "Minh họa đáy biển và vệt đèn"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "hadal"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Khảo sát trực quan và lấy mẫu ở vùng hadal còn hạn chế."
+        }
+      ]
+    }
+  ]
+}

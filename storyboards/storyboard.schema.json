@@ -1,0 +1,300 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "topic",
+    "language",
+    "sources",
+    "music",
+    "scenes"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "vi"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "music": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "credit",
+            "license"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "credit": {
+              "type": "string"
+            },
+            "license": {
+              "type": "string"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sceneId",
+          "title",
+          "kicker",
+          "displayNote",
+          "narration",
+          "visualDescription",
+          "duration",
+          "cameraMovement",
+          "transition",
+          "visualType",
+          "visualDirection",
+          "image",
+          "sourceIds",
+          "factChecks"
+        ],
+        "properties": {
+          "sceneId": {
+            "type": "string"
+          },
+            "chapter": {"type": "string"},
+            "portrait": {"type": "boolean"},
+            "soundDesign": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["mood", "tempo", "cue"],
+              "properties": {
+                "mood": {"type": "string"},
+                "tempo": {"type": "number", "minimum": 0.88, "maximum": 1.12},
+                "cue": {"type": ["string", "null"]}
+              }
+            },
+            "sportGraphic": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "required": ["kind", "heading", "items"],
+              "properties": {
+                "kind": {"enum": ["score", "trophy", "timeline", "pitch"]},
+                "heading": {"type": "string"},
+                "items": {
+                  "type": "array",
+                  "maxItems": 5,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["label", "value"],
+                    "properties": {
+                      "label": {"type": "string"},
+                      "value": {"type": "string"}
+                    }
+                  }
+                }
+              }
+            },
+            "keywords": {"type": "array", "items": {"type": "string", "minLength": 1}},
+          "title": {
+            "type": "string"
+          },
+          "kicker": {
+            "type": "string"
+          },
+          "displayNote": {
+            "type": "string"
+          },
+          "narration": {
+            "type": "string"
+          },
+          "visualDescription": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "cameraMovement": {
+            "type": "string",
+            "enum": [
+              "ken-burns",
+              "zoom-in",
+              "zoom-out",
+              "pan-left",
+              "pan-right",
+              "dolly",
+              "drift"
+            ]
+          },
+          "transition": {
+            "type": "string",
+            "enum": [
+              "cut",
+              "fade"
+            ]
+          },
+          "visualType": {
+            "type": "string",
+            "enum": [
+              "surface",
+              "trench",
+              "vents",
+              "brine",
+              "seep",
+              "whale",
+              "abyss",
+              "abstract"
+            ]
+          },
+          "visualDirection": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "shotType",
+              "cameraAngle",
+              "lighting",
+              "colorPalette",
+              "composition",
+              "foreground",
+              "midground",
+              "background",
+              "visualAssets"
+            ],
+            "properties": {
+              "shotType": {
+                "type": "string"
+              },
+              "cameraAngle": {
+                "type": "string"
+              },
+              "lighting": {
+                "type": "string"
+              },
+              "colorPalette": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "composition": {
+                "type": "string"
+              },
+              "foreground": {
+                "type": "string"
+              },
+              "midground": {
+                "type": "string"
+              },
+              "background": {
+                "type": "string"
+              },
+              "visualAssets": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "path",
+                  "credit",
+                  "license",
+                  "objectPosition"
+                ],
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "credit": {
+                    "type": "string"
+                  },
+                  "license": {
+                    "type": "string"
+                  },
+                  "objectPosition": {
+                    "type": "string"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "factChecks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "status",
+                "note"
+              ],
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "verified",
+                    "needs-verification",
+                    "open-question"
+                  ]
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
