@@ -16,6 +16,17 @@
     "topic": {
       "type": "string"
     },
+    "visualStyle": {
+      "enum": ["image-first"]
+    },
+    "historicalStyle": {
+      "enum": ["intel-uhd"]
+    },
+    "mixGainDb": {
+      "type": "number",
+      "minimum": -24,
+      "maximum": 12
+    },
     "subtitle": {
       "type": "string",
       "maxLength": 90
@@ -103,13 +114,15 @@
             "type": "string"
           },
             "chapter": {"type": "string"},
+            "labelPosition": {"enum": ["top-left", "top-center", "top-right"]},
             "historical": {
               "type": "object",
               "additionalProperties": false,
               "required": ["kind", "stage"],
               "properties": {
-                "kind": {"enum": ["archive", "ship", "ocean", "route", "collision", "flooding", "timeline", "lifeboat", "wreck"]},
-                "stage": {"type": "integer", "minimum": 0, "maximum": 5}
+                "kind": {"enum": ["archive", "ship", "ocean", "route", "collision", "flooding", "timeline", "lifeboat", "wreck", "capacity", "detail"]},
+                "stage": {"type": "integer", "minimum": 0, "maximum": 7},
+                "eventSeconds": {"type": "number", "minimum": 0}
               }
             },
             "portrait": {"type": "boolean"},
@@ -120,7 +133,23 @@
               "properties": {
                 "mood": {"type": "string"},
                 "tempo": {"type": "number", "minimum": 0.88, "maximum": 1.12},
-                "cue": {"type": ["string", "null"]}
+                "cue": {"type": ["string", "null"]},
+                "musicGain": {"type": "number", "minimum": 0, "maximum": 1},
+                "cues": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["path", "start", "duration", "gain"],
+                    "properties": {
+                      "path": {"type": "string", "minLength": 1},
+                      "start": {"type": "number", "minimum": 0},
+                      "duration": {"type": "number", "minimum": 0.034},
+                      "gain": {"type": "number", "minimum": 0, "maximum": 1},
+                      "loop": {"type": "boolean"}
+                    }
+                  }
+                }
               }
             },
             "sportGraphic": {

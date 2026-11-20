@@ -1,0 +1,122 @@
+{
+  "assets": [
+    {
+      "id": "inquiry-plate",
+      "kind": "image",
+      "path": "titanic-intel/inquiry-48.jpg",
+      "title": "S.S. Titanic bulkhead and flooding plan",
+      "creator": "British Wreck Commissioner’s Court, reprinted by the U.S. Government Printing Office",
+      "date": "1912",
+      "identity": "Page 48 in Senate Document 933. Cropped to the original elevation and crosshatching.",
+      "license": "Public domain in the United States, published in 1912",
+      "credit": "British Wreck Commissioner’s report, 1912, p. 48 / GovInfo",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/SERIALSET-06179_00_00-019-0933-0000/pdf/SERIALSET-06179_00_00-019-0933-0000.pdf",
+      "rightsUrl": "https://www.copyright.gov/circs/circ15a.pdf",
+      "sha256": "1d5a74eeb9d13365d224d13b34a93e6fb899851d2bf22e84e3caecfd010b618b",
+      "derivation": {
+        "pdfSha256": "c248db8b87db869081a0d515a1e90c01953732165e0384e332dfddd42c641832",
+        "page": 48,
+        "scale": 3,
+        "cropPixels": [
+          170,
+          762,
+          1150,
+          1047
+        ]
+      }
+    },
+    {
+      "id": "southampton",
+      "kind": "image",
+      "path": "titanic/southampton.jpg",
+      "title": "Titanic at Southampton",
+      "creator": "Photographer unknown",
+      "date": "10 April 1912",
+      "identity": "Titanic at Southampton before departure, as catalogued.",
+      "license": "Public domain per item record",
+      "credit": "Photographer unknown / Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titanic_in_Southampton.jpg",
+      "rightsUrl": "https://commons.wikimedia.org/wiki/File:Titanic_in_Southampton.jpg#Licensing",
+      "sha256": "07dd1923f3842d4058251fbc4ea3b01816f7a2252a80631b21282add6b020ff7"
+    },
+    {
+      "id": "belfast",
+      "kind": "image",
+      "path": "titanic/belfast.jpg",
+      "title": "Titanic fitting out at Belfast",
+      "creator": "Robert John Welch for Harland & Wolff",
+      "date": "February–March 1912, per item record",
+      "identity": "Titanic fitting out in Belfast.",
+      "license": "Public domain per item record",
+      "credit": "Robert John Welch / Harland & Wolff",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titanic_under_construction.jpg",
+      "rightsUrl": "https://commons.wikimedia.org/wiki/File:Titanic_under_construction.jpg#Licensing",
+      "sha256": "5a8e03f1e36dc00f1c5403692ef70381dd5199eb7a41479e3f29c44a3a498630"
+    },
+    {
+      "id": "rostron",
+      "kind": "image",
+      "path": "titanic/rostron.jpg",
+      "title": "Rostron and officers of Carpathia",
+      "creator": "Bain News Service",
+      "date": "1912",
+      "identity": "Rostron and officers pose with the silver cup presented after the April rescue.",
+      "license": "No known copyright restrictions, Bain collection advisory",
+      "credit": "Bain News Service / Library of Congress, Prints & Photographs Division, ggbain 10438",
+      "sourceUrl": "https://www.loc.gov/pictures/item/2014690421/",
+      "rightsUrl": "https://www.loc.gov/rr/print/res/274_bain.html",
+      "downloadUrl": "https://cdn.loc.gov/service/pnp/ggbain/10400/10438v.jpg",
+      "sha256": "b7011572871119a7670f182c85195e7d1b3b578c6fcddb37c5f15b30bd3f4fe8"
+    },
+    {
+      "id": "lifeboats",
+      "kind": "image",
+      "path": "titanic/lifeboats.jpg",
+      "title": "Titanic lifeboat No. 14 and collapsible D",
+      "creator": "Attributed to Louis Ogden",
+      "date": "15 April 1912",
+      "identity": "Two Titanic lifeboats photographed during the rescue.",
+      "license": "Public domain in the United States, 1912 photo",
+      "credit": "Louis Ogden (attributed) / U.S. National Archives, 278336",
+      "sourceUrl": "https://catalog.archives.gov/id/278336",
+      "rightsUrl": "https://commons.wikimedia.org/wiki/File:Photograph_of_two_lifeboats_carying_TITANIC_survivors._The_folowing_caption_appears_on_the_back_of_the_mat,_%22Boat_No..._-_NARA_-_278336.jpg",
+      "sha256": "7b900b594593d481f30448936d05dc23c486a312be9e0cb46a1761bf2f28de09"
+    },
+    {
+      "id": "survivors",
+      "kind": "image",
+      "path": "titanic/survivors.jpg",
+      "title": "Survivors of Titanic on Carpathia",
+      "creator": "Bain News Service",
+      "date": "April 1912",
+      "identity": "Titanic survivors aboard Carpathia, identified in the archive catalogue.",
+      "license": "No known restrictions on publication per item record",
+      "credit": "Bain News Service / Library of Congress, LC-DIG-ggbain-11211",
+      "sourceUrl": "https://www.loc.gov/pictures/item/2014691298/",
+      "rightsUrl": "https://www.loc.gov/rr/print/res/274_bain.html",
+      "sha256": "f146f042e27af62413e3bb0a0b8fae63878cecc85ce6019a4d1c54bfb1f516c8"
+    },
+    {
+      "id": "headlines",
+      "kind": "image",
+      "path": "titanic/headlines.jpg",
+      "title": "The New York Times front page after the sinking",
+      "creator": "The New York Times",
+      "date": "16 April 1912",
+      "identity": "Period reporting; the early loss/arrival figures are estimates.",
+      "license": "Public domain per item record",
+      "credit": "The New York Times / Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titanic-NYT.jpg",
+      "rightsUrl": "https://commons.wikimedia.org/wiki/File:Titanic-NYT.jpg#Licensing",
+      "sha256": "379d95ce890e96e3fb657d6917599a76a39a9d8d19b9b3a1acc1020e427cd82a"
+    }
+  ],
+  "deferred": [
+    {
+      "title": "Titanic disaster (1912)",
+      "sourceUrl": "https://www.loc.gov/item/mp73125400/",
+      "rightsUrl": "https://www.loc.gov/item/mp73125400/#rights",
+      "reason": "Mixed newsreel. The catalogue identifies Olympic, Carpathia, and Stuart Collett. Treat a Carpathia rescue excerpt as a separate candidate after inspecting original timecodes and reuse rights. No excerpt depicts the night collision."
+    }
+  ]
+}

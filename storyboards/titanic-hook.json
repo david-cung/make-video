@@ -1,0 +1,76 @@
+{
+  "title": "Titanic · High-Tension Hook",
+  "voice": "bm_george",
+  "language": "en-gb",
+  "scenes": [
+    {
+      "id": "reveal",
+      "name": "Black screen to ship reveal",
+      "targetStart": 0,
+      "lines": [
+        0
+      ]
+    },
+    {
+      "id": "engine",
+      "name": "Engine room",
+      "targetStart": 3,
+      "lines": [
+        1
+      ]
+    },
+    {
+      "id": "corridor",
+      "name": "Passenger corridor",
+      "targetStart": 7,
+      "lines": [
+        2
+      ]
+    },
+    {
+      "id": "flooding",
+      "name": "Flooding compartments",
+      "targetStart": 12,
+      "lines": [
+        3
+      ]
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown clock",
+      "targetStart": 17,
+      "lines": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "sinking",
+      "name": "Titanic at sea",
+      "targetStart": 21,
+      "lines": [
+        6
+      ]
+    },
+    {
+      "id": "question",
+      "name": "Dark ocean and title question",
+      "targetStart": 26,
+      "lines": [
+        7,
+        8
+      ]
+    }
+  ],
+  "lines": [
+    "11:40 PM.",
+    "A sudden impact shakes the Titanic.",
+    "But above deck... almost nobody understands what has just happened.",
+    "Deep below, seawater is already flooding the ship.",
+    "The clock is ticking.",
+    "More than two thousand people are on board.",
+    "And in just two hours and forty minutes... the Titanic will be gone.",
+    "The terrifying question is...",
+    "How did a collision become a catastrophe?"
+  ]
+}

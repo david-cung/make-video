@@ -40,7 +40,7 @@ export function checkLocalAsset(path) {
   return actual;
 }
 
-export function validateStoryboard(storyboard, {assets = true} = {}) {
+export function validateStoryboard(storyboard, {assets = true, minSeconds = MIN_DOCUMENTARY_SECONDS} = {}) {
   if (!schemaCheck(storyboard)) {
     throw new Error("Storyboard schema validation failed: " + schemaCheck.errors.map((error) => `${error.instancePath || "/"} ${error.message}`).join(", "));
   }
@@ -50,8 +50,8 @@ export function validateStoryboard(storyboard, {assets = true} = {}) {
   const plannedFrames = scenes.reduce((sum, scene) => sum + Math.round(scene.duration * FPS), 0);
   const minScenes = plannedFrames < 60 * FPS ? 1 : 6;
   add(scenes.length >= minScenes && scenes.length <= 60, `Use ${minScenes}–60 scenes.`);
-  add(plannedFrames >= MIN_DOCUMENTARY_SECONDS * FPS && plannedFrames <= MAX_DOCUMENTARY_SECONDS * FPS,
-    `Use a total duration of ${MIN_DOCUMENTARY_SECONDS}–${MAX_DOCUMENTARY_SECONDS} seconds.`);
+  add(plannedFrames >= minSeconds * FPS && plannedFrames <= MAX_DOCUMENTARY_SECONDS * FPS,
+    `Use a total duration of ${minSeconds}–${MAX_DOCUMENTARY_SECONDS} seconds.`);
   add(Boolean(storyboard.title.trim() && storyboard.topic.trim()), "Add a project title and topic.");
   add(new Set(scenes.map(({sceneId}) => sceneId)).size === scenes.length, "Scene IDs must be unique.");
   const sourceIds = new Set(storyboard.sources.map(({id}) => id));
@@ -67,6 +67,9 @@ export function validateStoryboard(storyboard, {assets = true} = {}) {
     const sentences = splitSentences(scene.narration);
     add(/^[a-z][a-z0-9-]{1,39}$/.test(label), `Invalid scene ID ${label}.`);
     add(scene.duration >= 4 && scene.duration <= 24, `${label} must be 4–24 seconds.`);
+    if (scene.historical?.eventSeconds !== undefined) {
+      add(scene.historical.eventSeconds < scene.duration, `${label} historical event must be inside the shot.`);
+    }
     add(scene.title.trim().length > 0 && scene.title.length <= 70 && scene.kicker.length <= 65 && scene.displayNote.length <= 68, `${label} display text exceeds the layout limits.`);
     add(sentences.length > 0 && sentences.length <= 6 && sentences.every((sentence) => sentence.length <= 160), `${label} needs 1–6 sentences of at most 160 characters each.`);
     add([scene.visualDescription, direction.shotType, direction.cameraAngle, direction.lighting, direction.composition,
@@ -75,6 +78,11 @@ export function validateStoryboard(storyboard, {assets = true} = {}) {
     add(direction.colorPalette.length === 3 && direction.colorPalette.every((color) => /^#[0-9a-f]{6}$/i.test(color)), `${label} needs dark, middle and light hex colors.`);
     add(scene.sourceIds.every((id) => sourceIds.has(id)), `${label} references an unknown source.`);
     if (scene.soundDesign?.cue && assets) checkLocalAsset(scene.soundDesign.cue);
+    for (const cue of scene.soundDesign?.cues ?? []) {
+      const end = Math.round(cue.start * FPS) + Math.round(cue.duration * FPS);
+      add(end <= Math.round(scene.duration * FPS), `${label} sound cue exceeds the shot: ${cue.path}`);
+      if (assets) checkLocalAsset(cue.path);
+    }
     add(scene.sourceIds.length > 0 || scene.factChecks.every(({status}) => status !== "verified"), `${label} needs a source for every verified claim.`);
     add(scene.factChecks.every(({note}) => note.trim()), `${label} includes an empty fact check.`);
     if (scene.image) {

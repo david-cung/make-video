@@ -9,6 +9,10 @@ export const LEAD_FRAMES = 19;
 export const GAP_FRAMES = 5;
 export const TAIL_FRAMES = 15;
 
+export function opensChapter(scenes, index) {
+  return index === 0 || Boolean(scenes[index].chapter && scenes[index].chapter !== scenes[index - 1].chapter);
+}
+
 export function splitSentences(narration) {
   return narration.match(/(?:\d+[.,](?=\d)|[^.!?])+[.!?]*|[.!?]+/gu)?.map((part) => part.trim()).filter(Boolean) ?? [];
 }

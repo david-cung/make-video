@@ -43,7 +43,7 @@ function Pitch({accent}: {accent: string}) {
 
 const DIGITS = "Bahnschrift, 'Be Vietnam Pro', sans-serif";
 
-export function SportsGraphic({graphic, accent}: {graphic: Graphic; accent: string}) {
+export function SportsGraphic({graphic, accent, centered = false}: {graphic: Graphic; accent: string; centered?: boolean}) {
   const frame = useCurrentFrame();
   const reveal = interpolate(frame, [17, 58], [0, 1], {
     easing: Easing.out(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp",
@@ -51,9 +51,11 @@ export function SportsGraphic({graphic, accent}: {graphic: Graphic; accent: stri
   const medal = graphic.kind === "trophy";
   const score = graphic.kind === "score";
   return <aside style={{
-    position: "absolute", right: 126, top: medal || graphic.kind === "pitch" ? 188 : 275,
-    width: score ? 620 : 590, color: "#f8f5ea", opacity: reveal,
-    transform: `translateX(${44 * (1 - reveal)}px)`, background: "#0a0d15dc", padding: "25px 29px 29px",
+    position: "absolute", right: centered ? undefined : 126, left: centered ? "50%" : undefined,
+    top: centered || medal || graphic.kind === "pitch" ? 188 : 275,
+    width: centered ? 790 : score ? 620 : 590, color: "#f8f5ea", opacity: reveal,
+    transform: centered ? `translate(-50%, ${26 * (1 - reveal)}px)` : `translateX(${44 * (1 - reveal)}px)`,
+    background: "#0a0d15dc", padding: "25px 29px 29px",
     border: "1px solid #ffffff27", borderLeft: `3px solid ${accent}`, fontFamily: DIGITS, display: "grid", gap: 14,
   }}>
     <div style={{color: accent, letterSpacing: ".15em", fontSize: 18, fontWeight: 600}}>{graphic.heading}</div>

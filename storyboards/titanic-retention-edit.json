@@ -1,0 +1,95 @@
+{
+  "baseline": "output/titanic-upgraded-preview.mp4",
+  "replacesChapter": "Cold open",
+  "opening": [
+    {
+      "sceneId": "out-of-time",
+      "duration": 6,
+      "title": "Where the boats ran out",
+      "historical": {"kind": "ship", "stage": 5},
+      "cameraMovement": "zoom-out",
+      "narration": "At two twenty, Titanic was gone. Help was still coming.",
+      "visualBeat": "Open on the ship's last silhouette and leave its destination unresolved.",
+      "effects": [{"asset": "ocean", "start": 0, "duration": 5.8, "gainDb": -9, "fadeIn": 0.65, "fadeOut": 0.6}]
+    },
+    {
+      "sceneId": "room-in-the-boats",
+      "duration": 8,
+      "narration": "More than two thousand people had been aboard. The lifeboats had room for just over half.",
+      "tempo": 1.06,
+      "visualBeat": "Reveal the capacity gap on one scale.",
+      "effects": []
+    },
+    {
+      "sceneId": "before-the-night",
+      "duration": 7,
+      "transition": "fade",
+      "narration": "Four days earlier, Titanic left Southampton for New York.",
+      "visualBeat": "Return to the departure in an authentic photograph.",
+      "effects": [{"asset": "engine", "start": 1.2, "duration": 5.6, "gainDb": -13, "fadeIn": 0.7, "fadeOut": 0.8}]
+    },
+    {
+      "sceneId": "open-water",
+      "duration": 6,
+      "narration": "That Sunday night, an iceberg lay in her path.",
+      "visualBeat": "Trace the approximate route to the reported distress area.",
+      "effects": [{"asset": "wind", "start": 0.2, "duration": 5.75, "gainDb": -9, "fadeIn": 0.8, "fadeOut": 0.65}]
+    },
+    {
+      "sceneId": "below-the-waterline",
+      "duration": 7,
+      "historical": {"kind": "collision", "stage": 1, "eventSeconds": 4.3},
+      "narration": "At about eleven forty, ice scraped the hull.",
+      "visualBeat": "Separate sea, ship and ice in depth. A brief recoil marks the contact.",
+      "effects": [
+        {"asset": "engine", "start": 0, "duration": 4.03, "gainDb": -9, "fadeIn": 0.25, "fadeOut": 0.45},
+        {"asset": "ocean", "start": 0, "duration": 4.03, "gainDb": -10, "fadeIn": 0.45, "fadeOut": 0.45},
+        {"asset": "impact", "start": 4.3, "duration": 1.25, "gainDb": -1, "fadeIn": 0.035, "fadeOut": 0.3, "event": "collision"}
+      ],
+      "silence": [{"start": 4.03, "end": 4.3, "purpose": "Brief drop after the sentence and before contact."},{"start": 5.55, "end": 7, "purpose": "Hold after impact before moving below decks."}]
+    },
+    {
+      "sceneId": "the-limit",
+      "duration": 8,
+      "narration": "Five forward compartments flooded. Water spilled over a bulkhead.",
+      "tempo": 1.06,
+      "visualBeat": "Show flooding and then spillover in sentence order, with the original inquiry plate visible.",
+      "effects": [
+        {"asset": "deep", "start": 0.1, "duration": 7.6, "gainDb": -9, "fadeIn": 0.9, "fadeOut": 1.1, "lowpassHz": 460},
+        {"asset": "creak", "start": 3.8, "duration": 2.65, "gainDb": -10, "fadeIn": 0.6, "fadeOut": 0.55}
+      ]
+    },
+    {
+      "sceneId": "rostron-turns",
+      "newId": "opening-carpathia",
+      "duration": 7,
+      "transition": "fade",
+      "narration": "Carpathia answered the call and turned towards Titanic.",
+      "visualBeat": "Reveal the rescue ship's approach as a separate line on the map.",
+      "effects": [{"asset": "engine", "start": 0.25, "duration": 6.5, "gainDb": -11, "fadeIn": 1, "fadeOut": 0.7}]
+    },
+    {
+      "sceneId": "daybreak",
+      "newId": "opening-boat-question",
+      "duration": 11,
+      "imagePosition": "50% 79%",
+      "narration": "The rescue ship reached the lifeboats after Titanic sank. Who managed to get into one?",
+      "visualBeat": "Show the authentic dawn rescue photograph, then hold on the question that the film will answer.",
+      "effects": [{"asset": "ocean", "start": 0, "duration": 10.85, "gainDb": -11, "fadeIn": 0.7, "fadeOut": 1.4}]
+    }
+  ],
+  "laterRevisions": {
+    "belfast": {
+      "narration": "To see why getting off was so hard, go back to Belfast. Titanic was nearly two hundred and seventy metres long. What mattered that night was how the space inside was divided.",
+      "visualBeat": "Use the image of the fitting-out dock to introduce design instead of reopening with a general description."
+    },
+    "boat-deck": {
+      "narration": "Twenty boats sat on deck, including four collapsibles. The regulations allowed Titanic to sail with fewer places than people. Once the ice came, that shortfall was fixed.",
+      "visualBeat": "End the construction chapter on the constraint the evacuation will inherit."
+    },
+    "the-last-distance": {
+      "narration": "The wireless call brought Carpathia to the boats. Reaching one meant getting up to the deck, arriving before it left, and getting a place. For so many people, the longest distance that night was the one between the deck and the sea.",
+      "visualBeat": "Answer the opening question with access, timing and places, then return to the empty sea."
+    }
+  }
+}

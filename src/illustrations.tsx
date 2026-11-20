@@ -199,9 +199,24 @@ export function ArchiveAtmosphere({palette, children}: {palette: Palette; childr
   </AbsoluteFill>;
 }
 
-export function SceneSubject({scene, palette, id, archive = false, sports = false}: {
-  scene: Scene; palette: Palette; id: string; archive?: boolean; sports?: boolean;
+export function SceneSubject({scene, palette, id, archive = false, sports = false, fullBleed = false}: {
+  scene: Scene; palette: Palette; id: string; archive?: boolean; sports?: boolean; fullBleed?: boolean;
 }) {
+  if (scene.image && fullBleed) {
+    const src = staticFile(scene.image.path);
+    const position = scene.image.objectPosition;
+    if (!scene.portrait) return <Img src={src} style={{width: "100%", height: "100%", objectFit: "cover", objectPosition: position}} />;
+    return <AbsoluteFill>
+      <Img src={src} style={{
+        width: "100%", height: "100%", objectFit: "cover", objectPosition: position,
+        filter: "blur(24px) brightness(.56)", transform: "scale(1.07)",
+      }} />
+      <Img src={src} style={{
+        position: "absolute", top: "7%", left: "10%", right: "10%", width: "80%", height: "86%",
+        objectFit: "contain", objectPosition: position,
+      }} />
+    </AbsoluteFill>;
+  }
   if (scene.image && sports) return <Img src={staticFile(scene.image.path)} style={{
     position: "absolute", top: scene.portrait ? 65 : 0, right: 0, height: "100%",
     width: scene.portrait ? "54%" : "76%", objectFit: "cover",

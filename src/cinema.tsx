@@ -1,6 +1,6 @@
 import type {CSSProperties, ReactNode} from "react";
 import {AbsoluteFill, Easing, interpolate, random, spring, useCurrentFrame, useVideoConfig} from "remotion";
-import type {CameraPreset, Caption} from "./types";
+import type {CameraPreset, Caption, Scene} from "./types";
 
 const cameraPaths: Record<CameraPreset, [number, number, number, number, number, number]> = {
   "ken-burns": [1.06, 1.16, 24, -32, 10, -21],
@@ -12,8 +12,8 @@ const cameraPaths: Record<CameraPreset, [number, number, number, number, number,
   drift: [1.11, 1.055, 30, -27, -11, 12],
 };
 
-export function CameraMotion({preset, duration, depth, hold, children}: {
-  preset: CameraPreset; duration: number; depth: number; hold: boolean; children: ReactNode;
+export function CinematicCamera({preset, duration, depth, hold, origin = "68% 48%", children}: {
+  preset: CameraPreset; duration: number; depth: number; hold: boolean; origin?: string; children: ReactNode;
 }) {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -25,16 +25,27 @@ export function CameraMotion({preset, duration, depth, hold, children}: {
   const seconds = Math.min(frame, duration - 1) / fps;
   const x = (x0 + (x1 - x0) * progress) * depth + Math.sin(seconds * 2.1) * 1.1 * depth;
   const y = (y0 + (y1 - y0) * progress) * depth + Math.cos(seconds * 1.7) * 0.7 * depth;
-  return <AbsoluteFill style={{transform: `translate3d(${x}px, ${y}px, 0) scale(${scale})`, transformOrigin: "68% 48%"}}>{children}</AbsoluteFill>;
+  return <AbsoluteFill style={{transform: `translate3d(${x}px, ${y}px, 0) scale(${scale})`, transformOrigin: origin}}>{children}</AbsoluteFill>;
 }
 
-export function ParallaxLayers({preset, duration, hold, layers}: {
-  preset: CameraPreset; duration: number; hold: boolean; layers: ReactNode[];
+export function DepthParallax({preset, duration, hold, layers, origin}: {
+  preset: CameraPreset; duration: number; hold: boolean; layers: ReactNode[]; origin?: string;
 }) {
   return layers.map((layer, index) =>
-    <CameraMotion key={index} preset={preset} duration={duration} hold={hold} depth={[0.22, 0.72, 1.2][index]}>
+    <CinematicCamera key={index} preset={preset} duration={duration} hold={hold} origin={origin} depth={[0.22, 0.72, 1.2][index]}>
       {layer}
-    </CameraMotion>);
+    </CinematicCamera>);
+}
+
+export {CinematicCamera as CameraMotion, DepthParallax as ParallaxLayers};
+
+export function VolumetricLight({color, intensity = 0.22}: {color: string; intensity?: number}) {
+  const frame = useCurrentFrame();
+  const sweep = 45 + 8 * Math.sin(frame / 120);
+  return <AbsoluteFill aria-hidden style={{
+    opacity: intensity,
+    background: `radial-gradient(ellipse 47% 36% at ${sweep}% 55%, ${color}, transparent 76%), conic-gradient(from 140deg at 17% 0%, transparent 0deg, ${color}60 14deg, transparent 36deg)`,
+  }} />;
 }
 
 const particles = Array.from({length: 85}, (_, index) => {
@@ -93,6 +104,33 @@ export function CinematicTitle({title, kicker, note, color, cover, chapter}: {
     {note && <div style={{fontSize: 17, color: "#d5e4e5", fontWeight: 500, letterSpacing: "0.16em", marginTop: 35}}>{note}</div>}
   </section>;
 }
+
+export function DramaticTextReveal({scene, chapterOpening, color}: {
+  scene: Scene; chapterOpening: boolean; color: string;
+}) {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const entry = Math.round(fps * 0.15);
+  const exit = Math.round(fps * 2.9);
+  const label = scene.image ? scene.kicker : scene.displayNote || scene.kicker;
+  if (frame < entry || frame >= exit || (!chapterOpening && !label)) return null;
+
+  const position = scene.labelPosition ?? "top-left";
+  const placement: CSSProperties = position === "top-right" ? {right: 98, textAlign: "right"} :
+    position === "top-center" ? {left: "50%", transform: "translateX(-50%)", textAlign: "center"} : {left: 98};
+  const opacity = Math.min(1, (frame - entry) / (fps * 0.25), (exit - frame) / (fps * 0.3));
+  const heading = chapterOpening ? (scene.chapter || scene.kicker) : label;
+  return <section style={{
+    position: "absolute", top: 88, maxWidth: chapterOpening ? 770 : 630, ...placement,
+    opacity, color: "#f5f7f5", background: "#070b13cc", padding: chapterOpening ? "20px 25px" : "9px 14px",
+    borderRadius: 4, overflowWrap: "anywhere",
+  }}>
+    {heading && <div style={{fontSize: chapterOpening ? 18 : 21, fontWeight: 600, color}}>{heading}</div>}
+    {chapterOpening && <h1 style={{fontSize: 62, lineHeight: 1.04, margin: heading ? "9px 0 0" : 0, textWrap: "balance"}}>{scene.title}</h1>}
+  </section>;
+}
+
+export {DramaticTextReveal as ImageFirstTitle};
 
 export function SubtitleOverlay({captions, keywords = []}: {captions: Caption[]; keywords?: string[]}) {
   const frame = useCurrentFrame();

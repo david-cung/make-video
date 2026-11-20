@@ -1,11 +1,11 @@
 import type {ReactNode} from "react";
 import {AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig} from "remotion";
-import {AtmosphericParticles, FilmGrain, ParallaxLayers} from "./cinema";
+import {AtmosphericParticles, DepthParallax, DramaticTextReveal, FilmGrain, VolumetricLight} from "./cinema";
 import {captionLines} from "./timeline.mjs";
 import type {Caption, Scene} from "./types";
 
 type Colour = {dark: string; middle: string; light: string};
-type Shot = {id: string; stage: number; palette: Colour; duration: number};
+type Shot = {id: string; stage: number; palette: Colour; duration: number; imageFirst?: boolean};
 
 const viewStyle = {position: "absolute", width: "100%", height: "100%"} as const;
 
@@ -24,7 +24,7 @@ const seaBands = Array.from({length: 27}, (_, i) => ({
   alpha: 0.025 + random(`titanic-water-a-${i}`) * 0.11,
 }));
 
-export function AtlanticOceanScene({palette, submerged, chart}: {
+export function OceanAtmosphere({palette, submerged, chart}: {
   palette: Colour; submerged: boolean; chart: boolean;
 }) {
   const frame = useCurrentFrame();
@@ -55,8 +55,8 @@ function MovingWater({palette}: {palette: Colour}) {
   </Field>;
 }
 
-function ShipProfile({id, dark, light, carpathia = false}: {
-  id: string; dark: string; light: string; carpathia?: boolean;
+export function ShipSilhouette({id, dark, light, carpathia = false, detailed = false}: {
+  id: string; dark: string; light: string; carpathia?: boolean; detailed?: boolean;
 }) {
   const funnels = carpathia ? [435] : [274, 372, 470, 568];
   return <g>
@@ -68,6 +68,19 @@ function ShipProfile({id, dark, light, carpathia = false}: {
     </defs>
     <path d="M90-43 112-64H699L752-41Z" fill="#5f6d75" />
     <path d={carpathia ? "M275-64 309-88H541L586-64Z" : "M160-67 177-99H674L701-65Z"} fill="#93999a" />
+    {detailed && <g>
+      <path d="M112-62H699M167-79H690M186-94H670M92-45H753" stroke={light} strokeOpacity=".49" strokeWidth="1.8" />
+      <path d="M110-47h645M183-101h474" stroke="#151f22" strokeWidth="5" />
+      {Array.from({length: 53}, (_, i) => <g key={i} transform={`translate(${151 + 11 * i} -68)`}>
+        <path d="M0 18V-8" stroke="#262e34" strokeWidth="2.1" />
+        {i > 4 && i < 45 && <path d={`M0 -17h${i % 3 ? "4.4" : "2.4"}`} stroke="#e8c084" opacity={i % 6 ? ".78" : ".28"} strokeWidth="3.5" />}
+      </g>)}
+      {!carpathia && [204, 250, 331, 386, 491, 548, 606, 660].map((x) => <g key={x} transform={`translate(${x} -93)`}>
+        <path d="M-12 1q10 4 26-1l-4 6h-16Z" fill="#6f766f" stroke="#c5baa3" strokeWidth=".7" />
+        <path d="M-8 -2v-6h6m13 6v-6H7" stroke="#939991" fill="none" strokeWidth="1.3" />
+      </g>)}
+      <path d="M10-36h102m638 0h105M145-181l-61 149m622-149 82 151" stroke={light} opacity=".42" fill="none" strokeWidth="1.4" />
+    </g>}
     {funnels.map((x) => <g key={x} transform={`translate(${x} -147) skewX(-8)`}>
       <path d="M0 53 4 0H35L43 53Z" fill={`url(#${id}-funnel)`} />
       <path d="M4 0h31l2 11H3Z" fill="#10171c" />
@@ -76,25 +89,33 @@ function ShipProfile({id, dark, light, carpathia = false}: {
     <path d="M136-58 145-184M719-46 706-182M145-180Q435-102 706-180" fill="none" stroke={light} strokeWidth="1.8" opacity=".47" />
     <path d="M0-26 72-36 752-37 831-16 881-28Q867 13 801 52Q501 80 113 57Q40 47 0-26Z" fill={`url(#${id}-hull)`} />
     <path d="M7-24 72-36 752-37 831-16 878-27M32 21Q454 44 819 23" fill="none" stroke={light} strokeWidth="2.5" opacity=".44" />
+    {detailed && <path d="M41-7 114-13 751-11 823 5M47 30Q455 52 805 34" fill="none" stroke="#9a765b"
+      strokeOpacity=".44" strokeWidth="1.8" />}
     {Array.from({length: 31}, (_, i) => <path key={i}
       d={`M${119 + i * 21} -54h5m-5 14h5m-5 17h5`}
       stroke={i % 4 ? "#ead4a8" : light} strokeWidth="3" opacity={i % 6 ? ".76" : ".27"} />)}
   </g>;
 }
 
-export function TitanicShipScene({id, stage, palette, duration}: Shot) {
+export function TitanicShipScene({id, stage, palette, duration, imageFirst}: Shot) {
   const frame = useCurrentFrame();
   const t = progress(frame, 0, duration - 1);
   const sinking = stage === 5;
   const x = stage === 4 ? 820 : stage === 3 ? 975 : 823;
   const shipOpacity = sinking ? 1 - progress(frame, duration * .62, duration - 1) * .56 : 1;
+  const waterline = sinking && imageFirst ? `${id}-surface` : undefined;
   return <Field>
+    {waterline && <defs><clipPath id={waterline}>
+      <path d="M0 0H1920V692Q1410 678 1050 688T0 688Z" />
+    </clipPath></defs>}
     <ellipse cx="1320" cy="634" rx="670" ry="88" fill={palette.middle} opacity=".23" />
-    <g transform={`translate(${x + t * 20} ${620 + (sinking ? t * 124 : Math.sin(frame / 36) * 3)}) rotate(${sinking ? 7 + t * 13 : -2} 470 0) scale(${stage === 3 ? .89 : 1.06})`}
-      opacity={shipOpacity}>
-      <ShipProfile id={id} dark={palette.dark} light={palette.light} carpathia={stage === 3} />
+    <g clipPath={waterline ? `url(#${waterline})` : undefined}>
+      <g transform={`translate(${x + t * 20} ${620 + (sinking ? t * 124 : Math.sin(frame / 36) * 3)}) rotate(${sinking ? 7 + t * 13 : -2} 470 0) scale(${stage === 3 ? .89 : 1.06})`}
+        opacity={shipOpacity}>
+        <ShipSilhouette id={id} dark={palette.dark} light={palette.light} carpathia={stage === 3} detailed={imageFirst} />
+      </g>
     </g>
-    {sinking && <path d="M720 670Q1110 650 1450 668T1920 661V1080H720Z" fill={palette.dark} opacity=".85" />}
+    {sinking && !imageFirst && <path d="M720 670Q1110 650 1450 668T1920 661V1080H720Z" fill={palette.dark} opacity=".85" />}
     {stage === 1 && <g stroke={palette.light} fill={palette.light} opacity=".84">
       <path d="M860 792h900M860 779v26m900-26v26" fill="none" strokeWidth="2" />
       <text x="1310" y="840" textAnchor="middle" fontSize="27" letterSpacing="5" stroke="none">269 METRES</text>
@@ -109,7 +130,7 @@ export function TitanicShipScene({id, stage, palette, duration}: Shot) {
   </Field>;
 }
 
-export function IcebergCollisionScene({id, stage, palette, duration}: Shot) {
+export function IcebergCollisionScene({id, stage, palette, duration, imageFirst}: Shot) {
   const frame = useCurrentFrame();
   const motion = progress(frame, 0, duration - 1);
   const berg = stage === 0 ? 1655 - motion * 35 : 1677 - motion * 114;
@@ -124,7 +145,7 @@ export function IcebergCollisionScene({id, stage, palette, duration}: Shot) {
       <path d="M-245 15Q0 3 229 14" stroke={palette.light} opacity=".45" fill="none" />
     </g>
     <g transform={`translate(${755 + motion * (stage ? 131 : 68)} 634) scale(.85)`}>
-      <ShipProfile id={id} dark={palette.dark} light={palette.light} />
+      <ShipSilhouette id={id} dark={palette.dark} light={palette.light} detailed={imageFirst} />
     </g>
     {stage === 1 && <path d="M1300 698h295" stroke={palette.light} strokeDasharray="5 14" strokeWidth="4"
       opacity={progress(frame, duration * .32, duration * .53) * .65} />}
@@ -133,7 +154,8 @@ export function IcebergCollisionScene({id, stage, palette, duration}: Shot) {
 
 export function FloodingScene({id, stage, palette, duration}: Shot) {
   const frame = useCurrentFrame();
-  const ceiling = stage === 0 ? 0 : stage === 1 ? 5 : 7;
+  const spill = stage === 3 ? progress(frame, duration * .48, duration * .91) : 0;
+  const ceiling = stage === 0 ? 0 : stage === 2 ? 7 : 5;
   return <Field>
     <g transform="translate(850 390)">
       <defs><clipPath id={`${id}-section`}><path d="M0 38H920L872 178Q834 261 704 267H76Q19 239 0 38Z" /></clipPath></defs>
@@ -143,9 +165,10 @@ export function FloodingScene({id, stage, palette, duration}: Shot) {
       <g clipPath={`url(#${id}-section)`}>
         {[0, 1, 2, 3, 4, 5, 6].map((n) => {
           const x = 38 + n * 126;
-          const onset = (6 - n) * duration / 18;
-          const stageFill = stage === 2 && n > 1 ? 159 : 92;
-          const amount = n >= 7 - ceiling ? progress(frame, onset, onset + duration * .48) * stageFill : 0;
+          const onset = (6 - n) * duration / (stage === 3 ? 36 : 18);
+          const stageFill = stage === 2 && n > 1 ? 159 : stage === 3 ? 104 + spill * 65 : 92;
+          const amount = n >= 7 - ceiling ? progress(frame, onset, onset + duration * (stage === 3 ? .30 : .48)) * stageFill
+            : n === 1 ? spill * 108 : n === 0 ? Math.max(0, spill - .55) * 90 : 0;
           const y = 258 - amount;
           return <g key={n}>
             <path d={`M${x} ${y}q60 -10 126 0v${amount}H${x}Z`} fill="#456f8b" opacity=".87" />
@@ -154,6 +177,10 @@ export function FloodingScene({id, stage, palette, duration}: Shot) {
           </g>;
         })}
         <path d="M0 97H920M0 137H914" stroke={palette.light} opacity=".32" fill="none" strokeDasharray="7 10" />
+        {spill > 0 && <g opacity={Math.min(1, spill * 4)} fill="none" stroke="#a9d6e3" strokeWidth="6" strokeLinecap="round">
+          <path d="M386 100Q314 60 254 126" pathLength="1" strokeDasharray={`${Math.min(1, spill * 2.4)} 1`} />
+          {spill > .44 && <path d="M254 106l0 20 18 -7" />}
+        </g>}
       </g>
       <path d="M16 312H926" stroke={palette.light} opacity=".40" strokeWidth="2" />
       <text x="16" y="353" fill={palette.light} opacity=".82" fontSize="20" letterSpacing="4">STERNWARD</text>
@@ -170,7 +197,7 @@ const northAtlantic = {
   greenland: "M320 0H551L529 58 509 75 464 41 431 47 396 34Z",
 };
 
-function RouteMap({stage, palette, duration}: Shot) {
+export function HistoricalMap({stage, palette, duration}: Shot) {
   const frame = useCurrentFrame();
   const draw = progress(frame, 12, Math.max(13, duration * .64));
   return <Field>
@@ -192,6 +219,11 @@ function RouteMap({stage, palette, duration}: Shot) {
         {stage > 0 && <g fill="#b9ced6" opacity={.48 + draw * .32}>
           {[0, 1, 2, 3, 4, 5, 6].map((i) => <path key={i} d={`M${279+i*26} ${183+(i%3)*16}l8-14 9 14Z`} />)}
         </g>}
+        {stage === 3 && <g fill="#eebe8f" stroke="#eebe8f">
+          <path d="M475 330Q402 309 350 247" pathLength="1" fill="none" strokeWidth="5"
+            strokeDasharray={`${Math.max(.001, draw)} 1`} />
+          <text x="483" y="354" fontSize="22" stroke="none">CARPATHIA</text>
+        </g>}
       </g>
       <text x="32" y="35" fill={palette.light} fontSize="20" letterSpacing="5">ROUTE CHART · SCHEMATIC</text>
       <text x="32" y="520" fill="#dbe5e9" fontSize="22">
@@ -206,15 +238,36 @@ const nightEvents = [
   ["≈ 00:45", "Early boat launches"], ["AFTER 02:00", "Final boats"], ["02:20", "Sinking"],
 ];
 
-export function HistoricalTimeline({stage, palette, duration, label}: Shot & {label: string}) {
+export function AnimatedTimeline({stage, palette, duration, label}: Shot & {label: string}) {
   const frame = useCurrentFrame();
+  if (stage === 6) {
+    const travel = progress(frame, duration * .10, duration * .61);
+    const arrival = progress(frame, duration * .51, duration * .69);
+    return <Field>
+      <g transform="translate(302 238)">
+        <text y="18" fontSize="25" letterSpacing="5" fill={palette.light}>{label}</text>
+        <text x="3" y="176" fontSize="64" fontWeight="700" fill="#e4ebeb">23:40</text>
+        <text x="1316" y="176" fontSize="64" textAnchor="end" fontWeight="700" fill={palette.light}
+          opacity={.43 + .57 * arrival}>02:20</text>
+        <path d="M8 257H1311" stroke="#90aab8" strokeWidth="3" opacity=".48" />
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((index) => <path key={index}
+          d={`M${8 + index * 186.14} 243v28`} stroke="#90aab8" strokeWidth="2" opacity=".62" />)}
+        <path d={`M8 257h${1303 * travel}`} stroke={palette.light} strokeWidth="5" />
+        <circle cx={8 + 1303 * travel} cy="257" r="10" fill={palette.light} />
+        <text x="8" y="331" fontSize="26" letterSpacing="5" fill="#c0d0d7">COLLISION</text>
+        <text x="1316" y="331" fontSize="26" letterSpacing="5" textAnchor="end" fill="#c0d0d7" opacity={.43 + .57 * arrival}>SINKING</text>
+        <text x="660" y={413 - 16 * arrival} fontSize="49" fontWeight="600" fill={palette.light}
+          opacity={arrival} textAnchor="middle">2 HOURS 40 MINUTES</text>
+      </g>
+    </Field>;
+  }
   const status = progress(frame, 6, Math.min(duration - 1, 46));
   const events = stage === 0
     ? [["MORNING", "Ice reports"], ["EVENING", "Mesaba warning"], ["LATE NIGHT", "Californian stops"]]
     : stage === 5
       ? [["1912", "Inquiries"], ["1914", "SOLAS and ice patrol"], ["LATER", "Rules develop"]]
       : nightEvents;
-  const active = stage === 0 || stage === 5 ? 1 : stage;
+  const active = stage === 0 || stage === 5 ? 1 : stage === 7 ? 5 : stage;
   const dx = 850 / (events.length - 1);
   return <Field>
     <g transform="translate(875 300)">
@@ -232,6 +285,84 @@ export function HistoricalTimeline({stage, palette, duration, label}: Shot & {la
           fill="#e3ebed" fontSize="17">{event}</text>
       </g>)}
       <text x="0" y="429" fill="#a6bdc3" fontSize="18" letterSpacing="3">EVENTS SHOWN IN SEQUENCE · SPACING NOT TO SCALE</text>
+    </g>
+  </Field>;
+}
+
+function BoatCapacity({duration, palette, stage}: Shot) {
+  const frame = useCurrentFrame();
+  const fill = progress(frame, 12, duration * .72);
+  const rows = [
+    {label: "PEOPLE ABOARD", value: "About 2,200", fraction: 1, color: "#89b5cc"},
+    {label: "TOTAL BOAT CAPACITY", value: "1,178", fraction: 1178 / 2200, color: "#edb681"},
+    ...(stage ? [{label: "SURVIVED", value: "About 700", fraction: 700 / 2200, color: "#9bbeb6"}] : []),
+  ];
+  return <Field>
+    <g transform="translate(292 241)">
+      {rows.map(({label, value, fraction, color}, index) => <g key={label} transform={`translate(0 ${index * (stage ? 168 : 230)})`}>
+        <text x="0" y="32" fill={palette.light} fontSize="27" fontWeight="600" letterSpacing="5">{label}</text>
+        <text x="1300" y="39" fill={color} fontSize="62" fontWeight="700" textAnchor="end">{value}</text>
+        <rect y="61" width="1300" height="61" rx="3" fill="#9bb0bb" opacity=".14" />
+        <rect y="61" width={1300 * fraction * fill} height="61" rx="3" fill={color} />
+        {[.25, .5, .75].map((mark) => <path key={mark} d={`M${1300 * mark} 57v68`} stroke="#10202b" strokeWidth="2" opacity=".67" />)}
+      </g>)}
+    </g>
+  </Field>;
+}
+
+function HistoricalDetail({id, stage, duration, palette}: Shot) {
+  const frame = useCurrentFrame();
+  const time = progress(frame, 0, duration - 1);
+  const wireless = stage === 1;
+  const hull = stage === 0;
+  const letter = stage === 3;
+  return <Field>
+    <defs>
+      <linearGradient id={`${id}-detail`} x2="0" y2="1">
+        <stop stopColor={palette.middle} /><stop offset="1" stopColor={palette.dark} />
+      </linearGradient>
+    </defs>
+    <g transform={`translate(${235 - time * 28} 203)`}>
+      {letter ? <>
+        <path d="M-30 503 45 115 504 10 1395 150 1482 544 1044 678 261 660Z"
+          fill={`url(#${id}-detail)`} stroke="#677378" strokeWidth="5" />
+        <path d="M85 138 368 373l-120 258M1377 180 1071 384l133 212M256 587q470-159 950-16"
+          fill="none" stroke="#9fa69a" strokeOpacity=".46" strokeWidth="6" strokeDasharray="10 9" />
+        <g transform={`translate(535 ${299 - time * 72}) rotate(-9)`}>
+          <path d="M-12 9 452-8 474 262 7 285Z" fill="#1b1a17" opacity=".45" />
+          <path d="M0 0 452-9 461 262 7 281Z" fill="#d4c198" stroke="#ebd8a9" strokeWidth="3" />
+          <path d="M3 128 456 119" fill="none" stroke="#8f7955" opacity=".57" strokeWidth="3" />
+          {[207, 225, 243].map((y) => <path key={y} d={`M35 ${y}h124m13 0h71m17 0h132`}
+            fill="none" stroke="#796c57" opacity=".22" strokeWidth="2.5" />)}
+        </g>
+        <path d="M489 464 1038 409 1080 579 525 634Z" fill="#354a53" stroke="#8d9690" strokeWidth="4" />
+        <path d="M503 474 1031 424" fill="none" stroke="#a1a08d" strokeWidth="5" strokeDasharray="9 8" />
+      </> : hull ? <>
+        <path d="M-70 44 1503-10 1470 590-130 655Z" fill={`url(#${id}-detail)`} stroke={palette.light} strokeOpacity=".45" strokeWidth="4" />
+        {[95, 290, 495].map((y) => <g key={y}>
+          <path d={`M-61 ${y + 58} 1472 ${y}`} stroke={palette.light} strokeOpacity=".4" strokeWidth="4" />
+          {Array.from({length: 32}, (_, i) => <circle key={i} cx={i * 47 - 34} cy={y + 62 - i * 1.85} r={9 - i / 13}
+            fill={palette.dark} stroke={palette.light} strokeWidth="2" strokeOpacity=".55" />)}
+        </g>)}
+        <path d={`M80 390q520 -68 ${1010 * time} -51`} fill="none" stroke="#df9c78" strokeOpacity={time * .85} strokeWidth="7" strokeDasharray="14 18" />
+      </> : wireless ? <>
+        <rect x="78" y="20" width="1270" height="605" rx="14" fill={`url(#${id}-detail)`} stroke={palette.light} strokeWidth="3" />
+        <rect x="151" y="126" width="1118" height="272" rx="11" fill="#142029" stroke="#82949a" strokeWidth="3" />
+        {[268, 465, 1018, 1160].map((x) => <g key={x}>
+          <circle cx={x} cy="282" r="54" fill="#243640" stroke="#aabead" strokeWidth="4" />
+          <path d={`M${x} 282l22 -33`} stroke="#e0bd89" strokeWidth="5" />
+        </g>)}
+        <path d={`M578 266h36v-35h35v35h35v-35h69v35h35v-35h35v35h35`}
+          transform={`translate(0 ${Math.sin(frame / 11) * 6})`} fill="none" stroke="#e2bd89" opacity={.35 + .55 * time} strokeWidth="7" />
+        <path d="M496 544h450m-364 -41 158 -41 118 39" stroke="#879ea6" strokeWidth="14" fill="none" />
+        <circle cx="740" cy="462" r="24" fill="#b18c59" />
+      </> : <>
+        <path d="M0 563Q292 460 1510 490V692H0Z" fill={`url(#${id}-detail)`} stroke="#778d94" strokeWidth="4" />
+        <path d="M127 558V266Q127 84 372 84h109M1059 517V250q0-166 241-166h122" fill="none" stroke="#9caaa6" strokeWidth="18" />
+        <path d="M452 85v290m933-290v270" fill="none" stroke="#c9baa1" strokeWidth="5" />
+        <path d="M290 365q498 72 1200-29-81 107-448 145-589 59-752-116Z" fill="#11232d" stroke="#b3b0a3" strokeWidth="7" />
+        <path d="M330 388q453 61 1088-26" fill="none" stroke="#819da3" strokeWidth="3" />
+      </>}
     </g>
   </Field>;
 }
@@ -262,7 +393,7 @@ export function LifeboatScene({stage, palette, duration}: Shot) {
   </Field>;
 }
 
-export function UnderwaterWreckScene({id, stage, palette, duration}: Shot) {
+export function UnderwaterWreckScene({id, stage, palette, duration, imageFirst}: Shot) {
   const frame = useCurrentFrame();
   const sweep = 1260 + 106 * Math.sin(frame / 130);
   const reveal = progress(frame, 0, duration * .50);
@@ -273,7 +404,8 @@ export function UnderwaterWreckScene({id, stage, palette, duration}: Shot) {
       </radialGradient>
     </defs>
     <path d="M0 733Q572 686 1014 732T1920 704V1080H0Z" fill="#12343e" opacity=".60" />
-    <ellipse cx={sweep} cy="634" rx="630" ry="290" fill={`url(#${id}-beam)`} />
+    <ellipse cx={sweep - (imageFirst ? 345 : 0)} cy="634" rx="630" ry="290" fill={`url(#${id}-beam)`} />
+    <g transform={imageFirst ? "translate(-345 -33)" : undefined}>
     {stage === 0 && <g transform="translate(1157 542)" fill="none" stroke={palette.light}>
       {[110, 208, 311].map((r, i) => <ellipse key={r} rx={r + 70} ry={r * .58} opacity={.12 + .12 * Math.sin(frame / 45 + i)} />)}
       <path d="M-370 0h740M0-212v424" opacity=".38" />
@@ -295,7 +427,7 @@ export function UnderwaterWreckScene({id, stage, palette, duration}: Shot) {
       <path d="M194-55 247-66 264-39 336-56 388-44 427-55M36 30Q390 30 662 0M95 63Q349 79 603 40"
         fill="none" stroke="#a9bdb1" strokeWidth="2.8" opacity=".6" />
       {Array.from({length: 15}, (_, i) => <path key={i} d={`M${210 + i * 25} ${-15 - i * 1.7}v${20 + (i % 5) * 6}`}
-        stroke={i % 3 ? "#8d8a72" : "#486763"} opacity=".55" strokeWidth="2" />)}
+          stroke={i % 3 ? "#8d8a72" : "#486763"} opacity=".55" strokeWidth="2" />)}
       <path d="M507-28 486-125M487-125l146 104" fill="none" stroke="#839f96" strokeWidth="3" opacity=".68" />
       {stage === 2 && <g>
         <path d="M-380 44-341-49-288-34-231-46-186-7-205 51-321 68Z" fill="#445f60" stroke="#819a91" strokeWidth="2" />
@@ -308,13 +440,24 @@ export function UnderwaterWreckScene({id, stage, palette, duration}: Shot) {
       <path d="M-44-28-23-62h89m-106 113h113M-30 45l-7 29m92-29 8 29" stroke="#829da1" strokeWidth="5" fill="none" />
       <circle cx="66" cy="11" r="12" fill="#d9f3e3" />
     </g>}
+    </g>
   </Field>;
 }
 
-function TitanicArchive({scene}: {scene: Scene}) {
+function TitanicArchive({scene, fullBleed}: {scene: Scene; fullBleed: boolean}) {
   const image = scene.image;
   if (!image) return null;
-  const portrait = image.path.endsWith("headlines.jpg");
+  const portrait = scene.portrait ?? image.path.endsWith("headlines.jpg");
+  if (fullBleed) {
+    const source = staticFile(image.path);
+    return <AbsoluteFill style={{background: "#10181b"}}>
+      {portrait && <Img src={source} style={{width: "100%", height: "100%", objectFit: "cover",
+        opacity: .36, filter: "blur(30px) grayscale(1)"}} />}
+      <Img src={source} style={{...viewStyle, objectFit: portrait ? "contain" : "cover",
+        padding: portrait ? "38px 0" : undefined, boxSizing: "border-box", objectPosition: image.objectPosition,
+        filter: "grayscale(1) sepia(.18) contrast(1.07)"}} />
+    </AbsoluteFill>;
+  }
   return <AbsoluteFill style={{justifyContent: "center"}}>
     <div style={{position: "absolute", left: 837, top: 202, width: 934, height: 632,
       padding: "10px", border: "1px solid #ced2cc78", background: "#152028",
@@ -364,36 +507,56 @@ export function DocumentarySubtitles({captions}: {captions: Caption[]}) {
   </div>;
 }
 
-export function TitanicPicture({scene, duration, hold, palette, cover, subtitle}: {
+const centerShot: Partial<Record<NonNullable<Scene["historical"]>["kind"], string>> = {
+  ship: "translate(-348px, -30px)",
+  ocean: "translate(-348px, -30px) scale(.86)",
+  route: "translate(-344px, -5px) scale(1.32)",
+  collision: "translate(-338px, -83px) scale(1.2)",
+  flooding: "translate(-358px, -18px) scale(1.27)",
+  timeline: "translate(-344px, -35px) scale(1.32)",
+  lifeboat: "translate(-464px, -92px) scale(1.15)",
+};
+
+export function TitanicPicture({scene, duration, hold, palette, cover, subtitle, imageFirst, chapterOpening}: {
   scene: Scene; duration: number; hold: boolean; palette: Colour; cover: boolean; subtitle?: string;
+  imageFirst: boolean; chapterOpening: boolean;
 }) {
   const {kind, stage} = scene.historical!;
-  const shot = {id: scene.sceneId + (hold ? "-hold" : ""), stage, palette, duration};
-  const chart = kind === "archive" || kind === "route" || kind === "timeline" || kind === "flooding";
+  const shot = {id: scene.sceneId + (hold ? "-hold" : ""), stage, palette, duration, imageFirst};
+  const chart = ["archive", "route", "timeline", "flooding", "capacity"].includes(kind);
+  const transform = imageFirst && !(kind === "timeline" && stage === 6) ? centerShot[kind] : undefined;
   const sceneArt: Record<typeof kind, ReactNode> = {
-    archive: <TitanicArchive scene={scene} />,
+    archive: <TitanicArchive scene={scene} fullBleed={imageFirst} />,
     ship: <TitanicShipScene {...shot} />,
     ocean: stage === 0 || stage === 1 ? <TitanicShipScene {...shot} stage={4} /> : null,
-    route: <RouteMap {...shot} />,
+    route: <HistoricalMap {...shot} />,
     collision: <IcebergCollisionScene {...shot} />,
     flooding: <FloodingScene {...shot} />,
-    timeline: <HistoricalTimeline {...shot} label={stage === 5 ? "MARITIME SAFETY" : stage === 0 ? "ICE REPORTS · 14 APRIL 1912" : "THE NIGHT OF 14–15 APRIL · SHIP’S TIME"} />,
+    timeline: <AnimatedTimeline {...shot} label={stage === 5 ? "MARITIME SAFETY" : stage === 0 ? "ICE REPORTS · 14 APRIL 1912" : "THE NIGHT OF 14–15 APRIL · SHIP’S TIME"} />,
     lifeboat: <LifeboatScene {...shot} />,
     wreck: <UnderwaterWreckScene {...shot} />,
+    capacity: <BoatCapacity {...shot} />,
+    detail: <HistoricalDetail {...shot} />,
   };
   return <>
-    <ParallaxLayers preset={scene.cameraMovement} duration={duration} hold={hold} layers={[
-      <AtlanticOceanScene palette={palette} chart={chart} submerged={kind === "wreck"} />,
-      sceneArt[kind],
+    <DepthParallax preset={scene.cameraMovement} duration={duration} hold={hold} origin={imageFirst ? "50% 50%" : undefined} layers={[
+      <OceanAtmosphere palette={palette} chart={chart} submerged={kind === "wreck"} />,
+      transform ? <AbsoluteFill style={{transform, transformOrigin: "70% 50%"}}>{sceneArt[kind]}</AbsoluteFill> : sceneArt[kind],
       kind === "wreck" ? <AtmosphericParticles color={palette.light} sparse />
-        : chart ? null : <MovingWater palette={palette} />,
+        : chart || kind === "detail" ? null : <MovingWater palette={palette} />,
     ]} />
+    {imageFirst && !chart && <VolumetricLight color={palette.light} intensity={kind === "wreck" ? .20 : .10} />}
     <FilmGrain animated={false} />
-    <AbsoluteFill style={{background: "linear-gradient(90deg,#060c13 0%,#060c13da 23%,#060c1322 48%,transparent 72%),radial-gradient(ellipse at 69% 49%,transparent 42%,#060c1359 100%),linear-gradient(0deg,#060c13a3,transparent 30%,transparent 88%,#060c134d)"}} />
-    {!hold && <CinematicChapterTitle scene={scene} cover={cover} subtitle={subtitle} palette={palette} />}
+    <AbsoluteFill style={{background: imageFirst
+      ? "radial-gradient(ellipse at 49% 49%,transparent 58%,#060c134d 100%),linear-gradient(0deg,#060c13a3,transparent 26%)"
+      : "linear-gradient(90deg,#060c13 0%,#060c13da 23%,#060c1322 48%,transparent 72%),radial-gradient(ellipse at 69% 49%,transparent 42%,#060c1359 100%),linear-gradient(0deg,#060c13a3,transparent 30%,transparent 88%,#060c134d)"}} />
+    {!hold && (imageFirst
+      ? <DramaticTextReveal scene={{...scene, chapter: undefined, kicker: ""}} chapterOpening={chapterOpening} color={palette.light} />
+      : <CinematicChapterTitle scene={scene} cover={cover} subtitle={subtitle} palette={palette} />)}
     {!hold && <div style={{position: "absolute", bottom: 49, right: 119, color: "#c6d4d8", fontSize: 17, letterSpacing: ".06em",
       background: "#07131bce", padding: "8px 12px", borderRadius: 3}}>
-      {scene.image ? `Archive · ${scene.image.credit}` : chart ? "Historical diagram" : "Illustrated reconstruction"}
+      {scene.image ? `Archive · ${imageFirst && scene.displayNote ? `${scene.displayNote} · ` : ""}${scene.image.credit}`
+        : chart ? "Historical diagram" : "Illustrated reconstruction"}
     </div>}
   </>;
 }

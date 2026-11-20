@@ -1,0 +1,65 @@
+{
+  "baseline": "output/titanic-upgraded-preview.mp4",
+  "baselineSha256": "529d0bc5519c90b664b6a4984699292180809a464a5427e57888ca49d3cc6b68",
+  "sources": [
+    {"id": "intel-natural-earth", "title": "Natural Earth 1:110m land boundaries", "url": "https://www.naturalearthdata.com/downloads/110m-physical-vectors/110m-land/"},
+    {"id": "intel-inquiry-scan", "title": "U.S. Government Printing Office edition of the British Titanic inquiry, p. 48", "url": "https://www.govinfo.gov/content/pkg/SERIALSET-06179_00_00-019-0933-0000/pdf/SERIALSET-06179_00_00-019-0933-0000.pdf"}
+  ],
+  "before": [
+    {"startFrame": 615, "endFrame": 711, "beat": "route"},
+    {"startFrame": 765, "endFrame": 869, "beat": "contact"},
+    {"startFrame": 906, "endFrame": 936, "beat": "contact"},
+    {"startFrame": 975, "endFrame": 1195, "beat": "flooding"}
+  ],
+  "after": [
+    {
+      "sceneId": "open-water",
+      "beat": "route",
+      "duration": 4,
+      "narration": "Ice lay ahead of Titanic.",
+      "pictureChanges": [4, 65],
+      "additionalSources": ["intel-natural-earth", "intel-inquiry-scan"],
+      "sample": 103,
+      "soundDesign": {
+        "mood": "Distant weather", "tempo": 1.02, "cue": null, "musicGain": 0.65,
+        "cues": [{"path": "titanic-upgraded/wind.m4a", "start": 0, "duration": 4, "gain": 0.18}]
+      },
+      "visualAssets": ["titanic-intel/atlantic-land.svg"]
+    },
+    {
+      "sceneId": "below-the-waterline",
+      "beat": "contact",
+      "duration": 5,
+      "narration": "At about eleven forty, ice scraped the hull.",
+      "eventSeconds": 4,
+      "pictureChanges": [120],
+      "sample": 125,
+      "soundDesign": {
+        "mood": "Engine and water give way to contact", "tempo": 1, "cue": null, "musicGain": 0,
+        "cues": [
+          {"path": "titanic-upgraded/engine.m4a", "start": 0, "duration": 3.83, "gain": 0.25},
+          {"path": "titanic-upgraded/ocean.m4a", "start": 0, "duration": 3.83, "gain": 0.29},
+          {"path": "titanic-upgraded/impact.m4a", "start": 4, "duration": 0.9, "gain": 0.82}
+        ]
+      },
+      "visualAssets": ["titanic-intel/sky.jpg", "titanic-intel/far-water.jpg", "titanic-intel/iceberg.png", "titanic-intel/near-water.png"]
+    },
+    {
+      "sceneId": "the-limit",
+      "beat": "flooding",
+      "duration": 6,
+      "narration": "Five forward compartments flooded. Water spilled over a bulkhead.",
+      "pictureChanges": "narration-cues",
+      "additionalSources": ["intel-inquiry-scan"],
+      "sample": 157,
+      "soundDesign": {
+        "mood": "Below decks", "tempo": 1.06, "cue": null, "musicGain": 0,
+        "cues": [
+          {"path": "titanic-upgraded/deep.m4a", "start": 0, "duration": 5.45, "gain": 0.26},
+          {"path": "titanic-upgraded/creak.m4a", "start": 2.9, "duration": 2.1, "gain": 0.27}
+        ]
+      },
+      "visualAssets": ["Remotion forward hull cutaway", "titanic-intel/inquiry-48.jpg"]
+    }
+  ]
+}

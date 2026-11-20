@@ -1,0 +1,2589 @@
+{
+  "title": "Titanic: The Race for the Lifeboats",
+  "topic": "RMS Titanic’s final night, the lifeboat evacuation and Carpathia’s rescue",
+  "language": "en",
+  "visualStyle": "image-first",
+  "mixGainDb": 8,
+  "sources": [
+    {
+      "id": "inquiry",
+      "title": "1912 British Wreck Commissioner's report",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRep01.php"
+    },
+    {
+      "id": "us",
+      "title": "United States Senate report, 1912",
+      "url": "https://www.senate.gov/about/resources/pdf/TitanicReport.pdf"
+    },
+    {
+      "id": "ship",
+      "title": "British inquiry · Description of Titanic",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepTitanic.php"
+    },
+    {
+      "id": "voyage",
+      "title": "Royal Museums Greenwich · Titanic facts and voyage chronology",
+      "url": "https://www.rmg.co.uk/collections/research-guides/research-guide-d1-rms-titanic-fact-sheet"
+    },
+    {
+      "id": "passengers",
+      "title": "The National Archives · Titanic passengers",
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/passengers-on-the-titanic/"
+    },
+    {
+      "id": "capacity",
+      "title": "British inquiry · Life-saving appliances",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepLSApp.php"
+    },
+    {
+      "id": "warnings",
+      "title": "British inquiry · Ice messages",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepMessages.php"
+    },
+    {
+      "id": "weather",
+      "title": "British inquiry · Weather conditions",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepWeather.php"
+    },
+    {
+      "id": "collision",
+      "title": "British inquiry · Collision",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepCollision.php"
+    },
+    {
+      "id": "damage",
+      "title": "British inquiry · Analysis of damage and progressive flooding",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepObserv.php"
+    },
+    {
+      "id": "assist",
+      "title": "British inquiry · Means taken to procure assistance",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepAssist.php"
+    },
+    {
+      "id": "bride",
+      "title": "Harold Bride's testimony · U.S. inquiry transcript",
+      "url": "https://www.titanicinquiry.org/USInq/AmInq14Bride01.php"
+    },
+    {
+      "id": "boats",
+      "title": "British inquiry · The boats",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/BOTRepBoats.php"
+    },
+    {
+      "id": "third",
+      "title": "British inquiry · Third-class passengers",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRep3rdClass.php"
+    },
+    {
+      "id": "saved",
+      "title": "British inquiry · Numbers saved",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepSaved.php"
+    },
+    {
+      "id": "rostron",
+      "title": "Arthur Rostron's testimony · British inquiry transcript",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTInq28Rostron01.php"
+    },
+    {
+      "id": "rescue",
+      "title": "British inquiry · Rescue by Carpathia",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepRescue.php"
+    },
+    {
+      "id": "wreck",
+      "title": "Woods Hole Oceanographic Institution · 1985 expedition",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1985-discovery-of-rms-titanic/"
+    },
+    {
+      "id": "return",
+      "title": "Woods Hole Oceanographic Institution · 1986 return",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1986-return-to-the-rms-titanic/"
+    },
+    {
+      "id": "safety",
+      "title": "International Maritime Organization · Titanic and SOLAS",
+      "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/TITANIC.pdf"
+    },
+    {
+      "id": "belfast-photo",
+      "title": "Robert John Welch · Titanic fitting out at Belfast",
+      "url": "https://commons.wikimedia.org/wiki/File:Titanic_under_construction.jpg"
+    },
+    {
+      "id": "southampton-photo",
+      "title": "Unknown photographer · Titanic at Southampton",
+      "url": "https://commons.wikimedia.org/wiki/File:Titanic_in_Southampton.jpg"
+    },
+    {
+      "id": "boats-photo",
+      "title": "NARA 278336 · Lifeboat 14 towing collapsible D",
+      "url": "https://catalog.archives.gov/id/278336"
+    },
+    {
+      "id": "survivors-photo",
+      "title": "Bain News Service / LOC · Survivors aboard Carpathia",
+      "url": "https://www.loc.gov/pictures/item/2014691298/"
+    },
+    {
+      "id": "headlines-photo",
+      "title": "The New York Times · 16 April 1912",
+      "url": "https://commons.wikimedia.org/wiki/File:Titanic-NYT.jpg"
+    },
+    {
+      "id": "rostron-photo",
+      "title": "Bain News Service / LOC: Rostron and Carpathia officers",
+      "url": "https://www.loc.gov/pictures/item/2014690421/"
+    },
+    {
+      "id": "hart-letter",
+      "title": "Royal Museums Greenwich · Copy of the letter by Eva and Esther Hart",
+      "url": "https://www.rmg.co.uk/collections/archive/rmgc-object-485446"
+    },
+    {
+      "id": "hart-letters",
+      "title": "Royal Museums Greenwich · Correspondence and biographical notes for Eva Hart",
+      "url": "https://www.rmg.co.uk/collections/archive/rmgc-object-555600"
+    }
+  ],
+  "music": {
+    "path": "titanic-upgraded/score.m4a",
+    "credit": "Original procedural score composed for this documentary",
+    "license": "Original project audio"
+  },
+  "scenes": [
+    {
+      "sceneId": "out-of-time",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "ocean",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Titanic: The Race for the Lifeboats",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Titanic struck ice with more than two thousand people aboard.",
+      "visualDescription": "Titanic and the dark Atlantic. Focus on pinpoints of light under four funnels.",
+      "duration": 6.0,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extremely wide",
+        "cameraAngle": "Near waterline",
+        "lighting": "Low starlight, cool rim on windows",
+        "colorPalette": [
+          "#061019",
+          "#1b3b52",
+          "#b4ccdd"
+        ],
+        "composition": "Titanic and the dark Atlantic, framed to direct attention to pinpoints of light under four funnels.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Pinpoints of light under four funnels",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion ocean illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "collision"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 1,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 6,
+            "gain": 0.19
+          },
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0.1,
+            "duration": 5.9,
+            "gain": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "room-in-the-boats",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "capacity",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Room in the boats",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Its lifeboats had room for just one thousand one hundred and seventy-eight.",
+      "visualDescription": "Occupancy and boat-capacity comparison. Focus on the amber bar stops at just over half.",
+      "duration": 8.0,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Graphic wide",
+        "cameraAngle": "Overhead graphic",
+        "lighting": "Ice blue and muted amber over navy",
+        "colorPalette": [
+          "#0b1924",
+          "#294354",
+          "#d5e7ee"
+        ],
+        "composition": "Occupancy and boat-capacity comparison, framed to direct attention to the amber bar stops at just over half.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The amber bar stops at just over half",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion capacity illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "capacity",
+        "saved",
+        "boats"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Use the British final report’s rating of 1,178 and round the aboard and survivor figures."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 0.65,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "before-the-night",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "labelPosition": "top-right",
+      "portrait": false,
+      "title": "The last departure",
+      "kicker": "",
+      "displayNote": "Southampton · 10 April 1912",
+      "narration": "Four days earlier, Titanic left Southampton for New York.",
+      "visualDescription": "Titanic at Southampton before sailing. Focus on the photographed hull and upper decks.",
+      "duration": 6.0,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival wide",
+        "cameraAngle": "Dockside, low angle",
+        "lighting": "Period daylight in warm grey",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Titanic at Southampton before sailing, framed to direct attention to the photographed hull and upper decks.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The photographed hull and upper decks",
+        "background": "Period photographic context.",
+        "visualAssets": [
+          "titanic/southampton.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/southampton.jpg",
+        "credit": "Photographer unknown / Wikimedia Commons",
+        "license": "Public domain",
+        "objectPosition": "50% 51%"
+      },
+      "sourceIds": [
+        "voyage",
+        "southampton-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Match the image to the archival item named on-screen."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 0.75,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 6,
+            "gain": 0.13
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "open-water",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "route",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Closing on the ice",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Now it was hundreds of miles from land.",
+      "visualDescription": "North Atlantic crossing. Focus on westbound course ends near the collision area.",
+      "duration": 5.0,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Map wide",
+        "cameraAngle": "Overhead",
+        "lighting": "Amber collision marker on cool atlas blue",
+        "colorPalette": [
+          "#091822",
+          "#3a5e69",
+          "#c0ddd9"
+        ],
+        "composition": "North Atlantic crossing, framed to direct attention to westbound course ends near the collision area.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Westbound course ends near the collision area",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion route illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "weather",
+        "collision",
+        "voyage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The chart is schematic. The lifeboat rescue approach, where shown, is indicative."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 1,
+        "cues": [
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 5,
+            "gain": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "below-the-waterline",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "collision",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "First contact",
+      "kicker": "",
+      "displayNote": "14 APRIL · ABOUT 11:40 P.M.",
+      "narration": "At about eleven forty, ice scraped the hull.",
+      "visualDescription": "Ship approaching the iceberg. Focus on bow and closing gap.",
+      "duration": 7.0,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide reconstruction",
+        "cameraAngle": "Near waterline, side view",
+        "lighting": "Cold rim on the ice with restrained contrast",
+        "colorPalette": [
+          "#08131c",
+          "#39566b",
+          "#c6d9e5"
+        ],
+        "composition": "Ship approaching the iceberg, framed to direct attention to bow and closing gap.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Bow and closing gap",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion collision illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Score withheld",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 0,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 5.6,
+            "gain": 0.13
+          },
+          {
+            "path": "titanic-upgraded/impact.m4a",
+            "start": 5.25,
+            "duration": 1.4,
+            "gain": 0.72
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "the-limit",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "flooding",
+        "stage": 3
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The limit of the bulkheads",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Five forward compartments took on water. As the bow sank, water spilled over the partitions.",
+      "visualDescription": "Five forward compartments take water. Focus on water rises against the internal partitions.",
+      "duration": 9.0,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway wide",
+        "cameraAngle": "Side elevation",
+        "lighting": "Blue water against charcoal steel",
+        "colorPalette": [
+          "#0c1d29",
+          "#2b526d",
+          "#b5d2df"
+        ],
+        "composition": "Five forward compartments take water, framed to direct attention to water rises against the internal partitions.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Water rises against the internal partitions",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion flooding illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "damage",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The cutaway shows forward spaces schematically. It omits unaffected sections farther aft."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 0.52,
+        "cues": [
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 3.1,
+            "duration": 3.8,
+            "gain": 0.29
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "who-gets-off",
+      "chapter": "Cold open",
+      "historical": {
+        "kind": "timeline",
+        "stage": 6
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Two hours and forty minutes",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "A rescue ship was coming. Titanic would be gone in two hours and forty minutes. Who could reach a boat in time?",
+      "visualDescription": "Time from collision to disappearance. Focus on the two anchor times and the gap between them.",
+      "duration": 13.0,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Chronology wide",
+        "cameraAngle": "Straight-on chart",
+        "lighting": "Warm timeline anchor on blue-grey",
+        "colorPalette": [
+          "#0a1824",
+          "#1c4059",
+          "#e6c196"
+        ],
+        "composition": "Time from collision to disappearance, framed to direct attention to the two anchor times and the gap between them.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The two anchor times and the gap between them",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion timeline illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision",
+        "assist",
+        "rescue",
+        "voyage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1,
+        "cue": null,
+        "musicGain": 0.9,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 8.3,
+            "duration": 3.4,
+            "gain": 0.17
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "belfast",
+      "chapter": "Built for a crossing",
+      "historical": {
+        "kind": "archive",
+        "stage": 1
+      },
+      "labelPosition": "top-right",
+      "portrait": false,
+      "title": "Built for a crossing",
+      "kicker": "",
+      "displayNote": "Belfast · Titanic fitting out",
+      "narration": "In Belfast, during fitting out, the hull fills the frame. Titanic was nearly two hundred and seventy metres long. That length made the Atlantic crossing possible at a scale few people had experienced.",
+      "visualDescription": "Titanic in Belfast. Focus on hull against dock infrastructure.",
+      "duration": 14.766667,
+      "cameraMovement": "pan-right",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival wide",
+        "cameraAngle": "Dockside three-quarter",
+        "lighting": "Soft overcast; warm silver",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Titanic in Belfast, framed to direct attention to hull against dock infrastructure.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Hull against dock infrastructure",
+        "background": "Period photographic context.",
+        "visualAssets": [
+          "titanic/belfast.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/belfast.jpg",
+        "credit": "Robert John Welch / Harland & Wolff",
+        "license": "Public domain",
+        "objectPosition": "50% 48%"
+      },
+      "sourceIds": [
+        "ship",
+        "voyage",
+        "belfast-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Match the image to the archival item named on-screen."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.9,
+        "cues": [
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 2,
+            "duration": 5,
+            "gain": 0.19
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "steel",
+      "chapter": "Built for a crossing",
+      "historical": {
+        "kind": "detail",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "A hull divided",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Look past the paint and the rows of windows. Behind the steel were fifteen transverse bulkheads. Imagine sixteen spaces arranged along the ship, one behind the other. A local leak could be kept local.",
+      "visualDescription": "Steel plates and rivet seams. Focus on interrupted seam under raking light.",
+      "duration": 15.366667,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme close-up",
+        "cameraAngle": "Raking side angle",
+        "lighting": "Warm highlights over slate steel",
+        "colorPalette": [
+          "#0b171e",
+          "#3c555f",
+          "#d1bb97"
+        ],
+        "composition": "Steel plates and rivet seams, framed to direct attention to interrupted seam under raking light.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Interrupted seam under raking light",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion detail illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "ship",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.9,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 14,
+            "gain": 0.22,
+            "loop": true
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "doors",
+      "chapter": "Built for a crossing",
+      "historical": {
+        "kind": "flooding",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Separate spaces",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "In the machinery spaces, watertight doors could be shut between compartments. It was a practical defence against flooding. Its effectiveness depended on how many spaces filled and how high the water could rise.",
+      "visualDescription": "Forward compartment schematic before damage. Focus on the line of uninterrupted partitions.",
+      "duration": 14.733333,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Technical wide",
+        "cameraAngle": "Side elevation",
+        "lighting": "Clean cool diagram",
+        "colorPalette": [
+          "#0c1d29",
+          "#2b526d",
+          "#b5d2df"
+        ],
+        "composition": "Forward compartment schematic before damage, framed to direct attention to the line of uninterrupted partitions.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The line of uninterrupted partitions",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion flooding illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "ship",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The cutaway shows forward spaces schematically. It omits unaffected sections farther aft."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 1,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "the-crossing",
+      "chapter": "Built for a crossing",
+      "historical": {
+        "kind": "route",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "A crossing in four stops",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Titanic left Southampton, called at Cherbourg, and stopped off Queenstown in Ireland. The next port was New York. The route joined a familiar traffic lane, carrying people with very different reasons for getting to America.",
+      "visualDescription": "Maiden voyage from Southampton westward. Focus on route and printed ports.",
+      "duration": 15.533333,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Map wide",
+        "cameraAngle": "Overhead",
+        "lighting": "Pale track on muted navy",
+        "colorPalette": [
+          "#091822",
+          "#3a5e69",
+          "#c0ddd9"
+        ],
+        "composition": "Maiden voyage from Southampton westward, framed to direct attention to route and printed ports.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Route and printed ports",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion route illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "passengers"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The chart is schematic. The lifeboat rescue approach, where shown, is indicative."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 1,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.18
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "boat-deck",
+      "chapter": "Built for a crossing",
+      "historical": {
+        "kind": "detail",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The boat deck",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Up on the boat deck were twenty boats, including four collapsibles. The rules in force still allowed a ship this large to sail with too few places. That gap was built into the crossing.",
+      "visualDescription": "Lifeboat held inboard at the davits. Focus on the overhead falls and the suspended hull.",
+      "duration": 14.0,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Detail reconstruction",
+        "cameraAngle": "Low three-quarter",
+        "lighting": "Soft practical pools; dark negative space",
+        "colorPalette": [
+          "#0b171e",
+          "#3c555f",
+          "#d1bb97"
+        ],
+        "composition": "Lifeboat held inboard at the davits, framed to direct attention to the overhead falls and the suspended hull.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The overhead falls and the suspended hull",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion detail illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "capacity",
+        "boats",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.78,
+        "cues": [
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 0,
+            "duration": 6,
+            "gain": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "messages",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "timeline",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Ice ahead",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "On Sunday, wireless messages began to describe ice in the Atlantic. Some reached the bridge. The evening message from Mesaba described ice close to Titanic's route. The British inquiry found that it never reached the bridge.",
+      "visualDescription": "Ice reports during 14 April. Focus on evening warning highlighted among earlier messages.",
+      "duration": 16.733333,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Timeline wide",
+        "cameraAngle": "Straight-on",
+        "lighting": "Cool grid with amber emphasis",
+        "colorPalette": [
+          "#0a1824",
+          "#1c4059",
+          "#e6c196"
+        ],
+        "composition": "Ice reports during 14 April, framed to direct attention to evening warning highlighted among earlier messages.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Evening warning highlighted among earlier messages",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion timeline illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "warnings",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.9,
+        "cues": [
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 10,
+            "gain": 0.22
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "seas",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "ocean",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "A calm sea",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "It was a clear night, without moonlight. The sea was unusually calm. Breaking water at an iceberg's base might have drawn a white line. That night there was little to outline the ice.",
+      "visualDescription": "Ship lights above a smooth horizon. Focus on black water in front of the bow.",
+      "duration": 13.9,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme wide",
+        "cameraAngle": "Waterline",
+        "lighting": "Cold darkness with clear windows",
+        "colorPalette": [
+          "#061019",
+          "#1b3b52",
+          "#b4ccdd"
+        ],
+        "composition": "Ship lights above a smooth horizon, framed to direct attention to black water in front of the bow.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Black water in front of the bow",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion ocean illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "weather",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.88,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.22
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "last-sighting",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "collision",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Ice straight ahead",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The lookouts finally made out an iceberg straight ahead. A warning went to the bridge. The ship began to turn. There was enough movement for the bow to swing, but it did not clear the starboard side.",
+      "visualDescription": "Ice emerging ahead of the ship. Focus on the iceberg outline grows in the dark.",
+      "duration": 13.8,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide reconstruction",
+        "cameraAngle": "Low bow-side view",
+        "lighting": "Silver ridge against black water",
+        "colorPalette": [
+          "#08131c",
+          "#39566b",
+          "#c6d9e5"
+        ],
+        "composition": "Ice emerging ahead of the ship, framed to direct attention to the iceberg outline grows in the dark.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The iceberg outline grows in the dark",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion collision illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.55,
+        "cues": [
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 9,
+            "gain": 0.2
+          },
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 12,
+            "gain": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "first-impact",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "detail",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Under the surface",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "For people high in the ship, the contact could seem minor. Down where the steel met the sea, the damage ran across enough of the forward hull to let water into several spaces at once.",
+      "visualDescription": "Steel at the waterline. Focus on the marked path runs across plates.",
+      "duration": 13.0,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Detail reconstruction",
+        "cameraAngle": "Raking along the hull",
+        "lighting": "Faint ice-blue edge on steel",
+        "colorPalette": [
+          "#0b171e",
+          "#3c555f",
+          "#d1bb97"
+        ],
+        "composition": "Steel at the waterline, framed to direct attention to the marked path runs across plates.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The marked path runs across plates",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion detail illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Score withheld",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0,
+        "cues": [
+          {
+            "path": "titanic-upgraded/impact.m4a",
+            "start": 0.2,
+            "duration": 2,
+            "gain": 0.65
+          },
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 1.9,
+            "duration": 4,
+            "gain": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "five-open",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "flooding",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Five spaces take water",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The inquiry concluded that the collision opened the five forward compartments to the sea. Titanic could remain afloat with the first four flooded. The fifth changed what would happen next, even if the doors did their job.",
+      "visualDescription": "Five forward compartments. Focus on water fills consecutive cells towards the bow.",
+      "duration": 15.5,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway wide",
+        "cameraAngle": "Side elevation",
+        "lighting": "Water rises in blue; structure outlined",
+        "colorPalette": [
+          "#0c1d29",
+          "#2b526d",
+          "#b5d2df"
+        ],
+        "composition": "Five forward compartments, framed to direct attention to water fills consecutive cells towards the bow.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Water fills consecutive cells towards the bow",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion flooding illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "damage",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The cutaway shows forward spaces schematically. It omits unaffected sections farther aft."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.83,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 1,
+            "duration": 12,
+            "gain": 0.24
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "over-the-top",
+      "chapter": "Ice ahead",
+      "historical": {
+        "kind": "flooding",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Water reaches the next space",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "As the bow sank lower, water rose to the top of the forward bulkheads. Then it spilled into the spaces behind them. The ship's weight shifted towards the bow, and the process could continue from one compartment to the next.",
+      "visualDescription": "Progressive flooding as the bow settles. Focus on water level approaches the bulkhead tops.",
+      "duration": 15.333333,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway close",
+        "cameraAngle": "Side elevation",
+        "lighting": "Cool flat light with a bright waterline",
+        "colorPalette": [
+          "#0c1d29",
+          "#2b526d",
+          "#b5d2df"
+        ],
+        "composition": "Progressive flooding as the bow settles, framed to direct attention to water level approaches the bulkhead tops.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Water level approaches the bulkhead tops",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion flooding illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "damage",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The cutaway shows forward spaces schematically. It omits unaffected sections farther aft."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 1,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 1,
+            "duration": 12,
+            "gain": 0.2
+          },
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 7,
+            "duration": 5,
+            "gain": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "the-key",
+      "chapter": "A signal in the dark",
+      "historical": {
+        "kind": "detail",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "A signal in the dark",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Harold Bride, the junior wireless operator, found his colleague Jack Phillips at work. Bride later told the American inquiry that Phillips had felt the ship tremble and stop. At first, he thought she might have to return to Belfast.",
+      "visualDescription": "Illustrated wireless equipment. Focus on the transmitter key and an abstract pulse.",
+      "duration": 15.8,
+      "cameraMovement": "dolly",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme close-up",
+        "cameraAngle": "Oblique instrument view",
+        "lighting": "Warm lamps against a dark cabin",
+        "colorPalette": [
+          "#0b171e",
+          "#3c555f",
+          "#d1bb97"
+        ],
+        "composition": "Illustrated wireless equipment, framed to direct attention to the transmitter key and an abstract pulse.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The transmitter key and an abstract pulse",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion detail illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "bride",
+        "assist"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.92,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "distress",
+      "chapter": "A signal in the dark",
+      "historical": {
+        "kind": "timeline",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The call goes out",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Captain Smith gave the operators the ship's position. Phillips began sending distress calls. The transmitter could reach ships beyond the horizon. Anyone who answered still had to come the rest of the way by sea.",
+      "visualDescription": "Sequence of early distress calls. Focus on distress signal and carpathia response.",
+      "duration": 15.3,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Timeline wide",
+        "cameraAngle": "Straight-on chart",
+        "lighting": "Amber pulse on the sequence",
+        "colorPalette": [
+          "#0a1824",
+          "#1c4059",
+          "#e6c196"
+        ],
+        "composition": "Sequence of early distress calls, framed to direct attention to distress signal and carpathia response.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Distress signal and Carpathia response",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion timeline illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "assist",
+        "bride"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.78,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 6,
+            "duration": 7,
+            "gain": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "rostron-turns",
+      "chapter": "A signal in the dark",
+      "historical": {
+        "kind": "route",
+        "stage": 3
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Carpathia turns",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Carpathia's wireless operator brought the call to his captain. Arthur Rostron ordered his ship to turn and steam towards Titanic at full speed. He would have to thread his own ship through the ice that Titanic had hit.",
+      "visualDescription": "Titanic's route and Carpathia's approach. Focus on a separate amber leg turns towards the call.",
+      "duration": 15.233333,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Overhead map",
+        "cameraAngle": "North-up schematic",
+        "lighting": "Cold atlas with amber approach",
+        "colorPalette": [
+          "#091822",
+          "#3a5e69",
+          "#c0ddd9"
+        ],
+        "composition": "Titanic's route and Carpathia's approach, framed to direct attention to a separate amber leg turns towards the call.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "A separate amber leg turns towards the call",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion route illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "rostron",
+        "rescue"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The chart is schematic. The lifeboat rescue approach, where shown, is indicative."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 1,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 14,
+            "gain": 0.22,
+            "loop": true
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "two-clocks",
+      "chapter": "A signal in the dark",
+      "historical": {
+        "kind": "ship",
+        "stage": 3
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Two ships, two clocks",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "On Carpathia, preparations began for passengers who might arrive injured or cold. On Titanic, crew were uncovering the boats. One ship had to close the distance. On the other, every minute was lowering the deck towards the water.",
+      "visualDescription": "Carpathia underway. Focus on single funnel and light trailing over water.",
+      "duration": 16.7,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide tracking",
+        "cameraAngle": "Broadside near the water",
+        "lighting": "Cool horizon, warm portholes",
+        "colorPalette": [
+          "#0a111a",
+          "#2a4151",
+          "#c7c4b0"
+        ],
+        "composition": "Carpathia underway, framed to direct attention to single funnel and light trailing over water.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Single funnel and light trailing over water",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion ship illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "rostron",
+        "rescue",
+        "boats"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.82,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 14,
+            "gain": 0.22,
+            "loop": true
+          },
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "lower-away",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Down to the boats",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Early in the evacuation, the boat deck was still high above the water. To leave, people had to step into a boat hanging on ropes. Under their feet Titanic still seemed solid, and the open sea was a long way down.",
+      "visualDescription": "A lifeboat hung from ropes beside the deck. Focus on the distance opens as the boat descends.",
+      "duration": 15.4,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Medium-wide reconstruction",
+        "cameraAngle": "Looking up from outside the ship",
+        "lighting": "Warm boat-deck practicals over cold water",
+        "colorPalette": [
+          "#0b1923",
+          "#304956",
+          "#cebd9f"
+        ],
+        "composition": "A lifeboat hung from ropes beside the deck, framed to direct attention to the distance opens as the boat descends.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The distance opens as the boat descends",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion lifeboat illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "boats",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.74,
+        "cues": [
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 0,
+            "duration": 6,
+            "gain": 0.27
+          },
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 5,
+            "duration": 10,
+            "gain": 0.18
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "twelve",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Twelve in a boat built for forty",
+      "kicker": "",
+      "displayNote": "EMERGENCY BOAT NO. 1",
+      "narration": "Emergency boat Number One had room for forty. The inquiry found it went down with twelve people. By the time it was on the sea, those empty places were beyond the reach of the crowd on deck.",
+      "visualDescription": "Partly loaded boat hanging from the davits. Focus on spare room inside the boat.",
+      "duration": 13.7,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Medium reconstruction",
+        "cameraAngle": "Side view",
+        "lighting": "Low light isolates boat and rope",
+        "colorPalette": [
+          "#0b1923",
+          "#304956",
+          "#cebd9f"
+        ],
+        "composition": "Partly loaded boat hanging from the davits, framed to direct attention to spare room inside the boat.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Spare room inside the boat",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion lifeboat illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "boats",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.72,
+        "cues": [
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 1,
+            "duration": 5,
+            "gain": 0.25
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "route-up",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "detail",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Getting to the boat deck",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "A seat was useless to anyone who could not reach it. Third-class passengers survived at a lower rate. The inquiry pointed to the difficulty of getting passengers up from quarters at the far ends of the ship.",
+      "visualDescription": "Boat gear and upper-deck structure. Focus on deck edge beyond the suspended boat.",
+      "duration": 15.0,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Medium close",
+        "cameraAngle": "Low deck-side reconstruction",
+        "lighting": "Compartmentalised pools of warm light",
+        "colorPalette": [
+          "#0b171e",
+          "#3c555f",
+          "#d1bb97"
+        ],
+        "composition": "Boat gear and upper-deck structure, framed to direct attention to deck edge beyond the suspended boat.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Deck edge beyond the suspended boat",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion detail illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "inquiry",
+        "passengers",
+        "third",
+        "saved"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Survival differed by class. The inquiry considered several contributing explanations."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.78,
+        "cues": [
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 10,
+            "gain": 0.17
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "a-letter",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "detail",
+        "stage": 3
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "A letter in a jacket",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "Seven-year-old Eva Hart went into a lifeboat wearing her father's jacket. Inside was a letter she and her mother had written that night. Eva and her mother survived. Her father did not.",
+      "visualDescription": "A folded sheet emerges from an illustrated wool pocket. The paper stands in for a letter held in the museum archive.",
+      "duration": 17.0,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme close-up reconstruction",
+        "cameraAngle": "Overhead pocket detail",
+        "lighting": "Warm paper in a cold pool of light",
+        "colorPalette": [
+          "#0c1a20",
+          "#45545a",
+          "#dec6a0"
+        ],
+        "composition": "Letter and jacket pocket centered in close-up",
+        "foreground": "The lip of the wool pocket",
+        "midground": "The folded paper",
+        "background": "Blue-grey fabric in low light",
+        "visualAssets": [
+          "Original Remotion letter and wool illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "hart-letter",
+        "hart-letters"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Royal Museums Greenwich catalogue records the letter, the jacket and the fate of Eva's father. The paper is visually reconstructed."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Scored cue withheld for the family account",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0,
+        "cues": [
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 8,
+            "gain": 0.13
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "stern",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "ship",
+        "stage": 5
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The bow drops",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "As the bow went down, the forward deck became harder to use. The final collapsible boats became a struggle of their own. Passengers still aboard were running out of deck and running out of ways off it.",
+      "visualDescription": "Titanic settling forward. Focus on bow sinks as lights approach the horizon.",
+      "duration": 14.033333,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme wide",
+        "cameraAngle": "Waterline profile",
+        "lighting": "Fading lights against dark sea",
+        "colorPalette": [
+          "#0a111a",
+          "#2a4151",
+          "#c7c4b0"
+        ],
+        "composition": "Titanic settling forward, framed to direct attention to bow sinks as lights approach the horizon.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Bow sinks as lights approach the horizon",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion ship illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "boats",
+        "damage",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.48,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.15
+          },
+          {
+            "path": "titanic-upgraded/creak.m4a",
+            "start": 7,
+            "duration": 5,
+            "gain": 0.24
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "lights-out",
+      "chapter": "Down to the boats",
+      "historical": {
+        "kind": "timeline",
+        "stage": 7
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The lights go out",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "At about two twenty in the morning, Titanic was gone. More than fifteen hundred people died in the disaster. For those in the boats, the night was not over. Their next hope was a light on the horizon.",
+      "visualDescription": "Sequence of the last night. Focus on the sinking time remains in focus.",
+      "duration": 14.833333,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Chronology wide",
+        "cameraAngle": "Straight-on chart",
+        "lighting": "Muted slate; single time marker",
+        "colorPalette": [
+          "#0a1824",
+          "#1c4059",
+          "#e6c196"
+        ],
+        "composition": "Sequence of the last night, framed to direct attention to the sinking time remains in focus.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The sinking time remains in focus",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion timeline illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "saved",
+        "rescue"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Score withheld",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 0.1,
+            "duration": 6,
+            "gain": 0.18
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "starlight",
+      "chapter": "A light at dawn",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "labelPosition": "top-right",
+      "portrait": false,
+      "title": "A light at dawn",
+      "kicker": "",
+      "displayNote": "1912 · Rostron and Carpathia officers",
+      "narration": "This is Arthur Rostron, photographed after the rescue. That night he saw starlight on an iceberg. The crew altered course repeatedly, following a light that would lead them to the first boat.",
+      "visualDescription": "Captain Arthur Rostron and Carpathia officers. Focus on Rostron beside the silver cup.",
+      "duration": 13.666667,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival medium",
+        "cameraAngle": "Eye-level group portrait",
+        "lighting": "Silver daylight with faces and cup in focus",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Rostron and officers with the silver cup in frame",
+        "foreground": "Leave the foreground clear",
+        "midground": "Rostron beside the silver cup",
+        "background": "The Carpathia deck in a 1912 photograph",
+        "visualAssets": [
+          "titanic/rostron.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/rostron.jpg",
+        "credit": "Bain News Service / Library of Congress",
+        "license": "No known restrictions on publication",
+        "objectPosition": "50% 43%"
+      },
+      "sourceIds": [
+        "rostron",
+        "rescue",
+        "rostron-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The photograph was taken after the rescue. Rostron stands beside a cup presented by survivors."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.82,
+        "cues": [
+          {
+            "path": "titanic-upgraded/engine.m4a",
+            "start": 0,
+            "duration": 12,
+            "gain": 0.19
+          },
+          {
+            "path": "titanic-upgraded/wind.m4a",
+            "start": 0,
+            "duration": 10,
+            "gain": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "green-light",
+      "chapter": "A light at dawn",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 3
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The first boat found",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The light came from a lifeboat. Just as Rostron went to pick it up, another iceberg appeared ahead. Carpathia turned again and brought the first boat alongside at about four ten by its own clock.",
+      "visualDescription": "A lifeboat at water level before dawn. Focus on small hull against open water.",
+      "duration": 14.0,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Medium-wide reconstruction",
+        "cameraAngle": "Boat-level profile",
+        "lighting": "Cold dawn with narrow rim on the boat",
+        "colorPalette": [
+          "#0b1923",
+          "#304956",
+          "#cebd9f"
+        ],
+        "composition": "A lifeboat at water level before dawn, framed to direct attention to small hull against open water.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Small hull against open water",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion lifeboat illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "rostron",
+        "rescue"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Rostron reported roughly 4:10 a.m. on Carpathia’s clock."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.9,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.23
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "daybreak",
+      "chapter": "A light at dawn",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "labelPosition": "top-right",
+      "portrait": false,
+      "title": "Dawn brings the boats into view",
+      "kicker": "",
+      "displayNote": "15 April 1912 · Lifeboat 14 and collapsible D",
+      "narration": "As daylight spread, more boats came into view. This photograph shows two of them. Titanic's lifeboat Fourteen is towing a collapsible. It took several hours to collect people scattered across miles of water.",
+      "visualDescription": "Lifeboat 14 towing collapsible D. Focus on the two photographed boats against pale water.",
+      "duration": 15.2,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival wide",
+        "cameraAngle": "From the rescue ship",
+        "lighting": "Cool silver daylight",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Lifeboat 14 towing collapsible D, framed to direct attention to the two photographed boats against pale water.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "The two photographed boats against pale water",
+        "background": "Period photographic context.",
+        "visualAssets": [
+          "titanic/lifeboats.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/lifeboats.jpg",
+        "credit": "Louis Ogden (attributed) / NARA",
+        "license": "Public domain",
+        "objectPosition": "50% 59%"
+      },
+      "sourceIds": [
+        "rescue",
+        "boats-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Match the image to the archival item named on-screen."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.98,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0,
+            "duration": 13,
+            "gain": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "aboard-carpathia",
+      "chapter": "A light at dawn",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "labelPosition": "top-right",
+      "portrait": false,
+      "title": "The people rescued",
+      "kicker": "",
+      "displayNote": "April 1912 · Survivors aboard Carpathia",
+      "narration": "About seven hundred people survived. Many of those pictured here still had a journey to make after coming aboard Carpathia. The first question had been how to get off Titanic. Then came the wait to be found.",
+      "visualDescription": "Survivors photographed aboard Carpathia. Focus on faces of people on the rescue ship.",
+      "duration": 15.333333,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival medium",
+        "cameraAngle": "Eye-level",
+        "lighting": "Warm silver on faces",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Survivors photographed aboard Carpathia, framed to direct attention to faces of people on the rescue ship.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Faces of people on the rescue ship",
+        "background": "Period photographic context.",
+        "visualAssets": [
+          "titanic/survivors.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/survivors.jpg",
+        "credit": "Bain News Service / Library of Congress",
+        "license": "No known restrictions on publication",
+        "objectPosition": "50% 47%"
+      },
+      "sourceIds": [
+        "saved",
+        "rescue",
+        "survivors-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Match the image to the archival item named on-screen."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 1,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "three-numbers",
+      "chapter": "A light at dawn",
+      "historical": {
+        "kind": "capacity",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "What capacity could and could not do",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The boats never had enough room for everyone. Yet the total who survived fell well below even that limited capacity. The difference reflects the time, access and decisions that determined which places could actually be used.",
+      "visualDescription": "Aboard, boat capacity and survivors. Focus on three proportional bars show two distinct gaps.",
+      "duration": 16.333333,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Graphic wide",
+        "cameraAngle": "Straight-on comparison",
+        "lighting": "Amber and sea green against slate",
+        "colorPalette": [
+          "#0b1924",
+          "#294354",
+          "#d5e7ee"
+        ],
+        "composition": "Aboard, boat capacity and survivors, framed to direct attention to three proportional bars show two distinct gaps.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Three proportional bars show two distinct gaps",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion capacity illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "capacity",
+        "boats",
+        "third",
+        "saved"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Use the British final report’s rating of 1,178 and round the aboard and survivor figures."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.93,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "first-reports",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "labelPosition": "top-right",
+      "portrait": true,
+      "title": "The news reaches shore",
+      "kicker": "",
+      "displayNote": "16 April 1912 · New York Times front page",
+      "narration": "On shore, early reports gave numbers that were still changing. Investigators in Britain and the United States then heard from people who had been there. They asked what had gone wrong, from the ice messages to the boats.",
+      "visualDescription": "Contemporary newspaper front page. Focus on masthead and headline, early estimates in period context.",
+      "duration": 15.233333,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival detail",
+        "cameraAngle": "Straight-on document",
+        "lighting": "Warm newsprint on neutral shadows",
+        "colorPalette": [
+          "#131918",
+          "#465451",
+          "#ddded4"
+        ],
+        "composition": "Contemporary newspaper front page, framed to direct attention to masthead and headline, early estimates in period context.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "Masthead and headline, early estimates in period context",
+        "background": "Period photographic context.",
+        "visualAssets": [
+          "titanic/headlines.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/headlines.jpg",
+        "credit": "The New York Times / Wikimedia Commons",
+        "license": "Public domain",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": [
+        "inquiry",
+        "us",
+        "headlines-photo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The period front page contains preliminary figures."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.85,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "new-rules",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "timeline",
+        "stage": 5
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The rules change",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "In nineteen fourteen, an international safety convention was adopted. It addressed lifesaving equipment, radio and other safeguards. The disaster also led to an international ice patrol. A future ship should have earlier warnings and a better chance to get everyone off.",
+      "visualDescription": "Inquiries and early international safety reform. Focus on 1914 convention marker.",
+      "duration": 18.933333,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Timeline wide",
+        "cameraAngle": "Straight-on chart",
+        "lighting": "Amber marker against blue grid",
+        "colorPalette": [
+          "#0a1824",
+          "#1c4059",
+          "#e6c196"
+        ],
+        "composition": "Inquiries and early international safety reform, framed to direct attention to 1914 convention marker.",
+        "foreground": "Leave the foreground clear of the focal detail.",
+        "midground": "1914 convention marker",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion timeline illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "safety",
+        "inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.96,
+        "cues": []
+      }
+    },
+    {
+      "sceneId": "search-pattern",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "wreck",
+        "stage": 0
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "Seventy-three years later",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "For more than seven decades, the wreck itself was missing. In nineteen eighty-five, a Franco-American expedition searched the seabed. On a video monitor, amid the debris, the team saw an object that looked like one of Titanic's boilers.",
+      "visualDescription": "Survey trace and a debris field. Focus on individual returns resolve in the dark.",
+      "duration": 16.166667,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide survey reconstruction",
+        "cameraAngle": "Overhead seafloor",
+        "lighting": "Low teal; searching light",
+        "colorPalette": [
+          "#05191e",
+          "#255255",
+          "#a8ccbc"
+        ],
+        "composition": "Survey trace and a debris field, framed to direct attention to individual returns resolve in the dark.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Individual returns resolve in the dark",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion wreck illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "wreck"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.68,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 0,
+            "duration": 12,
+            "gain": 0.26
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "boiler",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "wreck",
+        "stage": 1
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The first clue",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The boiler helped confirm that the searchers were looking at Titanic's debris. The wreck was far below the surface, and the bow and stern lay apart. The ship they found was no longer the intact outline known from departure photographs.",
+      "visualDescription": "Boiler shape illuminated by the survey. Focus on open furnace circles in the beam.",
+      "duration": 16.233333,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Close-up reconstruction",
+        "cameraAngle": "Near seafloor",
+        "lighting": "Narrow underwater light grazing metal",
+        "colorPalette": [
+          "#05191e",
+          "#255255",
+          "#a8ccbc"
+        ],
+        "composition": "Boiler shape illuminated by the survey, framed to direct attention to open furnace circles in the beam.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Open furnace circles in the beam",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion wreck illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "wreck",
+        "return"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.75,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 0,
+            "duration": 12,
+            "gain": 0.26
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "the-bow",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "wreck",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The bow on the seabed",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The following year, another expedition returned with a submersible. Its cameras picked out recognisable parts of the ship in darkness. The wreck preserved things no witness could see in the final minutes. The photographs and testimony preserve others.",
+      "visualDescription": "Titanic's bow resting on the seafloor. Focus on broken edge and scattered remnants.",
+      "duration": 17.6,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide reconstruction",
+        "cameraAngle": "Low survey oblique",
+        "lighting": "Moving teal shaft over rust tones",
+        "colorPalette": [
+          "#05191e",
+          "#255255",
+          "#a8ccbc"
+        ],
+        "composition": "Titanic's bow resting on the seafloor, framed to direct attention to broken edge and scattered remnants.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "Broken edge and scattered remnants",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion wreck illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "return",
+        "wreck"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.79,
+        "cues": [
+          {
+            "path": "titanic-upgraded/deep.m4a",
+            "start": 0,
+            "duration": 12,
+            "gain": 0.23
+          }
+        ]
+      }
+    },
+    {
+      "sceneId": "the-last-distance",
+      "chapter": "What the sea kept",
+      "historical": {
+        "kind": "ocean",
+        "stage": 2
+      },
+      "labelPosition": "top-left",
+      "portrait": false,
+      "title": "The distance between a deck and a boat",
+      "kicker": "",
+      "displayNote": "",
+      "narration": "The story began with too few places on the water. It ended with rescuers lifting people from separate boats, hours after the ship had gone. Titanic had made an ocean crossing feel ordinary. That night, even the distance from deck to boat could be too far.",
+      "visualDescription": "Empty North Atlantic surface. Focus on the horizon after the ship is gone.",
+      "duration": 18.633333,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Extreme wide",
+        "cameraAngle": "Near waterline",
+        "lighting": "Soft low light recedes towards black",
+        "colorPalette": [
+          "#061019",
+          "#1b3b52",
+          "#b4ccdd"
+        ],
+        "composition": "Empty North Atlantic surface, framed to direct attention to the horizon after the ship is gone.",
+        "foreground": "The nearest physical layer has separate depth movement where visible.",
+        "midground": "The horizon after the ship is gone",
+        "background": "Story-date palette and contextual geometry.",
+        "visualAssets": [
+          "Original Remotion ocean illustration"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "boats",
+        "rescue",
+        "saved"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Quote times approximately where used and label the illustration."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Restrained historical atmosphere",
+        "tempo": 1.06,
+        "cue": null,
+        "musicGain": 0.43,
+        "cues": [
+          {
+            "path": "titanic-upgraded/ocean.m4a",
+            "start": 0.4,
+            "duration": 12,
+            "gain": 0.2
+          }
+        ]
+      }
+    }
+  ]
+}

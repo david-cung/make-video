@@ -1,0 +1,291 @@
+{
+  "tracks": [
+    {
+      "id": "undertow",
+      "title": "Undertow",
+      "artist": "Scott Buckley",
+      "path": ".cache/titanic-retention-music/undertow.mp3",
+      "sourceUrl": "https://www.scottbuckley.com.au/library/undertow/",
+      "downloadUrl": "https://www.scottbuckley.com.au/library/wp-content/uploads/2019/12/sb_undertow.mp3",
+      "sha256": "4652007dad67295f1f5c87c8cbc8e2df1a530e7671266a29f693a084375d3910",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "style": "Sombre piano, strings and synth",
+      "attribution": "“Undertow” by Scott Buckley · CC BY 4.0 · https://www.scottbuckley.com.au/library/undertow/ · https://creativecommons.org/licenses/by/4.0/ · Edited excerpts with fades and dialogue ducking."
+    },
+    {
+      "id": "signal-to-noise",
+      "title": "Signal to Noise (No Piano Melody mix)",
+      "artist": "Scott Buckley",
+      "path": ".cache/titanic-retention-music/signal-to-noise.mp3",
+      "sourceUrl": "https://www.scottbuckley.com.au/library/signal-to-noise/",
+      "downloadUrl": "https://www.scottbuckley.com.au/library/wp-content/uploads/2020/04/sb_signaltonoise_nomelody.mp3",
+      "sha256": "8e20b496b0614053565d4f43c80f469c84abd2aefb3ba01e29dfa813f49b9594",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "style": "Dark ambient suspense with warm synths and low strings",
+      "attribution": "“Signal to Noise (No Piano Melody mix)” by Scott Buckley · CC BY 4.0 · https://www.scottbuckley.com.au/library/signal-to-noise/ · https://creativecommons.org/licenses/by/4.0/ · Edited excerpts with fades and dialogue ducking."
+    },
+    {
+      "id": "hiraeth",
+      "title": "Hiraeth",
+      "artist": "Scott Buckley",
+      "path": ".cache/titanic-retention-music/hiraeth.mp3",
+      "sourceUrl": "https://www.scottbuckley.com.au/library/hiraeth/",
+      "downloadUrl": "https://www.scottbuckley.com.au/library/wp-content/uploads/2020/06/sb_hiraeth.mp3",
+      "sha256": "f790c7d53b8d802981ff7cdd8c59e22cdfe103ea66aba296c6cf1a65fe7fcf01",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "style": "Atmospheric pads, orchestral strings and solo cello",
+      "attribution": "“Hiraeth” by Scott Buckley · CC BY 4.0 · https://www.scottbuckley.com.au/library/hiraeth/ · https://creativecommons.org/licenses/by/4.0/ · Edited excerpts with fades and dialogue ducking."
+    }
+  ],
+  "placements": [
+    {
+      "id": "the-empty-sea",
+      "track": "undertow",
+      "from": {
+        "scene": "out-of-time",
+        "offset": 0.1
+      },
+      "to": {
+        "scene": "before-the-night",
+        "offset": 6.2
+      },
+      "sourceIn": 10,
+      "gainDb": -7,
+      "fadeIn": 1.15,
+      "fadeOut": 2.9,
+      "style": "emotional piano",
+      "purpose": "Set grief and shortage against the return to the departure."
+    },
+    {
+      "id": "the-night-approach",
+      "track": "signal-to-noise",
+      "from": {
+        "scene": "before-the-night",
+        "offset": 4.2
+      },
+      "to": {
+        "scene": "below-the-waterline",
+        "offset": 3.96
+      },
+      "sourceIn": 44,
+      "gainDb": -8,
+      "fadeIn": 2.2,
+      "fadeOut": 1.25,
+      "style": "suspense underscore",
+      "purpose": "Change the harmonic perspective near the route and clear the hit."
+    },
+    {
+      "id": "the-rescue-question",
+      "track": "hiraeth",
+      "from": {
+        "scene": "the-limit",
+        "offset": 1.1
+      },
+      "to": {
+        "scene": "belfast",
+        "offset": 1.2
+      },
+      "sourceIn": 32,
+      "gainDb": -13,
+      "fadeIn": 2.6,
+      "fadeOut": 2.2,
+      "style": "atmospheric drones and strings",
+      "purpose": "Bring in a restrained rescue motif after the damage is shown."
+    },
+    {
+      "id": "the-shipyard",
+      "track": "undertow",
+      "from": {
+        "scene": "belfast",
+        "offset": -0.6
+      },
+      "to": {
+        "scene": "messages",
+        "offset": 1.4
+      },
+      "sourceIn": 35,
+      "gainDb": -9,
+      "fadeIn": 2.1,
+      "fadeOut": 2.7,
+      "style": "emotional piano",
+      "purpose": "Keep the engineering sequence reflective and let the boat count lead into the warnings."
+    },
+    {
+      "id": "warnings",
+      "track": "signal-to-noise",
+      "from": {
+        "scene": "messages",
+        "offset": -1.2
+      },
+      "to": {
+        "scene": "first-impact",
+        "offset": -0.55
+      },
+      "sourceIn": 77,
+      "gainDb": -9.5,
+      "fadeIn": 2.7,
+      "fadeOut": 1.7,
+      "style": "dark ambient",
+      "purpose": "Increase tension through the messages and the lookouts."
+    },
+    {
+      "id": "the-wireless-race",
+      "track": "signal-to-noise",
+      "from": {
+        "scene": "five-open",
+        "offset": 2
+      },
+      "to": {
+        "scene": "two-clocks",
+        "offset": -0.7,
+        "edge": "end"
+      },
+      "sourceIn": 130,
+      "gainDb": -10,
+      "fadeIn": 2.9,
+      "fadeOut": 3.6,
+      "style": "suspense underscore",
+      "purpose": "Link the flooding and the two crews with a common underscoring pulse."
+    },
+    {
+      "id": "boarding",
+      "track": "hiraeth",
+      "from": {
+        "scene": "lower-away",
+        "offset": -1.7
+      },
+      "to": {
+        "scene": "a-letter",
+        "offset": -0.45
+      },
+      "sourceIn": 77,
+      "gainDb": -9,
+      "fadeIn": 2.8,
+      "fadeOut": 2,
+      "style": "cinematic orchestral strings",
+      "purpose": "Humanize the lowering of the boats and leave the family testimony clear."
+    },
+    {
+      "id": "the-lights-go",
+      "track": "signal-to-noise",
+      "from": {
+        "scene": "stern",
+        "offset": 1
+      },
+      "to": {
+        "scene": "lights-out",
+        "offset": -0.5
+      },
+      "sourceIn": 17,
+      "gainDb": -11,
+      "fadeIn": 2.9,
+      "fadeOut": 2.2,
+      "style": "atmospheric drones",
+      "purpose": "Let the mood darken ahead of the sinking chronology."
+    },
+    {
+      "id": "the-dawn-rescue",
+      "track": "hiraeth",
+      "from": {
+        "scene": "starlight",
+        "offset": 0.75
+      },
+      "to": {
+        "scene": "first-reports",
+        "offset": 1.55
+      },
+      "sourceIn": 134,
+      "gainDb": -8.5,
+      "fadeIn": 2.7,
+      "fadeOut": 3,
+      "style": "cinematic orchestral strings",
+      "purpose": "Introduce warmth as the survivors enter the frame."
+    },
+    {
+      "id": "the-public-record",
+      "track": "undertow",
+      "from": {
+        "scene": "first-reports",
+        "offset": -1.1
+      },
+      "to": {
+        "scene": "search-pattern",
+        "offset": 1.9
+      },
+      "sourceIn": 111,
+      "gainDb": -10,
+      "fadeIn": 2.65,
+      "fadeOut": 2.9,
+      "style": "emotional piano",
+      "purpose": "Hold an understated bridge between testimony, inquiries and safety reform."
+    },
+    {
+      "id": "the-wreck",
+      "track": "signal-to-noise",
+      "from": {
+        "scene": "search-pattern",
+        "offset": -1
+      },
+      "to": {
+        "scene": "the-last-distance",
+        "offset": 0.65
+      },
+      "sourceIn": 219,
+      "gainDb": -11,
+      "fadeIn": 2.9,
+      "fadeOut": 2.85,
+      "style": "dark ambient",
+      "purpose": "Leave room for the search and the identification of the wreck."
+    },
+    {
+      "id": "the-last-distance",
+      "track": "hiraeth",
+      "from": {
+        "scene": "the-last-distance",
+        "offset": -1.25
+      },
+      "to": {
+        "scene": "end",
+        "offset": -0.25
+      },
+      "sourceIn": 244,
+      "gainDb": -8,
+      "fadeIn": 2.1,
+      "fadeOut": 5.5,
+      "style": "reflective ending",
+      "purpose": "Bring back the rescue motif quietly and end with the distance from deck to sea."
+    }
+  ],
+  "plannedGaps": [
+    {
+      "purpose": "Make room before impact and hold afterward.",
+      "scope": "All tracks",
+      "time": "31.03–31.30 and 32.55–34.00"
+    },
+    {
+      "purpose": "Allow early testimony, water and impact to carry the original contact chapter.",
+      "scope": "Music",
+      "fromScene": "first-impact",
+      "toScene": "five-open"
+    },
+    {
+      "purpose": "Leave Eva Hart's family account without music.",
+      "scope": "Music",
+      "scene": "a-letter"
+    },
+    {
+      "purpose": "Let the sinking chronology settle before the rescue chapter.",
+      "scope": "Music",
+      "scene": "lights-out"
+    }
+  ],
+  "attributionInstructions": {
+    "forYouTube": "Include the recording attribution in the video description, including title, creator, source, CC BY 4.0 link and the edits made. The licensor permits monetized YouTube use with proper attribution and asks users to keep the recordings out of their own Content ID registrations.",
+    "officialPolicy": "https://www.scottbuckley.com.au/library/using-this-music/",
+    "faq": "https://www.scottbuckley.com.au/library/faq/",
+    "missingAssetRequests": []
+  }
+}

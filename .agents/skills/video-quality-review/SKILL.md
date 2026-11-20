@@ -4,3 +4,5 @@ description: Verify a documentary render through storyboard, asset, narration, c
 ---
 
 Run the pipeline preflight for TypeScript, storyboard schema and source assets. Verify each narration WAV and build captions from measured audio segments. Check the selected Remotion composition and review frames across the scene boundaries and both ends of the video. Inspect the MP4 with FFprobe for duration, dimensions, fps, H.264 and AAC when narration or music is present. Scan the encoded picture for black frames and report which checks ran and which need human review.
+
+Apply the preview check in AGENTS.md before a long render. Inspect the actual rendered frames and a short playback range when reviewing a new visual treatment. Check for repeated title panels, clipped subjects during camera motion, and shots that hold through changes in the narration without a visual purpose.

@@ -4,7 +4,7 @@ import {availableParallelism} from "node:os";
 import {parseArgs} from "node:util";
 import {bundle} from "@remotion/bundler";
 import {openBrowser, renderMedia, renderStill, selectComposition} from "@remotion/renderer";
-import {COMPOSITION, FADE_FRAMES, FPS, HEIGHT, MIN_DOCUMENTARY_SECONDS, MAX_DOCUMENTARY_SECONDS, WIDTH, captionLines} from "../src/timeline.mjs";
+import {COMPOSITION, FADE_FRAMES, FPS, HEIGHT, MIN_DOCUMENTARY_SECONDS, MAX_DOCUMENTARY_SECONDS, WIDTH, captionLines, opensChapter} from "../src/timeline.mjs";
 import {prepareAudio} from "./audio.mjs";
 import {generateStoryboard} from "./generate-storyboard.mjs";
 import {atomicWrite, audioDuration, capture, checkLocalAsset, command, ffmpeg, hash, probe, readJson, root, validateStoryboard, writeJson} from "./project.mjs";
@@ -22,7 +22,9 @@ function assetCheck(storyboard) {
       throw new Error(`Could not decode image ${image.path}`);
     }
   }
-  for (const cue of new Set(storyboard.scenes.map((scene) => scene.soundDesign?.cue).filter(Boolean))) {
+  const cues = storyboard.scenes.flatMap(({soundDesign}) =>
+    [soundDesign?.cue, ...(soundDesign?.cues ?? []).map(({path}) => path)]);
+  for (const cue of new Set(cues.filter(Boolean))) {
     audioDuration(checkLocalAsset(cue));
   }
   if (storyboard.music) audioDuration(checkLocalAsset(storyboard.music.path));
@@ -79,18 +81,23 @@ function blackFrameScan(path, frames) {
   return {method: "ffmpeg-decoded-luma", blackIntervals};
 }
 
-function normalizeAudioDuration(path, duration) {
+function finalizeAudioMix(path, duration, gainDb) {
   const audio = probe(path).streams.find(({codec_type}) => codec_type === "audio");
   if (!audio) throw new Error("The expected AAC track is missing.");
-  if (Math.abs(Number(audio.duration) - duration) < 0.0005) return;
-  const trimmed = path.replace(/\.mp4$/i, ".timed.mp4");
+  const filters = [];
+  if (gainDb) filters.push(`volume=${gainDb}dB`, "alimiter=limit=0.794328:level=0:latency=1");
+  if (duration !== null && (gainDb || Math.abs(Number(audio.duration) - duration) >= 0.0005)) {
+    filters.push("apad", `atrim=duration=${duration}`);
+  }
+  if (!filters.length) return;
+  const processed = path.replace(/\.mp4$/i, ".mixed.mp4");
   try {
     capture(ffmpeg(), ["-nostdin", "-v", "error", "-y", "-i", path,
-      "-map", "0:v:0", "-map", "0:a:0", "-c:v", "copy", "-af", `apad,atrim=duration=${duration}`,
-      "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", trimmed]);
-    renameSync(trimmed, path);
+      "-map", "0:v:0", "-map", "0:a:0", "-c:v", "copy", "-af", filters.join(","),
+      "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", processed]);
+    renameSync(processed, path);
   } finally {
-    rmSync(trimmed, {force: true});
+    rmSync(processed, {force: true});
   }
 }
 
@@ -132,6 +139,9 @@ function previewFrames(storyboard, timing) {
     }
     const cue = scene.captions.find(({start: cueStart}) => cueStart >= 35) ?? scene.captions[0];
     frames.add(Math.floor((cue.start + cue.end) / 2) + start);
+    if (storyboard.visualStyle === "image-first" && opensChapter(storyboard.scenes, index)) {
+      frames.add(start + Math.min(FPS, scene.durationInFrames - 1));
+    }
     start += scene.durationInFrames;
   });
   frames.add(start - 1);
@@ -228,7 +238,7 @@ async function main() {
           if (percent > progress) { progress = percent; console.log(`[RENDER] ${percent}%`); }
         }});
       encoded = true;
-      if (duration !== null && hasAudio) normalizeAudioDuration(temp, duration);
+      if (hasAudio && (duration !== null || storyboard.mixGainDb)) finalizeAudioMix(temp, duration, storyboard.mixGainDb);
       report.encoded = verifyMp4(temp, frames, hasAudio, duration !== null);
       if (options.force) renameSync(temp, output);
       else linkSync(temp, output);

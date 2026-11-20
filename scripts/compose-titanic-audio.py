@@ -73,6 +73,9 @@ def effect(name, seconds):
         sound = 0.31 * (atmosphere(t, 74) + .33 * atmosphere(t, 148)) * np.exp(-t * .2)
     elif name == "deep":
         sound = 0.13 * wash * slow + .16 * atmosphere(t, 39, 4 * np.sin(t * 1.4))
+    elif name == "engine":
+        stroke = 0.48 + .52 * np.maximum(0, atmosphere(t, 2.2)) ** 3
+        sound = (.19 * atmosphere(t, 65) + .08 * atmosphere(t, 130) + .10 * wash) * stroke
     else:
         sound = (.30 * atmosphere(t, 49, 2 * (1 - np.exp(-12 * t))) + .17 * wash) * np.exp(-t * 2.9)
     return sound[:, None] * fade(t, seconds, .1, 1.4)[:, None]
@@ -107,7 +110,7 @@ def main():
     args.output.mkdir(parents=True, exist_ok=True)
     encode((score_section(seconds, notes, level, index)
             for index, (seconds, (notes, level)) in enumerate(zip(durations.values(), CHAPTERS))), args.output / "score.m4a")
-    for name, seconds in {"ocean": 13, "wind": 10, "creak": 6, "horn": 6, "deep": 12, "impact": 5}.items():
+    for name, seconds in {"ocean": 13, "wind": 10, "creak": 6, "horn": 6, "deep": 12, "impact": 5, "engine": 16}.items():
         encode([effect(name, seconds)], args.output / f"{name}.m4a")
 
 
