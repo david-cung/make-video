@@ -4,7 +4,7 @@ import {existsSync, mkdirSync, readFileSync, realpathSync, renameSync, rmSync, s
 import {dirname, isAbsolute, join, relative, resolve, sep} from "node:path";
 import {fileURLToPath} from "node:url";
 import Ajv from "ajv";
-import {FPS, MAX_DOCUMENTARY_SECONDS, splitSentences} from "../src/timeline.mjs";
+import {FPS, MIN_DOCUMENTARY_SECONDS, MAX_DOCUMENTARY_SECONDS, splitSentences} from "../src/timeline.mjs";
 
 export const root = fileURLToPath(new URL("../", import.meta.url));
 export const publicDir = join(root, "public");
@@ -48,8 +48,10 @@ export function validateStoryboard(storyboard, {assets = true} = {}) {
   const add = (condition, message) => { if (!condition) errors.push(message); };
   const scenes = storyboard.scenes;
   const plannedFrames = scenes.reduce((sum, scene) => sum + Math.round(scene.duration * FPS), 0);
-  add(scenes.length >= 6 && scenes.length <= 60, "Use 6–60 scenes.");
-  add(plannedFrames >= 60 * FPS && plannedFrames <= MAX_DOCUMENTARY_SECONDS * FPS, "Use a total duration of 60–600 seconds.");
+  const minScenes = plannedFrames < 60 * FPS ? 1 : 6;
+  add(scenes.length >= minScenes && scenes.length <= 60, `Use ${minScenes}–60 scenes.`);
+  add(plannedFrames >= MIN_DOCUMENTARY_SECONDS * FPS && plannedFrames <= MAX_DOCUMENTARY_SECONDS * FPS,
+    `Use a total duration of ${MIN_DOCUMENTARY_SECONDS}–${MAX_DOCUMENTARY_SECONDS} seconds.`);
   add(Boolean(storyboard.title.trim() && storyboard.topic.trim()), "Add a project title and topic.");
   add(new Set(scenes.map(({sceneId}) => sceneId)).size === scenes.length, "Scene IDs must be unique.");
   const sourceIds = new Set(storyboard.sources.map(({id}) => id));

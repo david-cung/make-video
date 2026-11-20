@@ -1,0 +1,2018 @@
+{
+  "title": "TITANIC: THE FINAL 2 HOURS AND 40 MINUTES",
+  "subtitle": "The Untold Story of the World's Most Famous Shipwreck",
+  "topic": "Titanic's maiden voyage, sinking, rescue, rediscovery and maritime legacy",
+  "language": "en",
+  "sources": [
+    {
+      "id": "clock",
+      "title": "Royal Museums Greenwich · Titanic fact sheet",
+      "url": "https://www.rmg.co.uk/collections/research-guides/research-guide-d1-rms-titanic-fact-sheet"
+    },
+    {
+      "id": "ship",
+      "title": "British Wreck Commissioner's Inquiry · Ship description",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepTitanic.php"
+    },
+    {
+      "id": "voyage",
+      "title": "The National Archives · Life Aboard the Titanic",
+      "url": "https://cdn.nationalarchives.gov.uk/documents/education/titanic.pdf"
+    },
+    {
+      "id": "passengers",
+      "title": "The National Archives · Passengers on the Titanic",
+      "url": "https://www.nationalarchives.gov.uk/education/teaching-resources/passengers-on-the-titanic/"
+    },
+    {
+      "id": "gymnasium",
+      "title": "White Star Line brochure · Titanic gymnasium",
+      "url": "https://commons.wikimedia.org/wiki/File:Titanic_gymnasium.jpg"
+    },
+    {
+      "id": "warnings",
+      "title": "British inquiry · Ice messages received",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepMessages.php"
+    },
+    {
+      "id": "weather",
+      "title": "British inquiry · Weather conditions",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepWeather.php"
+    },
+    {
+      "id": "collision",
+      "title": "British inquiry · The collision",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepCollision.php"
+    },
+    {
+      "id": "damage",
+      "title": "British inquiry · Flooding and damage analysis",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepObserv.php"
+    },
+    {
+      "id": "assist",
+      "title": "British inquiry · Means taken to procure assistance",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepAssist.php"
+    },
+    {
+      "id": "boats",
+      "title": "British inquiry · Life-saving appliances",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepLSApp.php"
+    },
+    {
+      "id": "launch",
+      "title": "British inquiry · The boats",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/BOTRepBoats.php"
+    },
+    {
+      "id": "third",
+      "title": "British inquiry · Third-class passengers",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRep3rdClass.php"
+    },
+    {
+      "id": "counts",
+      "title": "British inquiry · Numbers saved",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepSaved.php"
+    },
+    {
+      "id": "rescue",
+      "title": "British inquiry · Rescue by the Carpathia",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRepRescue.php"
+    },
+    {
+      "id": "photo-boats",
+      "title": "U.S. National Archives · Rescue photograph, NAID 278336",
+      "url": "https://catalog.archives.gov/id/278336"
+    },
+    {
+      "id": "inquiry",
+      "title": "British Wreck Commissioner's Inquiry · Final report",
+      "url": "https://www.titanicinquiry.org/BOTInq/BOTReport/botRep01.php"
+    },
+    {
+      "id": "us-inquiry",
+      "title": "United States Senate · Report of the 1912 investigation",
+      "url": "https://www.senate.gov/artandhistory/history/resources/pdf/TitanicReport.pdf"
+    },
+    {
+      "id": "press",
+      "title": "Library of Congress · Sinking of the Titanic in Chronicling America",
+      "url": "https://guides.loc.gov/chronicling-america-sinking-titanic"
+    },
+    {
+      "id": "discovery",
+      "title": "Woods Hole Oceanographic Institution · 1985 discovery",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1985-discovery-of-rms-titanic/"
+    },
+    {
+      "id": "return",
+      "title": "Woods Hole Oceanographic Institution · 1986 return",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-human-lives/underwater-archaeology/rms-titanic/1986-return-to-the-rms-titanic/"
+    },
+    {
+      "id": "noaa",
+      "title": "NOAA · Titanic past expeditions",
+      "url": "https://sanctuaries.noaa.gov/maritime/titanic/past_expeditions.html"
+    },
+    {
+      "id": "explore",
+      "title": "NOAA · Titanic wreck and maritime heritage",
+      "url": "https://sanctuaries.noaa.gov/maritime/titanic/"
+    },
+    {
+      "id": "imo",
+      "title": "International Maritime Organization · Titanic and SOLAS",
+      "url": "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/TITANIC.pdf"
+    },
+    {
+      "id": "ice-patrol",
+      "title": "United States Coast Guard · International Ice Patrol centennial report",
+      "url": "https://www.navcen.uscg.gov/sites/default/files/pdf/iip/2012_IIP_Annual_Report.pdf"
+    }
+  ],
+  "music": {
+    "path": "titanic/score.m4a",
+    "credit": "Cinema · original synthetic score",
+    "license": "Original project composition; no external samples"
+  },
+  "scenes": [
+    {
+      "sceneId": "opening",
+      "chapter": "01 / The Unsinkable Dream",
+      "historical": {
+        "kind": "ship",
+        "stage": 4
+      },
+      "title": "The Final 2 Hours and 40 Minutes",
+      "kicker": "TITANIC",
+      "displayNote": "NORTH ATLANTIC · 15 APRIL 1912",
+      "narration": "At two twenty in the morning, Titanic disappeared beneath the North Atlantic. Two hours and forty minutes earlier, her lights were still burning. How did a ship built to survive a collision run out of time?",
+      "visualDescription": "Wide maritime reconstruction. Ocean liner carries the scene: the final 2 hours and 40 minutes.",
+      "duration": 15.366666666666667,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide maritime reconstruction",
+        "cameraAngle": "Water-level broadside",
+        "lighting": "Warm windows against a cold silhouette",
+        "colorPalette": [
+          "#0a1320",
+          "#345461",
+          "#d4bd91"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near water and reflected light",
+        "midground": "Ocean liner",
+        "background": "Horizon and distant cloud",
+        "visualAssets": [
+          "Original animated ship reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The sinking time and elapsed interval follow the museum chronology."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Unsinkable Dream",
+        "tempo": 1.04,
+        "cue": "titanic/ocean.m4a"
+      }
+    },
+    {
+      "sceneId": "belfast",
+      "chapter": "01 / The Unsinkable Dream",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "title": "A ship built on land",
+      "kicker": "TITANIC",
+      "displayNote": "BELFAST · HARLAND AND WOLFF",
+      "narration": "Before there was a disaster, there was a shipyard in Belfast. Harland and Wolff built Titanic for the White Star Line. In the photograph, the hull rises over the men and machines that made it.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: a ship built on land.",
+      "duration": 15.033333333333333,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/belfast.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/belfast.jpg",
+        "credit": "R. J. Welch · Harland & Wolff",
+        "license": "Public domain",
+        "objectPosition": "48% 49%"
+      },
+      "sourceIds": [
+        "ship"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Construction yard, ownership and ship class are documented in the inquiry."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Unsinkable Dream",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "scale",
+      "chapter": "01 / The Unsinkable Dream",
+      "historical": {
+        "kind": "ship",
+        "stage": 1
+      },
+      "title": "Eight hundred and eighty-three feet",
+      "kicker": "TITANIC",
+      "displayNote": "LENGTH OVERALL · 269 METRES",
+      "narration": "Titanic stretched nearly eight hundred and eighty-three feet from end to end. Steam drove three propellers beneath the stern. The funnels and rows of deck windows made the scale of the ship visible from the quay.",
+      "visualDescription": "Wide maritime reconstruction. Ocean liner carries the scene: eight hundred and eighty-three feet.",
+      "duration": 15,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide maritime reconstruction",
+        "cameraAngle": "Water-level broadside",
+        "lighting": "Warm windows against a cold silhouette",
+        "colorPalette": [
+          "#0a1320",
+          "#345461",
+          "#d4bd91"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near water and reflected light",
+        "midground": "Ocean liner",
+        "background": "Horizon and distant cloud",
+        "visualAssets": [
+          "Original animated ship reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "clock",
+        "ship"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Rounded from 882.75 feet overall. The machinery specification records three propellers."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Unsinkable Dream",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "luxury",
+      "chapter": "01 / The Unsinkable Dream",
+      "historical": {
+        "kind": "archive",
+        "stage": 1
+      },
+      "title": "The floating hotel",
+      "kicker": "TITANIC",
+      "displayNote": "FIRST CLASS · BOAT DECK",
+      "narration": "White Star sold the crossing as an experience in itself. First class had a gymnasium on the boat deck, elaborate public rooms and private suites. Elsewhere on the same ship, passengers travelled with very different expectations.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: the floating hotel.",
+      "duration": 16.2,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/gymnasium.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/gymnasium.jpg",
+        "credit": "White Star Line period brochure",
+        "license": "Public domain",
+        "objectPosition": "54% 54%"
+      },
+      "sourceIds": [
+        "ship",
+        "gymnasium"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The period White Star brochure shows the gymnasium. The inquiry describes separate accommodation."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Unsinkable Dream",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "bulkheads",
+      "chapter": "01 / The Unsinkable Dream",
+      "historical": {
+        "kind": "flooding",
+        "stage": 0
+      },
+      "title": "The promise of subdivision",
+      "kicker": "TITANIC",
+      "displayNote": "WATERTIGHT BULKHEADS · SCHEMATIC",
+      "narration": "Below the public decks, bulkheads divided the hull into watertight compartments. Closing doors could isolate flooded sections. Several forward compartments flooding at once could defeat the design.",
+      "visualDescription": "Cutaway reconstruction. Compartment walls and decks carries the scene: the promise of subdivision.",
+      "duration": 14.633333333333333,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway reconstruction",
+        "cameraAngle": "Outer hull in profile",
+        "lighting": "Cold diagram lines, warm hull and rising blue water",
+        "colorPalette": [
+          "#0b1a26",
+          "#315b70",
+          "#c3d8df"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Water fill",
+        "midground": "Compartment walls and decks",
+        "background": "Drawing grid",
+        "visualAssets": [
+          "Original animated flooding reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "ship",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry documents the design and the consequences of overtopping bulkheads."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Unsinkable Dream",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "departure",
+      "chapter": "02 / The Maiden Voyage",
+      "historical": {
+        "kind": "archive",
+        "stage": 2
+      },
+      "title": "Leaving Southampton",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "10 APRIL 1912 · MAIDEN VOYAGE",
+      "narration": "On the tenth of April, nineteen twelve, Titanic left Southampton for New York. This photograph shows the ship at Southampton on the day she sailed. Once clear of the port, she turned towards the English Channel.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: leaving southampton.",
+      "duration": 15.466666666666667,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/southampton.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/southampton.jpg",
+        "credit": "Unknown photographer · Wikimedia Commons",
+        "license": "Public domain",
+        "objectPosition": "49% 47%"
+      },
+      "sourceIds": [
+        "voyage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The original voyage date, port and destination are corroborated by the National Archives."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Maiden Voyage",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "route",
+      "chapter": "02 / The Maiden Voyage",
+      "historical": {
+        "kind": "route",
+        "stage": 0
+      },
+      "title": "The route west",
+      "kicker": "TITANIC",
+      "displayNote": "SOUTHAMPTON · CHERBOURG · QUEENSTOWN",
+      "narration": "The first stop was Cherbourg, on the French coast. Next came Queenstown, in Ireland, where more passengers boarded. From there, the voyage opened out into the Atlantic, with New York on the far shore.",
+      "visualDescription": "Animated route chart. North Atlantic graticule carries the scene: the route west.",
+      "duration": 14.833333333333334,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated route chart",
+        "cameraAngle": "Plan view",
+        "lighting": "Amber route lines with cool coastlines",
+        "colorPalette": [
+          "#0a1923",
+          "#315467",
+          "#e1bb80"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Route and waypoint labels",
+        "midground": "North Atlantic graticule",
+        "background": "Chart plate and vignette",
+        "visualAssets": [
+          "Original animated route reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The ports and crossing sequence come from the voyage record. The animated route is schematic."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Maiden Voyage",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "passengers",
+      "chapter": "02 / The Maiden Voyage",
+      "historical": {
+        "kind": "archive",
+        "stage": 1
+      },
+      "title": "A crossing of many lives",
+      "kicker": "TITANIC",
+      "displayNote": "THREE CLASSES · ONE SHIP",
+      "narration": "Some passengers could afford the best rooms on the ship. Others were travelling in third class, carrying what they could towards new lives. Behind the passenger lists were families, people travelling alone and people crossing for work.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: a crossing of many lives.",
+      "duration": 15.933333333333334,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/southampton.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/southampton.jpg",
+        "credit": "Unknown photographer · Wikimedia Commons",
+        "license": "Public domain",
+        "objectPosition": "49% 47%"
+      },
+      "sourceIds": [
+        "voyage",
+        "passengers"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The National Archives teaching collection uses surviving passenger and crew records."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Maiden Voyage",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "crew",
+      "chapter": "02 / The Maiden Voyage",
+      "historical": {
+        "kind": "ship",
+        "stage": 2
+      },
+      "title": "The work beneath the decks",
+      "kicker": "TITANIC",
+      "displayNote": "ENGINES · BOILERS · WATCHES",
+      "narration": "The ship depended on hundreds of crew. Stewards kept the passenger decks running. In the stokeholds, firemen fed coal into the boilers. Above them, officers and lookouts worked in watches as the liner crossed the ocean.",
+      "visualDescription": "Wide maritime reconstruction. Ocean liner carries the scene: the work beneath the decks.",
+      "duration": 16.233333333333334,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide maritime reconstruction",
+        "cameraAngle": "Water-level broadside",
+        "lighting": "Warm windows against a cold silhouette",
+        "colorPalette": [
+          "#0a1320",
+          "#345461",
+          "#d4bd91"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near water and reflected light",
+        "midground": "Ocean liner",
+        "background": "Horizon and distant cloud",
+        "visualAssets": [
+          "Original animated ship reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "ship"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The original report describes the engine rooms, stokeholds, and machinery."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Maiden Voyage",
+        "tempo": 1.04,
+        "cue": "titanic/creak.m4a"
+      }
+    },
+    {
+      "sceneId": "westbound",
+      "chapter": "02 / The Maiden Voyage",
+      "historical": {
+        "kind": "ocean",
+        "stage": 0
+      },
+      "title": "Into the open Atlantic",
+      "kicker": "TITANIC",
+      "displayNote": "WESTBOUND · APRIL 1912",
+      "narration": "Once Ireland fell astern, the passengers had open water ahead of them. For days the ship held a westward course. On Sunday, the fourteenth of April, wireless messages began to describe ice lying across that passage.",
+      "visualDescription": "Wide ocean plate. Silhouette or wake carries the scene: into the open atlantic.",
+      "duration": 16.166666666666668,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide ocean plate",
+        "cameraAngle": "Low horizon",
+        "lighting": "Cold horizon light across dark water",
+        "colorPalette": [
+          "#091521",
+          "#334e60",
+          "#b5d2d9"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Slow bands of moving water",
+        "midground": "Silhouette or wake",
+        "background": "Open Atlantic and haze",
+        "visualAssets": [
+          "Original animated ocean reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Course and eventual destination follow the route record."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Maiden Voyage",
+        "tempo": 1.04,
+        "cue": "titanic/ocean.m4a"
+      }
+    },
+    {
+      "sceneId": "warnings",
+      "chapter": "03 / The Iceberg",
+      "historical": {
+        "kind": "route",
+        "stage": 1
+      },
+      "title": "Ice on the route",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "14 APRIL 1912 · NORTH ATLANTIC",
+      "narration": "Ships reported icebergs and fields of ice. The messages gave positions, and several reached Titanic's bridge. Together, the warnings placed ice in the ocean she was approaching.",
+      "visualDescription": "Animated route chart. North Atlantic graticule carries the scene: ice on the route.",
+      "duration": 14.233333333333333,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated route chart",
+        "cameraAngle": "Plan view",
+        "lighting": "Amber route lines with cool coastlines",
+        "colorPalette": [
+          "#0a1923",
+          "#315467",
+          "#e1bb80"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Route and waypoint labels",
+        "midground": "North Atlantic graticule",
+        "background": "Chart plate and vignette",
+        "visualAssets": [
+          "Original animated route reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "warnings"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The British inquiry reproduces the day's incoming ice reports."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Iceberg",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "wireless",
+      "chapter": "03 / The Iceberg",
+      "historical": {
+        "kind": "timeline",
+        "stage": 0
+      },
+      "title": "A busy wireless room",
+      "kicker": "TITANIC",
+      "displayNote": "PASSENGER TRAFFIC AND ICE REPORTS",
+      "narration": "Titanic's wireless operators also handled passengers' messages. A particularly detailed warning from Mesaba never reached the bridge. Late that night, Californian reported she had stopped in ice. By then, the ships were working on different priorities.",
+      "visualDescription": "Animated historical timeline. Time axis and event dates carries the scene: a busy wireless room.",
+      "duration": 18.2,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated historical timeline",
+        "cameraAngle": "Orthographic",
+        "lighting": "Amber tick marks against a dark chart",
+        "colorPalette": [
+          "#091722",
+          "#2b4b5d",
+          "#dfbc86"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Moving indicator and active label",
+        "midground": "Time axis and event dates",
+        "background": "Instrument grid and ocean plate",
+        "visualAssets": [
+          "Original animated timeline reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "warnings"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry distinguishes the earlier warnings from the late Mesaba and Californian messages."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Iceberg",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "dark-water",
+      "chapter": "03 / The Iceberg",
+      "historical": {
+        "kind": "ocean",
+        "stage": 1
+      },
+      "title": "A dark sea",
+      "kicker": "TITANIC",
+      "displayNote": "LATE EVENING · 14 APRIL",
+      "narration": "The night was clear, with no moon to light the horizon. The sea was unusually smooth. There was little swell to break against the base of an iceberg and make it easier for a lookout to distinguish.",
+      "visualDescription": "Wide ocean plate. Silhouette or wake carries the scene: a dark sea.",
+      "duration": 14.633333333333333,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide ocean plate",
+        "cameraAngle": "Low horizon",
+        "lighting": "Cold horizon light across dark water",
+        "colorPalette": [
+          "#091521",
+          "#334e60",
+          "#b5d2d9"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Slow bands of moving water",
+        "midground": "Silhouette or wake",
+        "background": "Open Atlantic and haze",
+        "visualAssets": [
+          "Original animated ocean reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "weather",
+        "collision"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry records a dark, clear, moonless night and a very smooth sea."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Iceberg",
+        "tempo": 1.04,
+        "cue": "titanic/wind.m4a"
+      }
+    },
+    {
+      "sceneId": "lookout",
+      "chapter": "03 / The Iceberg",
+      "historical": {
+        "kind": "collision",
+        "stage": 0
+      },
+      "title": "Ice directly ahead",
+      "kicker": "TITANIC",
+      "displayNote": "THE LOOKOUTS · 23:40 APPROX.",
+      "narration": "From the crow's nest, the lookouts saw ice ahead. The warning went to the bridge, and the ship began to turn. The interval between sighting the iceberg and reaching it was measured in seconds.",
+      "visualDescription": "Close reconstruction. Liner and iceberg silhouettes carries the scene: ice directly ahead.",
+      "duration": 14.233333333333333,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Close reconstruction",
+        "cameraAngle": "Low side angle",
+        "lighting": "Light catches the fractured edge of the iceberg",
+        "colorPalette": [
+          "#0b1723",
+          "#355971",
+          "#b9d8e6"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near wave bands",
+        "midground": "Liner and iceberg silhouettes",
+        "background": "Dark sea and haze",
+        "visualAssets": [
+          "Original animated collision reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The British inquiry records the lookout warning, the bell and the movement to avoid the berg."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Iceberg",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "contact",
+      "chapter": "03 / The Iceberg",
+      "historical": {
+        "kind": "collision",
+        "stage": 1
+      },
+      "title": "A glancing blow",
+      "kicker": "TITANIC",
+      "displayNote": "23:40 · SHIP'S TIME",
+      "narration": "At about eleven forty at night, the iceberg scraped along the starboard side. The contact was brief. Below the waterline, damage extended far enough along the forward hull to let water into several compartments.",
+      "visualDescription": "Close reconstruction. Liner and iceberg silhouettes carries the scene: a glancing blow.",
+      "duration": 15.8,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Close reconstruction",
+        "cameraAngle": "Low side angle",
+        "lighting": "Light catches the fractured edge of the iceberg",
+        "colorPalette": [
+          "#0b1723",
+          "#355971",
+          "#b9d8e6"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near wave bands",
+        "midground": "Liner and iceberg silhouettes",
+        "background": "Dark sea and haze",
+        "visualAssets": [
+          "Original animated collision reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "collision",
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The approximate time is corroborated; the report describes damage along the starboard side below water."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Iceberg",
+        "tempo": 1.04,
+        "cue": "titanic/impact.m4a"
+      }
+    },
+    {
+      "sceneId": "first-ingress",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "flooding",
+        "stage": 1
+      },
+      "title": "The first minutes",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "23:40 · COLLISION",
+      "narration": "Water poured into forward spaces, including a boiler room. Men below deck could see what the impact had done long before many people above them understood. Watertight doors closed, but the flooding already extended across multiple sections.",
+      "visualDescription": "Cutaway reconstruction. Compartment walls and decks carries the scene: the first minutes.",
+      "duration": 17.1,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway reconstruction",
+        "cameraAngle": "Outer hull in profile",
+        "lighting": "Cold diagram lines, warm hull and rising blue water",
+        "colorPalette": [
+          "#0b1a26",
+          "#315b70",
+          "#c3d8df"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Water fill",
+        "midground": "Compartment walls and decks",
+        "background": "Drawing grid",
+        "visualAssets": [
+          "Original animated flooding reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry records heavy early flooding in forward spaces, including boiler room six."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": "titanic/creak.m4a"
+      }
+    },
+    {
+      "sceneId": "the-bow",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "flooding",
+        "stage": 2
+      },
+      "title": "As the bow settles",
+      "kicker": "TITANIC",
+      "displayNote": "AFTER IMPACT · PROGRESSIVE FLOODING",
+      "narration": "With the bow settling, water could rise above the top of a bulkhead and pour into the next section. Each flooded space pulled the ship lower. The pumps could not keep pace with that progression.",
+      "visualDescription": "Cutaway reconstruction. Compartment walls and decks carries the scene: as the bow settles.",
+      "duration": 14.833333333333334,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Cutaway reconstruction",
+        "cameraAngle": "Outer hull in profile",
+        "lighting": "Cold diagram lines, warm hull and rising blue water",
+        "colorPalette": [
+          "#0b1a26",
+          "#315b70",
+          "#c3d8df"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Water fill",
+        "midground": "Compartment walls and decks",
+        "background": "Drawing grid",
+        "visualAssets": [
+          "Original animated flooding reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "damage"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The investigation explains water passing over bulkheads into subsequent spaces."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "distress",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "timeline",
+        "stage": 1
+      },
+      "title": "A call in the night",
+      "kicker": "TITANIC",
+      "displayNote": "AFTER MIDNIGHT · DISTRESS SIGNALS",
+      "narration": "After midnight, the wireless operators sent distress calls and gave a position. They used the older signal, C Q D, and also sent S O S. A ship that could hear them still had to reach them.",
+      "visualDescription": "Animated historical timeline. Time axis and event dates carries the scene: a call in the night.",
+      "duration": 14.733333333333333,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated historical timeline",
+        "cameraAngle": "Orthographic",
+        "lighting": "Amber tick marks against a dark chart",
+        "colorPalette": [
+          "#091722",
+          "#2b4b5d",
+          "#dfbc86"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Moving indicator and active label",
+        "midground": "Time axis and event dates",
+        "background": "Instrument grid and ocean plate",
+        "visualAssets": [
+          "Original animated timeline reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "assist",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry and museum chronology record CQD and SOS. Their exact wireless times are not identical."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "answer",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "timeline",
+        "stage": 2
+      },
+      "title": "A ship answers",
+      "kicker": "TITANIC",
+      "displayNote": "ABOUT 00:25 · CARPATHIA RESPONDS",
+      "narration": "One of the ships that answered was Carpathia. Her captain, Arthur Rostron, turned towards the distress position and ordered full speed. There was ice between the two ships, and the distance could not be crossed quickly enough.",
+      "visualDescription": "Animated historical timeline. Time axis and event dates carries the scene: a ship answers.",
+      "duration": 15.3,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated historical timeline",
+        "cameraAngle": "Orthographic",
+        "lighting": "Amber tick marks against a dark chart",
+        "colorPalette": [
+          "#091722",
+          "#2b4b5d",
+          "#dfbc86"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Moving indicator and active label",
+        "midground": "Time axis and event dates",
+        "background": "Instrument grid and ocean plate",
+        "visualAssets": [
+          "Original animated timeline reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "rescue",
+        "imo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The IMO gives about 00:25 for receipt; the rescue report records Rostron turning immediately."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "capacity",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 0
+      },
+      "title": "Too few places",
+      "kicker": "TITANIC",
+      "displayNote": "20 BOATS · 1,178 PLACES",
+      "narration": "Titanic carried twenty boats, including four collapsibles. On paper, they had room for fewer than twelve hundred people. More than two thousand were aboard. Even a perfectly organised launch could never have carried everyone away.",
+      "visualDescription": "Maritime reconstruction. Lifeboats and distant silhouettes carries the scene: too few places.",
+      "duration": 17,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Maritime reconstruction",
+        "cameraAngle": "Low from the boat or dockside",
+        "lighting": "Small hulls picked out in cold light",
+        "colorPalette": [
+          "#0d1923",
+          "#3a5660",
+          "#e0cfaa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Oars and near water",
+        "midground": "Lifeboats and distant silhouettes",
+        "background": "Quiet horizon",
+        "visualAssets": [
+          "Original animated lifeboat reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "boats",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Twenty boats including four collapsibles; nominal capacity 1,178 as recorded by the museum."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "launch",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 1
+      },
+      "title": "Lowering the boats",
+      "kicker": "TITANIC",
+      "displayNote": "ABOUT 00:45 · EARLY LAUNCHES",
+      "narration": "As crews uncovered and swung out the boats, passengers were urged to leave the liner. Some of the early boats went down with places still empty. It was hard to step into a small boat in the dark.",
+      "visualDescription": "Maritime reconstruction. Lifeboats and distant silhouettes carries the scene: lowering the boats.",
+      "duration": 15.033333333333333,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Maritime reconstruction",
+        "cameraAngle": "Low from the boat or dockside",
+        "lighting": "Small hulls picked out in cold light",
+        "colorPalette": [
+          "#0d1923",
+          "#3a5660",
+          "#e0cfaa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Oars and near water",
+        "midground": "Lifeboats and distant silhouettes",
+        "background": "Quiet horizon",
+        "visualAssets": [
+          "Original animated lifeboat reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "launch"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The report describes early launch order and counts at embarkation."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": "titanic/creak.m4a"
+      }
+    },
+    {
+      "sceneId": "access",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 2
+      },
+      "title": "Getting to the boat deck",
+      "kicker": "TITANIC",
+      "displayNote": "EVACUATION · BOAT DECK",
+      "narration": "Women and children were given priority, though officers applied the instruction differently. People starting on lower decks had farther to go and a less familiar route. The survival figures show how unequal the chances of reaching safety were.",
+      "visualDescription": "Maritime reconstruction. Lifeboats and distant silhouettes carries the scene: getting to the boat deck.",
+      "duration": 16.8,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Maritime reconstruction",
+        "cameraAngle": "Low from the boat or dockside",
+        "lighting": "Small hulls picked out in cold light",
+        "colorPalette": [
+          "#0d1923",
+          "#3a5660",
+          "#e0cfaa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Oars and near water",
+        "midground": "Lifeboats and distant silhouettes",
+        "background": "Quiet horizon",
+        "visualAssets": [
+          "Original animated lifeboat reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "third",
+        "counts",
+        "launch"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry discusses access from third class; the recorded survival rates differ sharply by class."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "last-boats",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "timeline",
+        "stage": 4
+      },
+      "title": "The water reaches the deck",
+      "kicker": "TITANIC",
+      "displayNote": "AFTER 02:00 · FINAL BOATS",
+      "narration": "As the bow sank deeper, the last boats were still being dealt with. Two collapsibles floated free as the ship went down. By then, people who had found no place in a boat were left on the liner.",
+      "visualDescription": "Animated historical timeline. Time axis and event dates carries the scene: the water reaches the deck.",
+      "duration": 14.366666666666667,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated historical timeline",
+        "cameraAngle": "Orthographic",
+        "lighting": "Amber tick marks against a dark chart",
+        "colorPalette": [
+          "#091722",
+          "#2b4b5d",
+          "#dfbc86"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Moving indicator and active label",
+        "midground": "Time axis and event dates",
+        "background": "Instrument grid and ocean plate",
+        "visualAssets": [
+          "Original animated timeline reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "launch",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The inquiry documents the last collapsible boats and the final stages of the evacuation."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "sinking",
+      "chapter": "04 / The Final Two Hours and Forty Minutes",
+      "historical": {
+        "kind": "ship",
+        "stage": 5
+      },
+      "title": "Two twenty",
+      "kicker": "TITANIC",
+      "displayNote": "02:20 · 15 APRIL 1912",
+      "narration": "At about two twenty, Titanic sank. The wreck would later show that the ship had broken apart. Two hours and forty minutes had passed since contact with the ice. In the darkness, those in the water needed immediate help.",
+      "visualDescription": "Wide maritime reconstruction. Ocean liner carries the scene: two twenty.",
+      "duration": 16.133333333333333,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide maritime reconstruction",
+        "cameraAngle": "Water-level broadside",
+        "lighting": "Warm windows against a cold silhouette",
+        "colorPalette": [
+          "#0a1320",
+          "#345461",
+          "#d4bd91"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near water and reflected light",
+        "midground": "Ocean liner",
+        "background": "Horizon and distant cloud",
+        "visualAssets": [
+          "Original animated ship reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "clock",
+        "explore"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The museum chronology gives 02:20; wreck surveys show separated bow and stern sections."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Final Two Hours and Forty Minutes",
+        "tempo": 1.04,
+        "cue": "titanic/impact.m4a"
+      }
+    },
+    {
+      "sceneId": "cold",
+      "chapter": "05 / Survival",
+      "historical": {
+        "kind": "lifeboat",
+        "stage": 3
+      },
+      "title": "After the lights",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "LIFEBOATS · BEFORE DAWN",
+      "narration": "The people in the boats could hear those in the water. In the near freezing sea, exposure could kill quickly. For the people already afloat, darkness and the fear of swamping complicated any decision to row back.",
+      "visualDescription": "Maritime reconstruction. Lifeboats and distant silhouettes carries the scene: after the lights.",
+      "duration": 15.033333333333333,
+      "cameraMovement": "zoom-in",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Maritime reconstruction",
+        "cameraAngle": "Low from the boat or dockside",
+        "lighting": "Small hulls picked out in cold light",
+        "colorPalette": [
+          "#0d1923",
+          "#3a5660",
+          "#e0cfaa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Oars and near water",
+        "midground": "Lifeboats and distant silhouettes",
+        "background": "Quiet horizon",
+        "visualAssets": [
+          "Original animated lifeboat reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "us-inquiry",
+        "imo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The American inquiry describes the boats after the sinking; the IMO notes deadly water temperatures."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Survival",
+        "tempo": 1.04,
+        "cue": "titanic/wind.m4a"
+      }
+    },
+    {
+      "sceneId": "look-for-survivors",
+      "chapter": "05 / Survival",
+      "historical": {
+        "kind": "archive",
+        "stage": 1
+      },
+      "title": "The boats in daylight",
+      "kicker": "TITANIC",
+      "displayNote": "15 APRIL · RESCUE PHOTOGRAPH",
+      "narration": "Fifth Officer Harold Lowe took a boat back to look for survivors. This photograph was taken later, after daylight, as his boat towed a collapsible towards Carpathia. It records the rescue in the small craft themselves.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: the boats in daylight.",
+      "duration": 15.933333333333334,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/lifeboats.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/lifeboats.jpg",
+        "credit": "Louis Ogden · U.S. National Archives",
+        "license": "Public domain",
+        "objectPosition": "52% 59%"
+      },
+      "sourceIds": [
+        "launch",
+        "photo-boats"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Evidence photograph from the rescue, not an image of the night evacuation."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Survival",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "carpathia",
+      "chapter": "05 / Survival",
+      "historical": {
+        "kind": "ship",
+        "stage": 3
+      },
+      "title": "Carpathia among the ice",
+      "kicker": "TITANIC",
+      "displayNote": "04:10 APPROX. · FIRST BOAT RECOVERED",
+      "narration": "At about four ten in the morning, Carpathia picked up the first boat. Ice still surrounded the rescue ship. Its crew recovered boats scattered over several miles until about eight.",
+      "visualDescription": "Wide maritime reconstruction. Ocean liner carries the scene: carpathia among the ice.",
+      "duration": 14.1,
+      "cameraMovement": "zoom-out",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide maritime reconstruction",
+        "cameraAngle": "Water-level broadside",
+        "lighting": "Warm windows against a cold silhouette",
+        "colorPalette": [
+          "#0a1320",
+          "#345461",
+          "#d4bd91"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Near water and reflected light",
+        "midground": "Ocean liner",
+        "background": "Horizon and distant cloud",
+        "visualAssets": [
+          "Original animated ship reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "rescue"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The British inquiry records Boat Two recovered at about 04:10 and the search continuing until 08:00."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Survival",
+        "tempo": 1.04,
+        "cue": "titanic/horn.m4a"
+      }
+    },
+    {
+      "sceneId": "counts",
+      "chapter": "05 / Survival",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "title": "The survivors",
+      "kicker": "TITANIC",
+      "displayNote": "ABOUT 700 SURVIVED · ABOUT 1,500 DIED",
+      "narration": "About seven hundred people survived. Around fifteen hundred died. The historical counts differ, but the imbalance is unmistakable. For those brought aboard Carpathia, survival came with the uncertainty of who else had made it out.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: the survivors.",
+      "duration": 16.966666666666665,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/survivors.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/survivors.jpg",
+        "credit": "Bain News Service · Library of Congress",
+        "license": "No known restrictions on publication",
+        "objectPosition": "52% 42%"
+      },
+      "sourceIds": [
+        "rescue",
+        "counts",
+        "clock"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Records differ on exact totals. The rounded estimates reflect the range in the historical sources."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Survival",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "new-york",
+      "chapter": "05 / Survival",
+      "historical": {
+        "kind": "archive",
+        "stage": 2
+      },
+      "title": "News reaches the shore",
+      "kicker": "TITANIC",
+      "displayNote": "18 APRIL 1912 · CARPATHIA IN NEW YORK",
+      "narration": "Carpathia arrived in New York on the eighteenth of April. By then, newspapers had carried estimates that changed as information reached shore. Families waiting for names still had to discover whether an absence was permanent.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: news reaches the shore.",
+      "duration": 16,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/headlines.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/headlines.jpg",
+        "credit": "The New York Times · 16 April 1912",
+        "license": "Public domain",
+        "objectPosition": "50% 22%"
+      },
+      "sourceIds": [
+        "clock",
+        "press"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "Carpathia arrived on 18 April. The earlier newspaper shown carries provisional figures."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Survival",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "search",
+      "chapter": "06 / Discovery in the Deep",
+      "historical": {
+        "kind": "wreck",
+        "stage": 0
+      },
+      "title": "The search below",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "1985 · JOINT FRENCH AND AMERICAN EXPEDITION",
+      "narration": "For more than seventy years the wreck's position remained unknown. In nineteen eighty-five, a French and American expedition searched the sea floor. The teams used sonar and then towed cameras, looking for a trail of debris.",
+      "visualDescription": "Underwater reconstruction. Survey equipment and wreck details carries the scene: the search below.",
+      "duration": 16,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Underwater reconstruction",
+        "cameraAngle": "Descending survey or oblique sea-floor view",
+        "lighting": "Moving searchlight in a dark blue field",
+        "colorPalette": [
+          "#051820",
+          "#285866",
+          "#aacecf"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Suspended particles",
+        "midground": "Survey equipment and wreck details",
+        "background": "Sediment and deep water",
+        "visualAssets": [
+          "Original animated wreck reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "discovery"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "WHOI identifies the French and American partners and documents the sonar and camera search."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Discovery in the Deep",
+        "tempo": 1.04,
+        "cue": "titanic/deep.m4a"
+      }
+    },
+    {
+      "sceneId": "boiler",
+      "chapter": "06 / Discovery in the Deep",
+      "historical": {
+        "kind": "wreck",
+        "stage": 1
+      },
+      "title": "An unmistakable shape",
+      "kicker": "TITANIC",
+      "displayNote": "1 SEPTEMBER 1985 · BOILER IDENTIFIED",
+      "narration": "Early on the first of September, the cameras passed over a boiler. Its shape told the team what they had found. Titanic lay southeast of Newfoundland, nearly three thousand eight hundred metres beneath the surface.",
+      "visualDescription": "Underwater reconstruction. Survey equipment and wreck details carries the scene: an unmistakable shape.",
+      "duration": 14.933333333333334,
+      "cameraMovement": "drift",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Underwater reconstruction",
+        "cameraAngle": "Descending survey or oblique sea-floor view",
+        "lighting": "Moving searchlight in a dark blue field",
+        "colorPalette": [
+          "#051820",
+          "#285866",
+          "#aacecf"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Suspended particles",
+        "midground": "Survey equipment and wreck details",
+        "background": "Sediment and deep water",
+        "visualAssets": [
+          "Original animated wreck reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "discovery",
+        "noaa"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "WHOI and NOAA record the boiler identification early on 1 September."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Discovery in the Deep",
+        "tempo": 1.04,
+        "cue": "titanic/deep.m4a"
+      }
+    },
+    {
+      "sceneId": "wreck",
+      "chapter": "06 / Discovery in the Deep",
+      "historical": {
+        "kind": "wreck",
+        "stage": 2
+      },
+      "title": "Two sections on the sea floor",
+      "kicker": "TITANIC",
+      "displayNote": "WRECK SITE · APPROX. 3,800 METRES DEEP",
+      "narration": "The bow and stern were lying apart, with debris between them. That distribution put physical evidence beside the survivors' accounts. A site once known through ships' positions and testimony could now be examined directly.",
+      "visualDescription": "Underwater reconstruction. Survey equipment and wreck details carries the scene: two sections on the sea floor.",
+      "duration": 15.833333333333334,
+      "cameraMovement": "zoom-in",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Underwater reconstruction",
+        "cameraAngle": "Descending survey or oblique sea-floor view",
+        "lighting": "Moving searchlight in a dark blue field",
+        "colorPalette": [
+          "#051820",
+          "#285866",
+          "#aacecf"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Suspended particles",
+        "midground": "Survey equipment and wreck details",
+        "background": "Sediment and deep water",
+        "visualAssets": [
+          "Original animated wreck reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "noaa",
+        "explore"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The documented bow and stern sections and intervening debris field anchor the schematic."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Discovery in the Deep",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "return",
+      "chapter": "06 / Discovery in the Deep",
+      "historical": {
+        "kind": "wreck",
+        "stage": 3
+      },
+      "title": "Back to the wreck",
+      "kicker": "TITANIC",
+      "displayNote": "1986 · ALVIN AND JASON JUNIOR",
+      "narration": "The next year, the research team returned with the submersible Alvin and a small remotely operated camera vehicle called Jason Junior. The cameras revealed details that earlier surveys could not.",
+      "visualDescription": "Underwater reconstruction. Survey equipment and wreck details carries the scene: back to the wreck.",
+      "duration": 14.633333333333333,
+      "cameraMovement": "pan-right",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Underwater reconstruction",
+        "cameraAngle": "Descending survey or oblique sea-floor view",
+        "lighting": "Moving searchlight in a dark blue field",
+        "colorPalette": [
+          "#051820",
+          "#285866",
+          "#aacecf"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Suspended particles",
+        "midground": "Survey equipment and wreck details",
+        "background": "Sediment and deep water",
+        "visualAssets": [
+          "Original animated wreck reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "return"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "WHOI records Alvin and Jason Jr. imaging the site in 1986."
+        }
+      ],
+      "soundDesign": {
+        "mood": "Discovery in the Deep",
+        "tempo": 1.04,
+        "cue": "titanic/deep.m4a"
+      }
+    },
+    {
+      "sceneId": "inquiries",
+      "chapter": "07 / The Legacy",
+      "historical": {
+        "kind": "archive",
+        "stage": 0
+      },
+      "title": "Questions on shore",
+      "kicker": "CHAPTER OPENING",
+      "displayNote": "1912 · BRITISH AND AMERICAN INQUIRIES",
+      "narration": "The British and American investigations gathered testimony about the warnings, the ship's speed, the boats and the rescue. Their records preserve accounts that sometimes disagree. What they made public was the chain of decisions that preceded the loss.",
+      "visualDescription": "Archival photograph. Mounted archive print carries the scene: questions on shore.",
+      "duration": 17.566666666666666,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Archival photograph",
+        "cameraAngle": "Original camera view",
+        "lighting": "Warm greys in a dark exhibit",
+        "colorPalette": [
+          "#111820",
+          "#4c5559",
+          "#d8c8aa"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Frame, edge light and caption",
+        "midground": "Mounted archive print",
+        "background": "Fine ruled exhibit backing",
+        "visualAssets": [
+          "titanic/headlines.jpg"
+        ]
+      },
+      "image": {
+        "path": "titanic/headlines.jpg",
+        "credit": "The New York Times · 16 April 1912",
+        "license": "Public domain",
+        "objectPosition": "50% 22%"
+      },
+      "sourceIds": [
+        "inquiry",
+        "us-inquiry"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The British and U.S. inquiries heard witnesses and examined navigation, safety and rescue."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Legacy",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "safety",
+      "chapter": "07 / The Legacy",
+      "historical": {
+        "kind": "timeline",
+        "stage": 5
+      },
+      "title": "Safety of life at sea",
+      "kicker": "TITANIC",
+      "displayNote": "1914 · FIRST SOLAS CONVENTION",
+      "narration": "In nineteen fourteen, a new international convention addressed safety of life at sea. The disaster sharpened attention to lifeboat capacity, wireless watches and ice patrols. The lessons could now reach ships beyond the company that had lost Titanic.",
+      "visualDescription": "Animated historical timeline. Time axis and event dates carries the scene: safety of life at sea.",
+      "duration": 17.933333333333334,
+      "cameraMovement": "dolly",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated historical timeline",
+        "cameraAngle": "Orthographic",
+        "lighting": "Amber tick marks against a dark chart",
+        "colorPalette": [
+          "#091722",
+          "#2b4b5d",
+          "#dfbc86"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Moving indicator and active label",
+        "midground": "Time axis and event dates",
+        "background": "Instrument grid and ocean plate",
+        "visualAssets": [
+          "Original animated timeline reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "imo"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The IMO dates the first SOLAS convention to 1914 and describes the reforms."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Legacy",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "patrol",
+      "chapter": "07 / The Legacy",
+      "historical": {
+        "kind": "route",
+        "stage": 2
+      },
+      "title": "A line marked by experience",
+      "kicker": "TITANIC",
+      "displayNote": "NORTH ATLANTIC · INTERNATIONAL ICE PATROL",
+      "narration": "The International Ice Patrol gave ships a way to track the moving danger that Titanic had met in darkness. Reporting positions became part of a shared system. Ships could use those reports to plan safer routes.",
+      "visualDescription": "Animated route chart. North Atlantic graticule carries the scene: a line marked by experience.",
+      "duration": 15.966666666666667,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Animated route chart",
+        "cameraAngle": "Plan view",
+        "lighting": "Amber route lines with cool coastlines",
+        "colorPalette": [
+          "#0a1923",
+          "#315467",
+          "#e1bb80"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Route and waypoint labels",
+        "midground": "North Atlantic graticule",
+        "background": "Chart plate and vignette",
+        "visualAssets": [
+          "Original animated route reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "imo",
+        "ice-patrol"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "USCG records the early ice patrol and its formalisation through SOLAS."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Legacy",
+        "tempo": 1.04,
+        "cue": null
+      }
+    },
+    {
+      "sceneId": "memory",
+      "chapter": "07 / The Legacy",
+      "historical": {
+        "kind": "ocean",
+        "stage": 4
+      },
+      "title": "What remains",
+      "kicker": "TITANIC",
+      "displayNote": "IN MEMORY OF THOSE LOST",
+      "narration": "Titanic is still remembered for what people made possible in Belfast. The lasting measure of the ship, though, is human. More than two thousand people went to sea together. For most of them, that crossing never ended.",
+      "visualDescription": "Wide ocean plate. Silhouette or wake carries the scene: what remains.",
+      "duration": 15.833333333333334,
+      "cameraMovement": "pan-left",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide ocean plate",
+        "cameraAngle": "Low horizon",
+        "lighting": "Cold horizon light across dark water",
+        "colorPalette": [
+          "#091521",
+          "#334e60",
+          "#b5d2d9"
+        ],
+        "composition": "Place the subject in the right two-thirds. Keep the lower caption band clear.",
+        "foreground": "Slow bands of moving water",
+        "midground": "Silhouette or wake",
+        "background": "Open Atlantic and haze",
+        "visualAssets": [
+          "Original animated ocean reconstruction or diagram"
+        ]
+      },
+      "image": null,
+      "sourceIds": [
+        "voyage",
+        "counts"
+      ],
+      "factChecks": [
+        {
+          "status": "verified",
+          "note": "The final passage connects the documented voyage with the recorded loss; no dialogue is reconstructed."
+        }
+      ],
+      "soundDesign": {
+        "mood": "The Legacy",
+        "tempo": 1.04,
+        "cue": "titanic/ocean.m4a"
+      }
+    }
+  ]
+}

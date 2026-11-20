@@ -4,6 +4,7 @@ import {ArchiveAtmosphere, OceanBackdrop, SceneForeground, SceneSubject, scenePa
 import {FADE_FRAMES, FPS} from "./timeline.mjs";
 import type {DocumentaryProps, Scene, SceneTiming} from "./types";
 import {SportsGraphic, StadiumAtmosphere} from "./sports";
+import {DocumentarySubtitles, TitanicPicture} from "./titanic";
 
 function voiceDuck(frame: number, spans: {start: number; end: number}[], rest: number, speaking: number) {
   const ramp = 6;
@@ -13,8 +14,8 @@ function voiceDuck(frame: number, spans: {start: number; end: number}[], rest: n
   return rest + (speaking - rest) * weight;
 }
 
-export function CinematicScene({scene, timing, cover, hold = false}: {
-  scene: Scene; timing: SceneTiming; cover: boolean; hold?: boolean;
+export function CinematicScene({scene, timing, cover, illustrationLabel, subtitle, hold = false}: {
+  scene: Scene; timing: SceneTiming; cover: boolean; illustrationLabel: string; subtitle?: string; hold?: boolean;
 }) {
   const {durationInFrames, audio, captions} = timing;
   const palette = scenePalette(scene);
@@ -22,6 +23,14 @@ export function CinematicScene({scene, timing, cover, hold = false}: {
   const archive = scene.visualType === "abstract" && Boolean(scene.image);
   const sports = Boolean(scene.chapter);
   const cue = scene.soundDesign?.cue;
+  if (scene.historical) {
+    return <AbsoluteFill style={{overflow: "hidden", fontFamily: '"Be Vietnam Pro", sans-serif', background: palette.dark}}>
+      <TitanicPicture scene={scene} duration={durationInFrames} hold={hold} palette={palette} cover={cover} subtitle={subtitle} />
+      {!hold && <DocumentarySubtitles captions={captions} />}
+      {!hold && audio && <Audio src={staticFile(audio)} />}
+      {!hold && cue && <Audio src={staticFile(cue)} volume={(frame) => voiceDuck(frame, captions, 0.22, 0.08)} />}
+    </AbsoluteFill>;
+  }
   return <AbsoluteFill style={{overflow: "hidden", fontFamily: '"Be Vietnam Pro", sans-serif', background: palette.dark}}>
     <ParallaxLayers preset={scene.cameraMovement} duration={durationInFrames} hold={hold} layers={[
       archive || sports ? <AbsoluteFill style={{background: `linear-gradient(136deg, ${palette.dark} 18%, ${palette.middle}85)`}} /> : <OceanBackdrop palette={palette} visual={scene.visualType} id={id} />,
@@ -42,7 +51,7 @@ export function CinematicScene({scene, timing, cover, hold = false}: {
     {scene.sportGraphic && <SportsGraphic graphic={scene.sportGraphic} accent={palette.light} />}
     <div style={{position: "absolute", right: 130, bottom: archive || sports ? 48 : 176, color: "#c2d3df", fontSize: 16, letterSpacing: "0.045em",
       textShadow: "0 2px 8px #020609", padding: "6px 12px", background: "#030916b0", borderRadius: 3}}>
-      {scene.image ? scene.image.credit : "Minh họa"}
+      {scene.image ? scene.image.credit : illustrationLabel}
     </div>
     {!hold && <SubtitleOverlay captions={captions} keywords={scene.keywords} />}
     {!hold && audio && <Audio src={staticFile(audio)} />}
@@ -52,6 +61,7 @@ export function CinematicScene({scene, timing, cover, hold = false}: {
 
 export function Documentary({storyboard, timing}: DocumentaryProps) {
   let from = 0;
+  const illustrationLabel = storyboard.language === "en" ? "Illustration" : "Minh họa";
   const total = timing.reduce((sum, scene) => sum + scene.durationInFrames, 0);
   const hasVoice = timing.some(({audio}) => audio);
   let audioStart = 0;
@@ -73,11 +83,13 @@ export function Documentary({storyboard, timing}: DocumentaryProps) {
       return <Sequence key={scene.sceneId} from={start} durationInFrames={current.durationInFrames} name={scene.title}>
         {fade > 0 && <Sequence from={0} durationInFrames={fade} name="Dissolve">
           <Sequence from={-(previous.durationInFrames - 1)}>
-            <CinematicScene scene={storyboard.scenes[index - 1]} timing={previous} cover={index === 1} hold />
+            <CinematicScene scene={storyboard.scenes[index - 1]} timing={previous} cover={index === 1}
+              illustrationLabel={illustrationLabel} subtitle={storyboard.subtitle} hold />
           </Sequence>
         </Sequence>}
         <SceneTransition frames={fade}>
-          <CinematicScene scene={scene} timing={current} cover={index === 0} />
+          <CinematicScene scene={scene} timing={current} cover={index === 0}
+            illustrationLabel={illustrationLabel} subtitle={storyboard.subtitle} />
         </SceneTransition>
       </Sequence>;
     })}

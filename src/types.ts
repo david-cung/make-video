@@ -1,9 +1,14 @@
 export type VisualType = "surface" | "trench" | "vents" | "brine" | "seep" | "whale" | "abyss" | "abstract";
 export type CameraPreset = "ken-burns" | "zoom-in" | "zoom-out" | "pan-left" | "pan-right" | "dolly" | "drift";
+export type HistoricalVisual = {
+  kind: "archive" | "ship" | "ocean" | "route" | "collision" | "flooding" | "timeline" | "lifeboat" | "wreck";
+  stage: number;
+};
 
 export interface Scene {
   sceneId: string;
   chapter?: string;
+  historical?: HistoricalVisual;
   portrait?: boolean;
   soundDesign?: {
     mood: string;
@@ -44,7 +49,8 @@ export interface Scene {
 export interface Storyboard {
   title: string;
   topic: string;
-  language: "vi";
+  subtitle?: string;
+  language: "en" | "vi";
   sources: {id: string; title: string; url: string}[];
   music: {path: string; credit: string; license: string} | null;
   scenes: Scene[];

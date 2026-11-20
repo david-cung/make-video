@@ -23,12 +23,12 @@ export async function generateStoryboard(topic, path, {duration = null, brief = 
   }
   const temp = join(dirname(path), `storyboard-${randomUUID()}.json`);
   const responseSchema = temp.replace(/\.json$/, ".schema.json");
-  const prompt = `Write a cinematic Vietnamese documentary about this quoted topic: ${JSON.stringify(topic)}.
+  const prompt = `Write a cinematic English-language documentary about this quoted topic: ${JSON.stringify(topic)}.
 Read AGENTS.md, storyboards/storyboard.schema.json, and the following project skills:
 ${skills.map((skill) => `.agents/skills/${skill}/SKILL.md`).join("\n")}
 Act in order as the scriptwriter, visual director, motion designer, and scene generator. Follow the output schema.
-Write ${duration && duration > 120 ? "enough scenes" : "6–10 scenes"} totaling ${duration === null ? "about 74" : "exactly " + duration} seconds, each 4–24 seconds, with a compelling first sentence timed to the first five seconds.
-Use concise, naturally spoken Vietnamese. Target about ${Math.round((duration ?? 74) * 2.6)} space-delimited words total. Read abbreviations and numbers aloud in the narration.
+Write ${duration !== null && (duration < 60 || duration > 120) ? "enough scenes" : "6–10 scenes"} totaling ${duration === null ? "about 74" : "exactly " + duration} seconds, each 4–24 seconds, with a compelling first sentence timed to the first five seconds.
+Set language to "en" and use concise, naturally spoken English. Target about ${Math.round((duration ?? 74) * 2.2)} words total. Spell out abbreviations and numbers as spoken in the narration.
 Use complete sentences, each at most 160 characters. Titles should be under 70 characters, kickers under 65 and display notes under 68.
 Design a distinct subject toward the right of each frame, a three-layer composition and exactly three hex colors in dark-to-light order.
 The visualType determines the preset illustration. Pick a matching preset for ocean scenes and use abstract for other topics.
@@ -54,6 +54,8 @@ ${brief ? "\nEditorial brief\n" + brief : ""}`;
   const model = env.CODEX_MODEL ? ["--model", env.CODEX_MODEL] : [];
   try {
     const schema = readJson(schemaPath);
+    schema.properties = Object.fromEntries(schema.required.map((key) => [key, schema.properties[key]]));
+    schema.properties.language.enum = ["en"];
     const scene = schema.properties.scenes.items;
     scene.properties = Object.fromEntries(scene.required.map((key) => [key, scene.properties[key]]));
     writeJson(responseSchema, schema);

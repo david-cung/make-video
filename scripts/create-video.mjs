@@ -4,15 +4,16 @@ import {availableParallelism} from "node:os";
 import {parseArgs} from "node:util";
 import {bundle} from "@remotion/bundler";
 import {openBrowser, renderMedia, renderStill, selectComposition} from "@remotion/renderer";
-import {COMPOSITION, FADE_FRAMES, FPS, HEIGHT, MAX_DOCUMENTARY_SECONDS, WIDTH} from "../src/timeline.mjs";
+import {COMPOSITION, FADE_FRAMES, FPS, HEIGHT, MIN_DOCUMENTARY_SECONDS, MAX_DOCUMENTARY_SECONDS, WIDTH, captionLines} from "../src/timeline.mjs";
 import {prepareAudio} from "./audio.mjs";
 import {generateStoryboard} from "./generate-storyboard.mjs";
 import {atomicWrite, audioDuration, capture, checkLocalAsset, command, ffmpeg, hash, probe, readJson, root, validateStoryboard, writeJson} from "./project.mjs";
 
-const sample = join(root, "storyboards/ocean.json");
+const sample = join(root, "storyboards/titanic-sample.json");
 const usage = `Usage: ./scripts/create-video.sh "Topic" [--output output/topic.mp4]
-       ./scripts/create-video.sh --storyboard storyboards/ocean.json [--require-voice]
-       Options: --duration SECONDS  --brief FILE  --silent  --prepare-only  --previews-only  --concurrency N  --force
+       ./scripts/create-video.sh --storyboard storyboards/titanic-sample.json [--require-voice]
+       Options: --duration SECONDS  --brief FILE  --voice bm_george|am_michael  --require-voice
+                --silent  --prepare-only  --previews-only  --concurrency N  --force
        Existing generated storyboards and measured narration are reused on retry.`;
 
 function assetCheck(storyboard) {
@@ -36,17 +37,24 @@ function srtTime(frame) {
 function exportCaptions(storyboard, timing, workDir) {
   const blocks = [];
   const script = [`# ${storyboard.title}`];
+  if (storyboard.subtitle) script.push(storyboard.subtitle);
+  const unit = storyboard.language === "en" ? "s" : "giây";
   let cursor = 0;
+  let section;
   for (const [index, scene] of timing.entries()) {
-    const {title, narration} = storyboard.scenes[index];
-    script.push(`## ${index + 1}. ${title} · ${(scene.durationInFrames / FPS).toFixed(2)} giây\n\n${narration}`);
+    const {title, narration, historical, chapter} = storyboard.scenes[index];
+    if (historical && chapter && chapter !== section) {
+      script.push(`## ${chapter}`);
+      section = chapter;
+    }
+    script.push(`${historical && chapter ? "###" : "##"} ${index + 1}. ${title} · ${(scene.durationInFrames / FPS).toFixed(2)} ${unit}\n\n${narration}`);
     for (const {text, start, end} of scene.captions) {
-      blocks.push(`${blocks.length + 1}\n${srtTime(cursor + start)} --> ${srtTime(cursor + end)}\n${text}`);
+      blocks.push(`${blocks.length + 1}\n${srtTime(cursor + start)} --> ${srtTime(cursor + end)}\n${historical ? captionLines(text) : text}`);
     }
     cursor += scene.durationInFrames;
   }
-  atomicWrite(join(workDir, "subtitles.vi.srt"), blocks.join("\n\n") + "\n");
-  atomicWrite(join(workDir, "script.vi.md"), script.join("\n\n") + "\n");
+  atomicWrite(join(workDir, `subtitles.${storyboard.language}.srt`), blocks.join("\n\n") + "\n");
+  atomicWrite(join(workDir, `script.${storyboard.language}.md`), script.join("\n\n") + "\n");
 }
 
 function blackFrameScan(path, frames) {
@@ -135,7 +143,7 @@ async function main() {
     allowPositionals: true,
     options: {
       storyboard: {type: "string"}, output: {type: "string"}, concurrency: {type: "string"},
-      duration: {type: "string"}, brief: {type: "string"},
+      duration: {type: "string"}, brief: {type: "string"}, voice: {type: "string"},
       silent: {type: "boolean"}, "require-voice": {type: "boolean"}, "prepare-only": {type: "boolean"},
       "previews-only": {type: "boolean"}, force: {type: "boolean"}, help: {type: "boolean", short: "h"},
     },
@@ -145,8 +153,8 @@ async function main() {
   const topic = positionals[0]?.trim();
   if (positionals.length && !topic) throw new Error("A topic cannot be blank.");
   const duration = options.duration === undefined ? null : Number(options.duration);
-  if (duration !== null && (!Number.isInteger(duration) || duration < 60 || duration > MAX_DOCUMENTARY_SECONDS)) {
-    throw new Error("--duration needs a whole number of seconds from 60 to 600.");
+  if (duration !== null && (!Number.isInteger(duration) || duration < MIN_DOCUMENTARY_SECONDS || duration > MAX_DOCUMENTARY_SECONDS)) {
+    throw new Error(`--duration needs a whole number of seconds from ${MIN_DOCUMENTARY_SECONDS} to ${MAX_DOCUMENTARY_SECONDS}.`);
   }
   if (options.brief && !topic) throw new Error("--brief needs a topic.");
   const brief = options.brief ? readFileSync(resolve(options.brief), "utf8") : "";
@@ -171,7 +179,8 @@ async function main() {
   await command(process.execPath, [join(root, "node_modules/typescript/bin/tsc"), "--noEmit"]);
   console.log(`[PREFLIGHT] TypeScript, schema and assets passed. ${storyboard.scenes.length} scenes · ${plannedFrames / FPS}s planned.`);
   const {timing, ...voice} = await prepareAudio(storyboard, workDir, {
-    silent: options.silent, requireVoice: options["require-voice"], targetFrames: duration === null ? null : duration * FPS,
+    silent: options.silent, requireVoice: options["require-voice"], voice: options.voice,
+    targetFrames: duration === null ? null : duration * FPS,
   });
   const props = {storyboard: options.silent ? {...storyboard, music: null} : storyboard, timing};
   const frames = timing.reduce((sum, scene) => sum + scene.durationInFrames, 0);
@@ -186,7 +195,7 @@ async function main() {
   if (options["prepare-only"]) return;
 
   const serveUrl = await bundle({entryPoint: join(root, "src/index.tsx"), enableCaching: true});
-  const browser = await openBrowser("chrome");
+  const browser = await openBrowser("chrome", {browserExecutable: process.env.REMOTION_BROWSER_EXECUTABLE});
   try {
     const browserOptions = {serveUrl, inputProps: props, puppeteerInstance: browser};
     const composition = await selectComposition({...browserOptions, id: COMPOSITION});

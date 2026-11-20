@@ -1,4 +1,5 @@
 export const FPS = 30;
+export const MIN_DOCUMENTARY_SECONDS = 20;
 export const MAX_DOCUMENTARY_SECONDS = 600;
 export const WIDTH = 1920;
 export const HEIGHT = 1080;
@@ -10,6 +11,17 @@ export const TAIL_FRAMES = 15;
 
 export function splitSentences(narration) {
   return narration.match(/(?:\d+[.,](?=\d)|[^.!?])+[.!?]*|[.!?]+/gu)?.map((part) => part.trim()).filter(Boolean) ?? [];
+}
+
+export function captionLines(text) {
+  if (text.length <= 62 || !text.includes(" ")) return text;
+  let split = text.indexOf(" ");
+  for (let index = split; index < text.length; index++) {
+    if (text[index] === " " && Math.abs(index - text.length / 2) < Math.abs(split - text.length / 2)) {
+      split = index;
+    }
+  }
+  return text.slice(0, split) + "\n" + text.slice(split + 1);
 }
 
 export function silentTiming(storyboard) {

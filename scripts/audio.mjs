@@ -1,15 +1,17 @@
-import {existsSync, mkdirSync, realpathSync, renameSync, rmSync} from "node:fs";
-import {join} from "node:path";
+import {existsSync, mkdirSync, renameSync, rmSync, statSync} from "node:fs";
+import {join, resolve} from "node:path";
 import {FPS, GAP_FRAMES, LEAD_FRAMES, MAX_DOCUMENTARY_SECONDS, TAIL_FRAMES, silentTiming, splitSentences} from "../src/timeline.mjs";
 import {audioDuration, capture, command, ffmpeg, hash, publicDir, root, writeJson} from "./project.mjs";
 
 const seconds = (frames) => (frames / FPS).toFixed(7);
 const wavFormat = "aformat=sample_rates=48000:channel_layouts=mono";
+const voiceLanguages = {bm_george: "en-gb", am_michael: "en-us"};
+const kokoroVersion = "kokoro-onnx-0.6.1";
 
 function pythonExecutable() {
-  if (process.env.VIENEU_PYTHON) return process.env.VIENEU_PYTHON;
+  if (process.env.KOKORO_PYTHON) return process.env.KOKORO_PYTHON;
   const venv = join(root, ".venv", process.platform === "win32" ? "Scripts/python.exe" : "bin/python");
-  return existsSync(venv) ? realpathSync(venv) : process.platform === "win32" ? "python" : "python3";
+  return existsSync(venv) ? venv : process.platform === "win32" ? "python" : "python3";
 }
 
 function measuredFrames(path) {
@@ -85,31 +87,52 @@ function mixScene(paths, timing, temp) {
 export async function prepareAudio(storyboard, workDir, options) {
   const desired = silentTiming(storyboard);
   if (options.silent) return {status: "skipped", timing: desired, error: null};
-  const mode = process.env.VIENEU_MODE ?? "v3nano";
-  const voice = process.env.VIENEU_VOICE ?? (mode === "v3nano" ? "Minh Quân" : "Phạm Tuyên");
-  const sceneKeys = storyboard.scenes.map(({sceneId, narration, duration, soundDesign}) =>
-    [sceneId, narration, duration, ...(soundDesign?.tempo === undefined ? [] : [soundDesign.tempo])]);
-  const audioKey = hash(JSON.stringify([sceneKeys, mode, voice, "vieneu-3.8.4", ...(options.targetFrames ? [options.targetFrames] : [])]));
-  const run = `runs/${audioKey}`;
-  const audioDir = join(publicDir, run);
-  const segmentsDir = join(root, ".cache", "voice", hash(JSON.stringify([mode, voice, "vieneu-3.8.4"])));
-  mkdirSync(audioDir, {recursive: true});
-  const jobs = storyboard.scenes.map((scene) => splitSentences(scene.narration).map((text, index) => {
-    const id = `${scene.sceneId}-${index + 1}`;
-    return {id, text, path: join(segmentsDir, hash(text) + ".wav")};
-  }));
-  const pending = [...new Map(jobs.flat().map((job) => [job.path, job])).values()].filter(({path}) => {
-    if (!existsSync(path)) return true;
-    try { measuredFrames(path); return false; } catch { return true; }
-  });
+  const voice = options.voice ?? process.env.KOKORO_VOICE ?? "bm_george";
+  if (!Object.hasOwn(voiceLanguages, voice)) {
+    throw new Error(`Unsupported Kokoro voice "${voice}". Choose bm_george or am_michael.`);
+  }
+  const language = voiceLanguages[voice];
 
   try {
+    if (storyboard.language !== "en") {
+      throw new Error(`This Kokoro adapter supports English narration. Use an English storyboard or --silent for ${storyboard.language}.`);
+    }
+    const modelDir = resolve(process.env.KOKORO_MODEL_DIR ?? join(root, ".cache", "kokoro"));
+    const modelFiles = ["kokoro-v1.0.onnx", "voices-v1.0.bin"].map((name) => {
+      const path = join(modelDir, name);
+      const file = statSync(path, {throwIfNoEntry: false});
+      if (!file?.isFile() || !file.size) {
+        throw new Error(`Missing Kokoro model file ${path}. See the macOS setup in README.md.`);
+      }
+      return [path, file.size, file.mtimeMs];
+    });
+    const profile = [kokoroVersion, modelFiles, voice, language];
+    const sceneKeys = storyboard.scenes.map(({sceneId, narration, duration, soundDesign}) =>
+      [sceneId, narration, duration, soundDesign?.tempo ?? 1]);
+    const audioKey = hash(JSON.stringify([profile, sceneKeys, options.targetFrames]));
+    const run = `runs/${audioKey}`;
+    const audioDir = join(publicDir, run);
+    const segmentsDir = join(root, ".cache", "voice", hash(JSON.stringify(profile)));
+    const jobs = storyboard.scenes.map((scene) => splitSentences(scene.narration).map((text, index) => ({
+      id: `${scene.sceneId}-${index + 1}`, text, path: join(segmentsDir, hash(text) + ".wav"),
+    })));
+    const pending = [...new Map(jobs.flat().map((job) => [job.path, job])).values()].filter(({path}) => {
+      if (!existsSync(path)) return true;
+      try { measuredFrames(path); return false; } catch { return true; }
+    });
     if (pending.length) {
-      const jobFile = join(workDir, `vieneu-jobs-${process.pid}.json`);
+      const jobFile = join(workDir, `kokoro-jobs-${process.pid}.json`);
       writeJson(jobFile, pending);
-      await command(pythonExecutable(), ["-u", join(root, "scripts/synthesize-vieneu.py"), jobFile, "--mode", mode, "--voice", voice], {
-        env: {...process.env, PYTHONUTF8: "1", HF_HOME: process.env.HF_HOME ?? join(root, ".cache", "huggingface")},
-      });
+      try {
+        await command(pythonExecutable(), ["-u", join(root, "scripts/tts/kokoro_adapter.py"), jobFile,
+          "--model-dir", modelDir, "--voice", voice, "--language", language], {
+          env: {...process.env, PYTHONUTF8: "1"},
+        });
+      } catch (error) {
+        throw new Error(`Kokoro synthesis failed: ${error.message}. Check the adapter log and Python setup.`, {cause: error});
+      } finally {
+        rmSync(jobFile, {force: true});
+      }
     }
     const sources = jobs.map((sceneJobs, index) => sceneJobs.map(({path}) =>
       setNarrationTempo(path, storyboard.scenes[index].soundDesign?.tempo ?? 1)));
@@ -134,6 +157,7 @@ export async function prepareAudio(storyboard, workDir, options) {
     if (timing.reduce((sum, scene) => sum + scene.durationInFrames, 0) > limit * FPS) {
       throw new Error(`Measured narration is longer than ${limit} seconds. Condense the storyboard and rerun.`);
     }
+    mkdirSync(audioDir, {recursive: true});
     for (const [index, scene] of timing.entries()) {
       const id = storyboard.scenes[index].sceneId;
       const dest = join(audioDir, `${id}.wav`);
@@ -148,10 +172,10 @@ export async function prepareAudio(storyboard, workDir, options) {
         rmSync(temp, {force: true});
       }
     }
-    return {status: "ready", timing, error: null, mode, voice, audioDir};
+    return {status: "ready", timing, error: null, engine: "kokoro", voice, language, audioDir};
   } catch (error) {
     if (options.requireVoice) throw error;
-    console.warn(`[VIENEU] ${error.message}. Continuing with the visual cut and estimated sentence timings.`);
-    return {status: "unavailable", timing: desired, error: error.message, mode, voice};
+    console.warn(`[KOKORO] ${error.message} Continuing with the visual cut and estimated sentence timings.`);
+    return {status: "unavailable", timing: desired, error: error.message, engine: "kokoro", voice, language};
   }
 }

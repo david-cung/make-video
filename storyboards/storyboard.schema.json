@@ -16,9 +16,14 @@
     "topic": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 90
+    },
     "language": {
       "type": "string",
       "enum": [
+        "en",
         "vi"
       ]
     },
@@ -98,6 +103,15 @@
             "type": "string"
           },
             "chapter": {"type": "string"},
+            "historical": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["kind", "stage"],
+              "properties": {
+                "kind": {"enum": ["archive", "ship", "ocean", "route", "collision", "flooding", "timeline", "lifeboat", "wreck"]},
+                "stage": {"type": "integer", "minimum": 0, "maximum": 5}
+              }
+            },
             "portrait": {"type": "boolean"},
             "soundDesign": {
               "type": "object",

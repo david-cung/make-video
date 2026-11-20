@@ -1,0 +1,119 @@
+{
+  "title": "Titanic: Two Hours and Forty Minutes",
+  "topic": "Titanic's maiden voyage, collision, and sinking",
+  "language": "en",
+  "sources": [
+    {
+      "id": "national-archives",
+      "title": "The National Archives · Life Aboard the Titanic",
+      "url": "https://cdn.nationalarchives.gov.uk/documents/education/titanic.pdf"
+    },
+    {
+      "id": "rmg-timeline",
+      "title": "Royal Museums Greenwich · RMS Titanic fact sheet",
+      "url": "https://www.rmg.co.uk/collections/research-guides/research-guide-d1-rms-titanic-fact-sheet"
+    }
+  ],
+  "music": null,
+  "scenes": [
+    {
+      "sceneId": "maiden-voyage",
+      "title": "The maiden voyage",
+      "kicker": "TITANIC",
+      "displayNote": "SOUTHAMPTON · 10 APRIL 1912",
+      "narration": "On her maiden voyage, Titanic sailed west from Southampton. New York was her destination.",
+      "visualDescription": "A four-funnel liner steams west on a quiet sea.",
+      "duration": 7,
+      "cameraMovement": "ken-burns",
+      "transition": "cut",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide establishing shot",
+        "cameraAngle": "Side-on at water level",
+        "lighting": "Low silver light along the horizon",
+        "colorPalette": ["#081522", "#294759", "#b8d4da"],
+        "composition": "Ship to the right with negative space for titles on the left",
+        "foreground": "Drifting haze",
+        "midground": "Liner profile and porthole lights",
+        "background": "Open sea and twilight sky",
+        "visualAssets": ["Original liner illustration"]
+      },
+      "image": {
+        "path": "titanic-sample/voyage.jpg",
+        "credit": "Illustration · Cinema",
+        "license": "Original project illustration",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": ["national-archives"],
+      "factChecks": [
+        {"status": "verified", "note": "The maiden voyage left Southampton on 10 April 1912 for New York."}
+      ]
+    },
+    {
+      "sceneId": "iceberg",
+      "title": "An iceberg in the dark",
+      "kicker": "THE COLLISION",
+      "displayNote": "23:40 · 14 APRIL 1912",
+      "narration": "Late on April fourteenth, nineteen twelve, Titanic struck an iceberg.",
+      "visualDescription": "A ridge of ice comes into view in the dark beyond the ship.",
+      "duration": 6,
+      "cameraMovement": "pan-left",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Side view of the approaching hazards",
+        "cameraAngle": "Low broadside",
+        "lighting": "Cold light catches the iceberg edge",
+        "colorPalette": ["#070f1e", "#24465a", "#9fc5d0"],
+        "composition": "Ship and iceberg to the right, with both silhouettes clear of the text",
+        "foreground": "Fine spray and haze",
+        "midground": "Liner and iceberg silhouettes",
+        "background": "Dark Atlantic horizon",
+        "visualAssets": ["Original collision illustration"]
+      },
+      "image": {
+        "path": "titanic-sample/collision.jpg",
+        "credit": "Illustration · Cinema",
+        "license": "Original project illustration",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": ["rmg-timeline"],
+      "factChecks": [
+        {"status": "verified", "note": "The museum chronology places the collision at 23:40 on 14 April 1912."}
+      ]
+    },
+    {
+      "sceneId": "beneath-the-atlantic",
+      "title": "Beneath the Atlantic",
+      "kicker": "TWO HOURS AND FORTY MINUTES",
+      "displayNote": "02:20 · 15 APRIL 1912",
+      "narration": "Two hours and forty minutes later, the ship slipped beneath the Atlantic.",
+      "visualDescription": "The liner's silhouette sinks into a dark waterline.",
+      "duration": 7,
+      "cameraMovement": "zoom-out",
+      "transition": "fade",
+      "visualType": "abstract",
+      "visualDirection": {
+        "shotType": "Wide closing view",
+        "cameraAngle": "Low, looking across the sea",
+        "lighting": "Faint blue edge light and a dark waterline",
+        "colorPalette": ["#061220", "#213b4b", "#a3c0cc"],
+        "composition": "Low ship silhouette to the right with clear space for the closing title",
+        "foreground": "Dark waves",
+        "midground": "Lowered liner silhouette",
+        "background": "Night sky fading into the horizon",
+        "visualAssets": ["Original sinking illustration"]
+      },
+      "image": {
+        "path": "titanic-sample/sinking.jpg",
+        "credit": "Illustration · Cinema",
+        "license": "Original project illustration",
+        "objectPosition": "50% 50%"
+      },
+      "sourceIds": ["rmg-timeline"],
+      "factChecks": [
+        {"status": "verified", "note": "The ship foundered at 02:20 on 15 April, two hours and forty minutes after the 23:40 collision."}
+      ]
+    }
+  ]
+}
