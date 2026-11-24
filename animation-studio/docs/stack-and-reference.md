@@ -1,0 +1,30 @@
+# Design audit and technology choices
+
+## Reference observations
+
+The locally supplied file for Heo Đen Official's episode one was opened from Downloads. FFprobe reported 253.098 seconds, 1280×720, 30000/1001 fps, AV1 video and stereo AAC. FFmpeg supplied a 16-cell contact sheet sampled every 18 seconds and a scene-change pass at a score threshold of 0.23. It flagged 65 changes. Those are filter candidates, not a manually verified cut count. The bookends and late close-ups show different shot scales. Food inserts give a character's object of attention a complete cutaway. Characters converse against a stable shop or room layout, then the edit cuts in to read the face. The art uses strong outlines and flat shading. The reference is intentionally absent from the project assets.
+
+The decoded audio measured approximately −11.2 LUFS. The meter reported a positive true peak, which is an input observation rather than a mixing target. This production uses separate dialogue, music, room and foley stems and verifies encoded true peak.
+
+## Technology evaluation
+
+This is an integration audit. Tools marked optional were assessed from their primary documentation; they were not installed or benchmarked as part of this project.
+
+| Candidate | Decision and trade-off |
+| --- | --- |
+| [ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Optional graph runner for exploring backgrounds and style. Its local API can save repeatable workflows; plug-ins, weights and custom nodes still need their own review and version pins. |
+| [FLUX.1 schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell), [FLUX.1 dev](https://huggingface.co/black-forest-labs/FLUX.1-dev), [SDXL base](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) | Schnell has Apache-2.0 weights; dev uses separate model terms; SDXL base uses its OpenRAIL license. SDXL has a mature control ecosystem. None guarantees the same silhouette, joint coordinates or separated pixels across poses. |
+| [ControlNet](https://github.com/lllyasviel/ControlNet) and [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) | Pose/edge conditioning and reference-image conditioning are useful at concept time. Pair exact checkpoint families and inspect license on each model. An approved turnaround or local image is the reference, with no source-video frames in this workflow. Export transparency and separate clean layers before accepting a rig. |
+| [Blender](https://www.blender.org/features/animation/) Grease Pencil and armatures | Good for authored drawing and complex perspective, and scriptable in a batch render. External .blend rigs and image sequences increase the asset hand-off and review cost. Blender's GPL governs the program. |
+| [Live2D Cubism](https://docs.live2d.com/en/cubism-sdk-manual/top/) and [Spine 2D](https://esotericsoftware.com/spine-runtimes-license) | Mature deformers and art tools; both add vendor tooling and separate editor/runtime terms. Buy no licenses for this production. |
+| [Rive](https://rive.app/docs/runtimes/getting-started), [DragonBonesJS](https://github.com/DragonBones/DragonBonesJS) | Rive is a candidate for designed state machines with documented runtimes. DragonBones can import legacy skeletal work; its maintenance and tooling need verification before adoption. Neither is needed by the authored SVG rigs. |
+| Custom SVG rig and browser Canvas | SVG keeps contour shapes, draw order, joint pivots and exported layers editable. Canvas is a fallback for many dynamic sprites but needs explicit drawing and layer order. |
+| [PixiJS](https://pixijs.com/8.x/guides/getting-started/intro) and [GSAP](https://gsap.com/docs/v3/) | PixiJS is useful if profiling shows a need for GPU batches. GSAP can be sampled by seeking a paused timeline each frame, but the rig already has pure functions and no scheduler dependency. Review GSAP's terms for any future use. |
+| [Remotion](https://www.remotion.dev/docs/renderer/render-media) and [FFmpeg](https://ffmpeg.org/legal.html) | Selected. Remotion samples React at a known frame, reuses the project's version and outputs independent scene encodes. FFmpeg handles stems, normalization, concatenation/mux and decode tests. Deployment must follow the applicable Remotion and FFmpeg terms. |
+| [Rhubarb](https://github.com/DanielSWolf/rhubarb-lip-sync), [MFA](https://montreal-forced-aligner.readthedocs.io/en/latest/), phoneme-to-viseme | Rhubarb is selected and generates actual cue timestamps from each WAV. The bundled macOS binary is Intel and ran under the existing translation support. Its non-English phonetic recognizer is coarser. MFA could improve language-specific alignment with compatible dictionary/acoustic models and a maintained phoneme mapping. Rhubarb A–H and X are mapped directly to authored SVG mouths. |
+| [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M), [VieNeu](https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Nano), [Chatterbox](https://github.com/resemble-ai/chatterbox) | Kokoro uses fixed synthetic speaking voices for the English cut. The optional animation-only VieNeu adapter uses native Vietnamese presets. Chatterbox is a future offline expressivity study; it would add Torch, another model and reference-voice rights review. |
+| [Ollama structured output](https://docs.ollama.com/capabilities/structured-outputs) | The optional topic writer calls an existing local model on loopback and validates each returned episode. A versioned authored episode bypasses story inference. |
+
+## Local and remote execution
+
+The selected stack fits the current machine. The documented interfaces are independent of hardware: episode JSON, separated SVG parts, PCM dialogue, Rhubarb cue JSON, and scene MP4s. A workstation can generate optional art in ComfyUI or package declared dependencies and render on another machine, but this project has no cloud upload, deployment, credential management or paid worker. Keep inferred images outside the master rig until the layer separations, transparent edges, exact pivots and four turnarounds have been reviewed.

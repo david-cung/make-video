@@ -28,3 +28,7 @@ Use the project skills in `.agents/skills/` in story, visual direction, motion, 
 - Use `audience-retention-director` to compare the existing export and rewrite the opening, evidence order and payoff. Measure narration before locking shot lengths.
 - Use `music-supervisor` to spot licensed recordings across the film and document source, in-point, edits and attribution. Use `soundscape-designer` for frame-linked effects, scene transitions and intentional silence.
 - Use `audio-mixing-engineer` to build separate narration, music and effects stems, duck music, run measured loudness normalization and verify the encoded audio. Use `video-quality-review` on the final MP4 and keep viewer-retention claims tied to analytics.
+
+## Character animation
+
+The studio has its own Remotion entrypoint and episode schema under `animation-studio/`. Use `animation-showrunner` and `comedy-screenwriter` for episode planning. Use the design, rig, expression, voice, lip sync and environment skills to stage the episode, then use `comedy-timing-editor`, `foley-sound-designer` and `animation-quality-critic` on decoded previews. Pass the three technical gates before rendering the bundled pilot. Keep the documentary entrypoint and original archive assets intact.

@@ -1,0 +1,11 @@
+{
+  "food-stall": {"label":"Jun’s Noodle Window","palette":["#efd5a9","#dd9873","#427e70"],"layout":"stall","props":["door","window","table","chair","bowl","cup","phone","bag","food","sign","receipt"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"bowl":[529,481],"receipt":[956,451],"door":[226,424],"chair":[319,620]}},
+  "restaurant": {"label":"The Corner Booth","palette":["#edd2a1","#be796c","#5e867c"],"layout":"dining","props":["door","window","table","chair","bowl","cup","sign"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"bowl":[529,481],"door":[226,424],"chair":[319,620]}},
+  "street": {"label":"Side Street","palette":["#efca94","#d78973","#508377"],"layout":"outside","props":["door","window","phone","bag","sign"],"anchors":{"milo":[410,604],"jun":[874,563],"door":[226,424]}},
+  "apartment": {"label":"Milo’s Flat","palette":["#e8caab","#c0af90","#6c7b99"],"layout":"room","props":["door","window","table","chair","cup","phone","bag"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"door":[226,424],"chair":[319,620]}},
+  "living-room": {"label":"The Sitting Room","palette":["#ebceaa","#c39086","#846987"],"layout":"room","props":["door","window","table","chair","cup","phone"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"door":[226,424],"chair":[319,620]}},
+  "kitchen": {"label":"The Back Kitchen","palette":["#e5d6b7","#acb1a2","#497f79"],"layout":"dining","props":["door","window","table","chair","cup","bowl","food"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"bowl":[529,481],"door":[226,424],"chair":[319,620]}},
+  "convenience-store": {"label":"Last Stop Market","palette":["#ddd6b6","#99a796","#706789"],"layout":"stall","props":["door","window","table","cup","bag","sign"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"door":[226,424]}},
+  "alley": {"label":"Behind the Shops","palette":["#d9bdaa","#9e8181","#6a6a82"],"layout":"outside","props":["door","window","bag","sign"],"anchors":{"milo":[410,604],"jun":[874,563],"door":[226,424]}},
+  "courtyard": {"label":"The Courtyard","palette":["#e3c9a0","#b2ae7e","#577f60"],"layout":"outside","props":["door","window","table","chair","cup","sign"],"anchors":{"milo":[410,604],"jun":[874,563],"cup":[491,479],"door":[226,424],"chair":[319,620]}}
+}

@@ -1,0 +1,16 @@
+{
+  "milo": {
+    "name": "Milo Finch", "version": "1.0.0", "silhouette": "tall", "height": 262,
+    "skin": "#edab78", "hair": "#262f48", "shirt": "#70cead", "trim": "#c4eed8", "pants": "#444666", "shoe": "#fff1d7",
+    "personality": "An earnest, methodical neighbour who will turn any small transaction into a maths problem.",
+    "delivery": "Dry courtesy and carefully placed emphasis. Gets faster when the total stops making sense.",
+    "voices": {"en": {"adapter": "kokoro", "voice": "bm_george", "rate": 1.04, "locale": "en-gb", "pronunciation": {}}, "vi": {"adapter": "vieneu", "voice": "Minh Quân", "rate": 1.04, "locale": "vi-vn", "pronunciation": {}}}
+  },
+  "jun": {
+    "name": "Jun Park", "version": "1.0.0", "silhouette": "compact", "height": 218,
+    "skin": "#b97857", "hair": "#30354c", "shirt": "#f2ba58", "trim": "#ec725b", "pants": "#375c68", "shoe": "#f4dfb6",
+    "personality": "An unflappable shopkeeper who delights in making a ridiculous rule sound like good customer service.",
+    "delivery": "Brisk and cheerful. Lands the oddest words as if reading the weather.",
+    "voices": {"en": {"adapter": "kokoro", "voice": "af_bella", "rate": 1.05, "locale": "en-us", "pronunciation": {}}, "vi": {"adapter": "vieneu", "voice": "Mỹ Duyên", "rate": 1.07, "locale": "vi-vn", "pronunciation": {}}}
+  }
+}

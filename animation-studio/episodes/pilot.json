@@ -1,0 +1,647 @@
+{
+  "id": "noodle-pilot",
+  "title": "The Most Expensive Bowl of Noodles",
+  "topic": "A cheap bowl becomes an itemised noodle shop disaster",
+  "language": "en",
+  "duration": 78,
+  "scenes": [
+    {
+      "id": "the-menu",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo",
+        "jun"
+      ],
+      "transition": "cut",
+      "music": "light",
+      "beats": [
+        {
+          "id": "price-first",
+          "seconds": 1.6,
+          "purpose": "Cold open on the promise",
+          "shot": "insert",
+          "move": "push",
+          "target": "sign",
+          "effects": [
+            {
+              "at": 0.12,
+              "name": "accent"
+            }
+          ]
+        },
+        {
+          "id": "customer-arrives",
+          "seconds": 2.4,
+          "purpose": "Milo follows the price into the shop",
+          "shot": "wide",
+          "poses": {
+            "milo": {
+              "clip": "walk",
+              "expression": "happy",
+              "eyeTarget": "sign",
+              "offset": [
+                -112,
+                0
+              ]
+            },
+            "jun": {
+              "clip": "hold",
+              "expression": "deadpan",
+              "eyeTarget": "milo"
+            }
+          },
+          "effects": [
+            {
+              "at": 0.18,
+              "name": "footstep"
+            },
+            {
+              "at": 0.75,
+              "name": "footstep"
+            },
+            {
+              "at": 1.32,
+              "name": "footstep"
+            }
+          ]
+        },
+        {
+          "id": "two-dollars",
+          "seconds": 2.8,
+          "purpose": "Milo checks the headline price",
+          "shot": "over-the-shoulder",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Two dollars for a whole bowl?"
+          },
+          "poses": {
+            "milo": {
+              "clip": "point",
+              "expression": "excited",
+              "eyeTarget": "sign"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "smug",
+              "eyeTarget": "milo"
+            }
+          }
+        },
+        {
+          "id": "whole-bowl",
+          "seconds": 2.8,
+          "purpose": "Jun says what the sign literally means",
+          "shot": "shot-reverse-shot",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Absolutely. It's a very good bowl."
+          },
+          "poses": {
+            "jun": {
+              "clip": "nod",
+              "expression": "happy",
+              "eyeTarget": "milo"
+            },
+            "milo": {
+              "clip": "idle",
+              "expression": "confused",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "noodles-question",
+          "seconds": 2.1,
+          "purpose": "Milo notices the missing noun",
+          "shot": "close-up",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "And the noodles?"
+          },
+          "poses": {
+            "milo": {
+              "clip": "look-right",
+              "expression": "suspicious",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "optional",
+          "seconds": 1.9,
+          "purpose": "First unexpected exception",
+          "shot": "reaction",
+          "deliberateHold": true,
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Optional."
+          },
+          "poses": {
+            "jun": {
+              "clip": "shrug",
+              "expression": "deadpan",
+              "eyeTarget": "milo"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "the-extras",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo",
+        "jun"
+      ],
+      "transition": "cut",
+      "music": "light",
+      "beats": [
+        {
+          "id": "add-noodles",
+          "seconds": 2.3,
+          "purpose": "Milo agrees to the obvious extra",
+          "shot": "medium",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Fine. Add noodles."
+          },
+          "poses": {
+            "milo": {
+              "clip": "nod",
+              "expression": "annoyed",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "heat",
+          "seconds": 2.4,
+          "purpose": "Jun upsells the temperature",
+          "shot": "shot-reverse-shot",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Hot, or room temperature?"
+          },
+          "poses": {
+            "jun": {
+              "clip": "point",
+              "expression": "happy",
+              "eyeTarget": "sign"
+            }
+          }
+        },
+        {
+          "id": "of-course",
+          "seconds": 1.7,
+          "purpose": "Milo answers before thinking",
+          "shot": "close-up",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Hot, obviously."
+          },
+          "poses": {
+            "milo": {
+              "clip": "shrug",
+              "expression": "confused",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "temperature-fee",
+          "seconds": 2.8,
+          "purpose": "Jun itemises heat",
+          "shot": "medium",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Excellent. That's the temperature fee."
+          },
+          "poses": {
+            "jun": {
+              "clip": "nod",
+              "expression": "excited",
+              "eyeTarget": "milo"
+            },
+            "milo": {
+              "clip": "surprise",
+              "expression": "shocked",
+              "eyeTarget": "jun"
+            }
+          },
+          "effects": [
+            {
+              "at": 1.8,
+              "name": "notify"
+            }
+          ]
+        },
+        {
+          "id": "cup-choice",
+          "seconds": 2.7,
+          "purpose": "Milo tries a different order",
+          "shot": "over-the-shoulder",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Forget lunch. Just tap water."
+          },
+          "poses": {
+            "milo": {
+              "clip": "shake-head",
+              "expression": "annoyed",
+              "eyeTarget": "cup"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "smug",
+              "eyeTarget": "milo"
+            }
+          }
+        },
+        {
+          "id": "try-water",
+          "seconds": 2.8,
+          "purpose": "The cup travels from table to Milo's hand",
+          "shot": "medium",
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "drink",
+              "expression": "smug",
+              "eyeTarget": "cup",
+              "hand": "right"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "suspicious",
+              "eyeTarget": "milo"
+            }
+          },
+          "props": [
+            {
+              "prop": "cup",
+              "at": 0.58,
+              "state": "held",
+              "character": "milo",
+              "hand": "right"
+            },
+            {
+              "prop": "cup",
+              "at": 1.15,
+              "state": "drinking",
+              "character": "milo",
+              "hand": "right"
+            },
+            {
+              "prop": "cup",
+              "at": 2.05,
+              "state": "held",
+              "character": "milo",
+              "hand": "right"
+            }
+          ],
+          "effects": [
+            {
+              "at": 1.48,
+              "name": "sip"
+            }
+          ]
+        },
+        {
+          "id": "cup-fee",
+          "seconds": 2.7,
+          "purpose": "Jun names a cost Milo is already holding",
+          "shot": "shot-reverse-shot",
+          "mood": "awkward",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Water is free. Holding the cup isn't."
+          },
+          "poses": {
+            "jun": {
+              "clip": "point",
+              "expression": "deadpan",
+              "eyeTarget": "cup"
+            },
+            "milo": {
+              "clip": "hold",
+              "expression": "embarrassed",
+              "eyeTarget": "jun",
+              "hand": "right"
+            }
+          }
+        },
+        {
+          "id": "release",
+          "seconds": 2.3,
+          "purpose": "Milo puts the cup down like it is hot",
+          "shot": "reaction",
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "grab",
+              "expression": "shocked",
+              "eyeTarget": "cup"
+            },
+            "jun": {
+              "clip": "breathing",
+              "expression": "happy",
+              "eyeTarget": "milo"
+            }
+          },
+          "props": [
+            {
+              "prop": "cup",
+              "at": 0.85,
+              "state": "on-table",
+              "character": "milo",
+              "hand": "right"
+            }
+          ],
+          "effects": [
+            {
+              "at": 0.85,
+              "name": "place"
+            }
+          ]
+        },
+        {
+          "id": "ask-bill",
+          "seconds": 2.6,
+          "purpose": "Milo tries to stop the cost",
+          "shot": "close-up",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Could I see the bill before it gets hungry?"
+          },
+          "poses": {
+            "milo": {
+              "clip": "point",
+              "expression": "sad",
+              "eyeTarget": "receipt"
+            }
+          }
+        },
+        {
+          "id": "empty-order",
+          "seconds": 2.5,
+          "purpose": "Jun thinks the receipt is a safe alternative",
+          "shot": "shot-reverse-shot",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "Of course. We don't charge for receipts."
+          },
+          "poses": {
+            "jun": {
+              "clip": "nod",
+              "expression": "happy",
+              "eyeTarget": "milo"
+            }
+          }
+        },
+        {
+          "id": "printer-windup",
+          "seconds": 2.0,
+          "purpose": "A short pause gives the absurd noise space",
+          "shot": "insert",
+          "deliberateHold": true,
+          "target": "receipt",
+          "props": [
+            {
+              "prop": "receipt",
+              "at": 0.42,
+              "state": "printing"
+            }
+          ],
+          "effects": [
+            {
+              "at": 0.43,
+              "name": "printer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fresh-paper",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo",
+        "jun"
+      ],
+      "transition": "cut",
+      "music": "playful",
+      "beats": [
+        {
+          "id": "printer-spills",
+          "seconds": 3.3,
+          "purpose": "Widen to reveal how much receipt there is",
+          "shot": "wide",
+          "poses": {
+            "milo": {
+              "clip": "surprise",
+              "expression": "shocked",
+              "eyeTarget": "receipt"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "deadpan",
+              "eyeTarget": "receipt"
+            }
+          },
+          "props": [
+            {
+              "prop": "receipt",
+              "at": 0.27,
+              "state": "unspooled"
+            }
+          ],
+          "effects": [
+            {
+              "at": 0.3,
+              "name": "printer"
+            }
+          ]
+        },
+        {
+          "id": "paper-looks-good",
+          "seconds": 2.6,
+          "purpose": "Milo sees a use for the invoice",
+          "shot": "close-up",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Well, that's the longest noodle I've seen."
+          },
+          "poses": {
+            "milo": {
+              "clip": "look-right",
+              "expression": "smug",
+              "eyeTarget": "receipt"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "confused",
+              "eyeTarget": "milo"
+            }
+          }
+        },
+        {
+          "id": "bowl-paper",
+          "seconds": 2.9,
+          "purpose": "An insert connects the unspooled receipt to the bowl",
+          "shot": "insert",
+          "move": "push",
+          "target": "bowl",
+          "props": [
+            {
+              "prop": "receipt",
+              "at": 0,
+              "state": "unspooled"
+            }
+          ],
+          "effects": [
+            {
+              "at": 0.9,
+              "name": "cloth"
+            }
+          ]
+        },
+        {
+          "id": "noodles-literal",
+          "seconds": 3.2,
+          "purpose": "Milo eats the receipt as if it is a noodle",
+          "shot": "medium",
+          "deliberateHold": true,
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "eat",
+              "expression": "happy",
+              "eyeTarget": "bowl",
+              "hand": "right"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "shocked",
+              "eyeTarget": "milo"
+            }
+          },
+          "props": [
+            {
+              "prop": "receipt",
+              "at": 0.74,
+              "state": "held",
+              "character": "milo",
+              "hand": "right"
+            }
+          ],
+          "effects": [
+            {
+              "at": 1.4,
+              "name": "eat"
+            }
+          ]
+        },
+        {
+          "id": "crunchy",
+          "seconds": 2.1,
+          "purpose": "Milo reviews the only free item",
+          "shot": "close-up",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "A little dry."
+          },
+          "poses": {
+            "milo": {
+              "clip": "nod",
+              "expression": "smug",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "processing",
+          "seconds": 2.2,
+          "purpose": "Jun realises the sale opportunity",
+          "shot": "reaction",
+          "deliberateHold": true,
+          "mood": "silence",
+          "target": "jun",
+          "poses": {
+            "jun": {
+              "clip": "blink",
+              "expression": "confused",
+              "eyeTarget": "milo"
+            },
+            "milo": {
+              "clip": "idle",
+              "expression": "happy",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "sign-payoff",
+          "seconds": 3.0,
+          "purpose": "The original price returns as a new menu item",
+          "shot": "point-of-view",
+          "deliberateHold": true,
+          "move": "push",
+          "target": "sign",
+          "props": [
+            {
+              "prop": "sign",
+              "at": 0.38,
+              "state": "open"
+            }
+          ],
+          "effects": [
+            {
+              "at": 0.38,
+              "name": "place"
+            },
+            {
+              "at": 0.53,
+              "name": "accent"
+            }
+          ]
+        },
+        {
+          "id": "final-stare",
+          "seconds": 2.6,
+          "purpose": "End on Milo's silent recognition and Jun's grin",
+          "shot": "wide",
+          "deliberateHold": true,
+          "poses": {
+            "milo": {
+              "clip": "blink",
+              "expression": "deadpan",
+              "eyeTarget": "sign"
+            },
+            "jun": {
+              "clip": "laugh",
+              "expression": "smug",
+              "eyeTarget": "milo"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

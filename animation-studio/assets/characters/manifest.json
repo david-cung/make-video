@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "unit": "SVG pixels",
+  "rig": "animation-studio/src/rig.tsx",
+  "characters": [
+    {
+      "id": "milo",
+      "name": "Milo Finch",
+      "version": "1.0.0",
+      "silhouette": "tall",
+      "height": 262,
+      "skin": "#edab78",
+      "hair": "#262f48",
+      "shirt": "#70cead",
+      "trim": "#c4eed8",
+      "pants": "#444666",
+      "shoe": "#fff1d7",
+      "personality": "An earnest, methodical neighbour who will turn any small transaction into a maths problem.",
+      "delivery": "Dry courtesy and carefully placed emphasis. Gets faster when the total stops making sense.",
+      "voices": {
+        "en": {
+          "adapter": "kokoro",
+          "voice": "bm_george",
+          "rate": 1.04,
+          "locale": "en-gb",
+          "pronunciation": {}
+        },
+        "vi": {
+          "adapter": "vieneu",
+          "voice": "Minh Quân",
+          "rate": 1.04,
+          "locale": "vi-vn",
+          "pronunciation": {}
+        }
+      },
+      "joints": {
+        "head": [
+          0,
+          -193
+        ],
+        "leftShoulder": [
+          -31,
+          -148
+        ],
+        "rightShoulder": [
+          31,
+          -148
+        ],
+        "upper": 49,
+        "lower": 48,
+        "leftHip": [
+          -17,
+          -75
+        ],
+        "rightHip": [
+          17,
+          -75
+        ]
+      },
+      "origin": [
+        0,
+        0
+      ],
+      "parts": [
+        "head",
+        "hair",
+        "left-eye",
+        "right-eye",
+        "pupils",
+        "eyelids",
+        "eyebrows",
+        "mouth",
+        "torso",
+        "left-upper-arm",
+        "left-forearm",
+        "left-hand",
+        "right-upper-arm",
+        "right-forearm",
+        "right-hand",
+        "legs",
+        "feet",
+        "accessories"
+      ],
+      "poses": [
+        {
+          "view": "front",
+          "path": "animation-studio/assets/characters/milo/front/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/milo/front/head.svg",
+            "hair": "animation-studio/assets/characters/milo/front/hair.svg",
+            "left-eye": "animation-studio/assets/characters/milo/front/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/milo/front/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/milo/front/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/milo/front/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/milo/front/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/milo/front/mouth.svg",
+            "torso": "animation-studio/assets/characters/milo/front/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/milo/front/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/milo/front/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/milo/front/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/milo/front/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/milo/front/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/milo/front/right-hand.svg",
+            "legs": "animation-studio/assets/characters/milo/front/legs.svg",
+            "feet": "animation-studio/assets/characters/milo/front/feet.svg",
+            "accessories": "animation-studio/assets/characters/milo/front/accessories.svg"
+          }
+        },
+        {
+          "view": "three-quarter",
+          "path": "animation-studio/assets/characters/milo/three-quarter/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/milo/three-quarter/head.svg",
+            "hair": "animation-studio/assets/characters/milo/three-quarter/hair.svg",
+            "left-eye": "animation-studio/assets/characters/milo/three-quarter/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/milo/three-quarter/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/milo/three-quarter/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/milo/three-quarter/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/milo/three-quarter/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/milo/three-quarter/mouth.svg",
+            "torso": "animation-studio/assets/characters/milo/three-quarter/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/milo/three-quarter/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/milo/three-quarter/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/milo/three-quarter/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/milo/three-quarter/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/milo/three-quarter/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/milo/three-quarter/right-hand.svg",
+            "legs": "animation-studio/assets/characters/milo/three-quarter/legs.svg",
+            "feet": "animation-studio/assets/characters/milo/three-quarter/feet.svg",
+            "accessories": "animation-studio/assets/characters/milo/three-quarter/accessories.svg"
+          }
+        },
+        {
+          "view": "side",
+          "path": "animation-studio/assets/characters/milo/side/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/milo/side/head.svg",
+            "hair": "animation-studio/assets/characters/milo/side/hair.svg",
+            "left-eye": "animation-studio/assets/characters/milo/side/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/milo/side/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/milo/side/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/milo/side/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/milo/side/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/milo/side/mouth.svg",
+            "torso": "animation-studio/assets/characters/milo/side/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/milo/side/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/milo/side/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/milo/side/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/milo/side/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/milo/side/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/milo/side/right-hand.svg",
+            "legs": "animation-studio/assets/characters/milo/side/legs.svg",
+            "feet": "animation-studio/assets/characters/milo/side/feet.svg",
+            "accessories": "animation-studio/assets/characters/milo/side/accessories.svg"
+          }
+        },
+        {
+          "view": "back",
+          "path": "animation-studio/assets/characters/milo/back/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/milo/back/head.svg",
+            "hair": "animation-studio/assets/characters/milo/back/hair.svg",
+            "left-eye": "animation-studio/assets/characters/milo/back/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/milo/back/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/milo/back/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/milo/back/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/milo/back/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/milo/back/mouth.svg",
+            "torso": "animation-studio/assets/characters/milo/back/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/milo/back/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/milo/back/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/milo/back/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/milo/back/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/milo/back/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/milo/back/right-hand.svg",
+            "legs": "animation-studio/assets/characters/milo/back/legs.svg",
+            "feet": "animation-studio/assets/characters/milo/back/feet.svg",
+            "accessories": "animation-studio/assets/characters/milo/back/accessories.svg"
+          }
+        }
+      ],
+      "hierarchy": {
+        "root": [
+          "legs",
+          "left-shoulder",
+          "torso",
+          "right-shoulder",
+          "head"
+        ],
+        "left-shoulder": [
+          "left-forearm"
+        ],
+        "left-forearm": [
+          "left-hand"
+        ],
+        "right-shoulder": [
+          "right-forearm"
+        ],
+        "right-forearm": [
+          "right-hand"
+        ],
+        "head": [
+          "hair",
+          "left-eye",
+          "right-eye",
+          "pupils",
+          "eyelids",
+          "eyebrows",
+          "mouth"
+        ]
+      }
+    },
+    {
+      "id": "jun",
+      "name": "Jun Park",
+      "version": "1.0.0",
+      "silhouette": "compact",
+      "height": 218,
+      "skin": "#b97857",
+      "hair": "#30354c",
+      "shirt": "#f2ba58",
+      "trim": "#ec725b",
+      "pants": "#375c68",
+      "shoe": "#f4dfb6",
+      "personality": "An unflappable shopkeeper who delights in making a ridiculous rule sound like good customer service.",
+      "delivery": "Brisk and cheerful. Lands the oddest words as if reading the weather.",
+      "voices": {
+        "en": {
+          "adapter": "kokoro",
+          "voice": "af_bella",
+          "rate": 1.05,
+          "locale": "en-us",
+          "pronunciation": {}
+        },
+        "vi": {
+          "adapter": "vieneu",
+          "voice": "Mỹ Duyên",
+          "rate": 1.07,
+          "locale": "vi-vn",
+          "pronunciation": {}
+        }
+      },
+      "joints": {
+        "head": [
+          0,
+          -193
+        ],
+        "leftShoulder": [
+          -31,
+          -148
+        ],
+        "rightShoulder": [
+          31,
+          -148
+        ],
+        "upper": 49,
+        "lower": 48,
+        "leftHip": [
+          -17,
+          -75
+        ],
+        "rightHip": [
+          17,
+          -75
+        ]
+      },
+      "origin": [
+        0,
+        0
+      ],
+      "parts": [
+        "head",
+        "hair",
+        "left-eye",
+        "right-eye",
+        "pupils",
+        "eyelids",
+        "eyebrows",
+        "mouth",
+        "torso",
+        "left-upper-arm",
+        "left-forearm",
+        "left-hand",
+        "right-upper-arm",
+        "right-forearm",
+        "right-hand",
+        "legs",
+        "feet",
+        "accessories"
+      ],
+      "poses": [
+        {
+          "view": "front",
+          "path": "animation-studio/assets/characters/jun/front/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/jun/front/head.svg",
+            "hair": "animation-studio/assets/characters/jun/front/hair.svg",
+            "left-eye": "animation-studio/assets/characters/jun/front/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/jun/front/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/jun/front/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/jun/front/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/jun/front/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/jun/front/mouth.svg",
+            "torso": "animation-studio/assets/characters/jun/front/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/jun/front/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/jun/front/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/jun/front/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/jun/front/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/jun/front/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/jun/front/right-hand.svg",
+            "legs": "animation-studio/assets/characters/jun/front/legs.svg",
+            "feet": "animation-studio/assets/characters/jun/front/feet.svg",
+            "accessories": "animation-studio/assets/characters/jun/front/accessories.svg"
+          }
+        },
+        {
+          "view": "three-quarter",
+          "path": "animation-studio/assets/characters/jun/three-quarter/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/jun/three-quarter/head.svg",
+            "hair": "animation-studio/assets/characters/jun/three-quarter/hair.svg",
+            "left-eye": "animation-studio/assets/characters/jun/three-quarter/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/jun/three-quarter/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/jun/three-quarter/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/jun/three-quarter/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/jun/three-quarter/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/jun/three-quarter/mouth.svg",
+            "torso": "animation-studio/assets/characters/jun/three-quarter/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/jun/three-quarter/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/jun/three-quarter/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/jun/three-quarter/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/jun/three-quarter/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/jun/three-quarter/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/jun/three-quarter/right-hand.svg",
+            "legs": "animation-studio/assets/characters/jun/three-quarter/legs.svg",
+            "feet": "animation-studio/assets/characters/jun/three-quarter/feet.svg",
+            "accessories": "animation-studio/assets/characters/jun/three-quarter/accessories.svg"
+          }
+        },
+        {
+          "view": "side",
+          "path": "animation-studio/assets/characters/jun/side/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/jun/side/head.svg",
+            "hair": "animation-studio/assets/characters/jun/side/hair.svg",
+            "left-eye": "animation-studio/assets/characters/jun/side/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/jun/side/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/jun/side/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/jun/side/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/jun/side/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/jun/side/mouth.svg",
+            "torso": "animation-studio/assets/characters/jun/side/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/jun/side/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/jun/side/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/jun/side/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/jun/side/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/jun/side/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/jun/side/right-hand.svg",
+            "legs": "animation-studio/assets/characters/jun/side/legs.svg",
+            "feet": "animation-studio/assets/characters/jun/side/feet.svg",
+            "accessories": "animation-studio/assets/characters/jun/side/accessories.svg"
+          }
+        },
+        {
+          "view": "back",
+          "path": "animation-studio/assets/characters/jun/back/turnaround.svg",
+          "layers": {
+            "head": "animation-studio/assets/characters/jun/back/head.svg",
+            "hair": "animation-studio/assets/characters/jun/back/hair.svg",
+            "left-eye": "animation-studio/assets/characters/jun/back/left-eye.svg",
+            "right-eye": "animation-studio/assets/characters/jun/back/right-eye.svg",
+            "pupils": "animation-studio/assets/characters/jun/back/pupils.svg",
+            "eyelids": "animation-studio/assets/characters/jun/back/eyelids.svg",
+            "eyebrows": "animation-studio/assets/characters/jun/back/eyebrows.svg",
+            "mouth": "animation-studio/assets/characters/jun/back/mouth.svg",
+            "torso": "animation-studio/assets/characters/jun/back/torso.svg",
+            "left-upper-arm": "animation-studio/assets/characters/jun/back/left-upper-arm.svg",
+            "left-forearm": "animation-studio/assets/characters/jun/back/left-forearm.svg",
+            "left-hand": "animation-studio/assets/characters/jun/back/left-hand.svg",
+            "right-upper-arm": "animation-studio/assets/characters/jun/back/right-upper-arm.svg",
+            "right-forearm": "animation-studio/assets/characters/jun/back/right-forearm.svg",
+            "right-hand": "animation-studio/assets/characters/jun/back/right-hand.svg",
+            "legs": "animation-studio/assets/characters/jun/back/legs.svg",
+            "feet": "animation-studio/assets/characters/jun/back/feet.svg",
+            "accessories": "animation-studio/assets/characters/jun/back/accessories.svg"
+          }
+        }
+      ],
+      "hierarchy": {
+        "root": [
+          "legs",
+          "left-shoulder",
+          "torso",
+          "right-shoulder",
+          "head"
+        ],
+        "left-shoulder": [
+          "left-forearm"
+        ],
+        "left-forearm": [
+          "left-hand"
+        ],
+        "right-shoulder": [
+          "right-forearm"
+        ],
+        "right-forearm": [
+          "right-hand"
+        ],
+        "head": [
+          "hair",
+          "left-eye",
+          "right-eye",
+          "pupils",
+          "eyelids",
+          "eyebrows",
+          "mouth"
+        ]
+      }
+    }
+  ]
+}

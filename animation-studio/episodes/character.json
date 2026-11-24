@@ -1,0 +1,68 @@
+{
+  "id": "character-gate",
+  "title": "Character acting test",
+  "topic": "Blink, head motion, brows, gesture and speech",
+  "language": "en",
+  "duration": 10,
+  "scenes": [
+    {
+      "id": "performance",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo"
+      ],
+      "transition": "cut",
+      "music": "silence",
+      "beats": [
+        {
+          "id": "settle",
+          "seconds": 2,
+          "purpose": "Show breathing and an independent blink",
+          "shot": "medium",
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "blink",
+              "expression": "neutral",
+              "eyeTarget": "camera"
+            }
+          }
+        },
+        {
+          "id": "explain",
+          "seconds": 4.3,
+          "purpose": "Show speech, head aim, and a pointing gesture",
+          "shot": "medium",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "One moment. I am doing the maths in my head."
+          },
+          "poses": {
+            "milo": {
+              "clip": "point",
+              "expression": "confused",
+              "eyeTarget": "sign"
+            }
+          }
+        },
+        {
+          "id": "change",
+          "seconds": 3.7,
+          "purpose": "Hold a new expression after the calculation",
+          "shot": "close-up",
+          "deliberateHold": true,
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "shake-head",
+              "expression": "shocked",
+              "eyeTarget": "sign"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

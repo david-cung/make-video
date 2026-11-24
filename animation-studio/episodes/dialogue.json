@@ -1,0 +1,107 @@
+{
+  "id": "dialogue-gate",
+  "title": "Conversation timing test",
+  "topic": "Two voices, eyelines and reverse coverage",
+  "language": "en",
+  "duration": 15,
+  "scenes": [
+    {
+      "id": "counter",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo",
+        "jun"
+      ],
+      "transition": "cut",
+      "music": "light",
+      "beats": [
+        {
+          "id": "question",
+          "seconds": 4,
+          "purpose": "Milo asks and Jun listens",
+          "shot": "over-the-shoulder",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "Is the price for the noodles or the bowl?"
+          },
+          "poses": {
+            "milo": {
+              "clip": "point",
+              "expression": "confused",
+              "eyeTarget": "jun"
+            },
+            "jun": {
+              "clip": "blink",
+              "expression": "suspicious",
+              "eyeTarget": "milo"
+            }
+          }
+        },
+        {
+          "id": "reverse",
+          "seconds": 3.8,
+          "purpose": "Reverse the eyeline and switch speaker",
+          "shot": "shot-reverse-shot",
+          "target": "jun",
+          "dialogue": {
+            "speaker": "jun",
+            "text": "The sign is very clear about the bowl."
+          },
+          "poses": {
+            "jun": {
+              "clip": "shrug",
+              "expression": "happy",
+              "eyeTarget": "milo"
+            },
+            "milo": {
+              "clip": "look-right",
+              "expression": "confused",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "reaction",
+          "seconds": 3,
+          "purpose": "Leave silence for the joke to land",
+          "shot": "reaction",
+          "deliberateHold": true,
+          "mood": "silence",
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "blink",
+              "expression": "shocked",
+              "eyeTarget": "jun"
+            }
+          }
+        },
+        {
+          "id": "double-check",
+          "seconds": 4.2,
+          "purpose": "Milo completes the joke",
+          "shot": "medium",
+          "target": "milo",
+          "dialogue": {
+            "speaker": "milo",
+            "text": "That is exactly what I was afraid of."
+          },
+          "poses": {
+            "milo": {
+              "clip": "nod",
+              "expression": "deadpan",
+              "eyeTarget": "jun"
+            },
+            "jun": {
+              "clip": "idle",
+              "expression": "smug",
+              "eyeTarget": "milo"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

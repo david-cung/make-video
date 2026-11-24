@@ -1,0 +1,107 @@
+{
+  "id": "prop-gate",
+  "title": "Prop constraint test",
+  "topic": "Pick up, drink, and set down a cup",
+  "language": "en",
+  "duration": 10,
+  "scenes": [
+    {
+      "id": "pickup",
+      "set": "food-stall",
+      "time": "day",
+      "cast": [
+        "milo"
+      ],
+      "transition": "cut",
+      "music": "light",
+      "beats": [
+        {
+          "id": "approach",
+          "seconds": 2.3,
+          "purpose": "Hand reaches for the still cup",
+          "shot": "wide",
+          "poses": {
+            "milo": {
+              "clip": "grab",
+              "expression": "neutral",
+              "eyeTarget": "cup"
+            }
+          },
+          "props": [
+            {
+              "prop": "cup",
+              "at": 1.62,
+              "state": "held",
+              "character": "milo",
+              "hand": "right"
+            }
+          ]
+        },
+        {
+          "id": "attached",
+          "seconds": 3.9,
+          "purpose": "The cup stays attached while Milo lifts it",
+          "shot": "medium",
+          "target": "milo",
+          "poses": {
+            "milo": {
+              "clip": "drink",
+              "expression": "happy",
+              "eyeTarget": "cup"
+            }
+          },
+          "props": [
+            {
+              "prop": "cup",
+              "at": 0.52,
+              "state": "drinking",
+              "character": "milo",
+              "hand": "right"
+            },
+            {
+              "prop": "cup",
+              "at": 2.75,
+              "state": "held",
+              "character": "milo",
+              "hand": "right"
+            }
+          ],
+          "effects": [
+            {
+              "at": 1.4,
+              "name": "sip"
+            }
+          ]
+        },
+        {
+          "id": "release",
+          "seconds": 3.8,
+          "purpose": "Return the cup to the same table anchor",
+          "shot": "wide",
+          "poses": {
+            "milo": {
+              "clip": "grab",
+              "expression": "happy",
+              "eyeTarget": "cup"
+            }
+          },
+          "props": [
+            {
+              "prop": "cup",
+              "at": 1.36,
+              "state": "on-table",
+              "character": "milo",
+              "hand": "right"
+            }
+          ],
+          "effects": [
+            {
+              "at": 1.36,
+              "name": "place"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

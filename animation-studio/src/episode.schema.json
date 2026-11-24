@@ -1,0 +1,555 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "topic",
+    "language",
+    "duration",
+    "scenes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 130
+    },
+    "topic": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 440
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "en",
+        "vi"
+      ]
+    },
+    "duration": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 90
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "set",
+          "time",
+          "cast",
+          "transition",
+          "music",
+          "beats"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "set": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "time": {
+            "type": "string",
+            "enum": [
+              "day",
+              "night"
+            ]
+          },
+          "cast": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "milo",
+                "jun"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2
+          },
+          "transition": {
+            "type": "string",
+            "enum": [
+              "cut",
+              "dip"
+            ]
+          },
+          "music": {
+            "type": "string",
+            "enum": [
+              "light",
+              "awkward",
+              "suspense",
+              "playful",
+              "tender",
+              "silence"
+            ]
+          },
+          "beats": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "seconds",
+                "purpose",
+                "shot"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 64,
+                  "pattern": "^[a-z][a-z0-9-]*$"
+                },
+                "seconds": {
+                  "type": "number",
+                  "minimum": 0.5,
+                  "maximum": 20
+                },
+                "purpose": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 96
+                },
+                "shot": {
+                  "type": "string",
+                  "enum": [
+                    "establishing",
+                    "wide",
+                    "medium",
+                    "close-up",
+                    "extreme-close-up",
+                    "over-the-shoulder",
+                    "point-of-view",
+                    "reaction",
+                    "shot-reverse-shot",
+                    "insert"
+                  ]
+                },
+                "target": {
+                  "type": "string",
+                  "enum": [
+                    "milo",
+                    "jun",
+                    "door",
+                    "window",
+                    "table",
+                    "chair",
+                    "bowl",
+                    "cup",
+                    "phone",
+                    "bag",
+                    "food",
+                    "sign",
+                    "receipt"
+                  ]
+                },
+                "move": {
+                  "type": "string",
+                  "enum": [
+                    "still",
+                    "push"
+                  ]
+                },
+                "deliberateHold": {
+                  "type": "boolean"
+                },
+                "mood": {
+                  "type": "string",
+                  "enum": [
+                    "light",
+                    "awkward",
+                    "suspense",
+                    "playful",
+                    "tender",
+                    "silence"
+                  ]
+                },
+                "dialogue": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "speaker",
+                    "text"
+                  ],
+                  "properties": {
+                    "speaker": {
+                      "type": "string",
+                      "enum": [
+                        "milo",
+                        "jun"
+                      ]
+                    },
+                    "text": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 250
+                    },
+                    "rate": {
+                      "type": "number",
+                      "minimum": 0.8,
+                      "maximum": 1.25
+                    },
+                    "delivery": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 96
+                    }
+                  }
+                },
+                "poses": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [],
+                  "properties": {
+                    "milo": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [],
+                      "properties": {
+                        "clip": {
+                          "type": "string",
+                          "enum": [
+                            "idle",
+                            "breathing",
+                            "blink",
+                            "look-left",
+                            "look-right",
+                            "nod",
+                            "shake-head",
+                            "talk",
+                            "point",
+                            "wave",
+                            "shrug",
+                            "walk",
+                            "run",
+                            "sit",
+                            "stand-up",
+                            "grab",
+                            "hold",
+                            "eat",
+                            "drink",
+                            "surprise",
+                            "anger",
+                            "laugh",
+                            "embarrassment"
+                          ]
+                        },
+                        "expression": {
+                          "type": "string",
+                          "enum": [
+                            "neutral",
+                            "happy",
+                            "angry",
+                            "confused",
+                            "suspicious",
+                            "shocked",
+                            "sad",
+                            "annoyed",
+                            "embarrassed",
+                            "excited",
+                            "smug",
+                            "deadpan"
+                          ]
+                        },
+                        "eyeTarget": {
+                          "type": "string",
+                          "enum": [
+                            "milo",
+                            "jun",
+                            "door",
+                            "window",
+                            "table",
+                            "chair",
+                            "bowl",
+                            "cup",
+                            "phone",
+                            "bag",
+                            "food",
+                            "sign",
+                            "receipt",
+                            "camera"
+                          ]
+                        },
+                        "offset": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "minimum": -220,
+                            "maximum": 220
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "view": {
+                          "type": "string",
+                          "enum": [
+                            "front",
+                            "three-quarter",
+                            "side",
+                            "back"
+                          ]
+                        },
+                        "hand": {
+                          "type": "string",
+                          "enum": [
+                            "left",
+                            "right"
+                          ]
+                        }
+                      }
+                    },
+                    "jun": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [],
+                      "properties": {
+                        "clip": {
+                          "type": "string",
+                          "enum": [
+                            "idle",
+                            "breathing",
+                            "blink",
+                            "look-left",
+                            "look-right",
+                            "nod",
+                            "shake-head",
+                            "talk",
+                            "point",
+                            "wave",
+                            "shrug",
+                            "walk",
+                            "run",
+                            "sit",
+                            "stand-up",
+                            "grab",
+                            "hold",
+                            "eat",
+                            "drink",
+                            "surprise",
+                            "anger",
+                            "laugh",
+                            "embarrassment"
+                          ]
+                        },
+                        "expression": {
+                          "type": "string",
+                          "enum": [
+                            "neutral",
+                            "happy",
+                            "angry",
+                            "confused",
+                            "suspicious",
+                            "shocked",
+                            "sad",
+                            "annoyed",
+                            "embarrassed",
+                            "excited",
+                            "smug",
+                            "deadpan"
+                          ]
+                        },
+                        "eyeTarget": {
+                          "type": "string",
+                          "enum": [
+                            "milo",
+                            "jun",
+                            "door",
+                            "window",
+                            "table",
+                            "chair",
+                            "bowl",
+                            "cup",
+                            "phone",
+                            "bag",
+                            "food",
+                            "sign",
+                            "receipt",
+                            "camera"
+                          ]
+                        },
+                        "offset": {
+                          "type": "array",
+                          "items": {
+                            "type": "number",
+                            "minimum": -220,
+                            "maximum": 220
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        },
+                        "view": {
+                          "type": "string",
+                          "enum": [
+                            "front",
+                            "three-quarter",
+                            "side",
+                            "back"
+                          ]
+                        },
+                        "hand": {
+                          "type": "string",
+                          "enum": [
+                            "left",
+                            "right"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "props": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "prop",
+                      "at",
+                      "state"
+                    ],
+                    "properties": {
+                      "prop": {
+                        "type": "string",
+                        "enum": [
+                          "door",
+                          "window",
+                          "table",
+                          "chair",
+                          "bowl",
+                          "cup",
+                          "phone",
+                          "bag",
+                          "food",
+                          "sign",
+                          "receipt"
+                        ]
+                      },
+                      "at": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 20
+                      },
+                      "state": {
+                        "type": "string",
+                        "enum": [
+                          "on-table",
+                          "held",
+                          "drinking",
+                          "open",
+                          "closed",
+                          "printing",
+                          "unspooled"
+                        ]
+                      },
+                      "character": {
+                        "type": "string",
+                        "enum": [
+                          "milo",
+                          "jun"
+                        ]
+                      },
+                      "hand": {
+                        "type": "string",
+                        "enum": [
+                          "left",
+                          "right"
+                        ]
+                      }
+                    }
+                  },
+                  "minItems": 0,
+                  "maxItems": 10
+                },
+                "effects": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "at",
+                      "name"
+                    ],
+                    "properties": {
+                      "at": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 20
+                      },
+                      "name": {
+                        "type": "string",
+                        "enum": [
+                          "door",
+                          "footstep",
+                          "place",
+                          "sip",
+                          "eat",
+                          "cloth",
+                          "notify",
+                          "printer",
+                          "accent",
+                          "transition"
+                        ]
+                      },
+                      "gain": {
+                        "type": "number",
+                        "minimum": -36,
+                        "maximum": 0
+                      }
+                    }
+                  },
+                  "minItems": 0,
+                  "maxItems": 10
+                }
+              }
+            },
+            "minItems": 1,
+            "maxItems": 28
+          },
+          "visibleProps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "door",
+                "window",
+                "table",
+                "chair",
+                "bowl",
+                "cup",
+                "phone",
+                "bag",
+                "food",
+                "sign",
+                "receipt"
+              ]
+            },
+            "minItems": 0,
+            "maxItems": 11
+          }
+        }
+      },
+      "minItems": 1,
+      "maxItems": 12
+    }
+  }
+}

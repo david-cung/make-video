@@ -6,9 +6,13 @@
   "scripts": {
     "studio": "remotion studio src/index.tsx",
     "typecheck": "tsc --noEmit",
-    "create": "node scripts/create-video.mjs"
+    "create": "node scripts/create-video.mjs",
+    "animation:create": "node animation-studio/scripts/studio.mjs",
+    "animation:studio": "remotion studio animation-studio/src/index.tsx"
   },
-  "engines": {"node": ">=20"},
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.2.0",
     "@fontsource/playfair-display": "^5.2.0",
@@ -16,6 +20,7 @@
     "@remotion/cli": "4.0.545",
     "@remotion/renderer": "4.0.545",
     "ajv": "^8.17.1",
+    "esbuild": "0.28.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "remotion": "4.0.545"

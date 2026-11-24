@@ -64,3 +64,27 @@ The English film uses [the Titanic storyboard](storyboards/titanic-en.json), [re
 ```
 
 The narration, shot timing and English SRT are written together in the working directory printed by the render command.
+
+## Side Street Specials animation studio
+
+The studio has a separate entrypoint under [animation-studio](animation-studio/docs/stack-and-reference.md). It uses reusable SVG actors, frame-based motion, local TTS and Rhubarb dialogue cues. The tabletop release gate measures the hand trajectory before any pilot render. The model-independent authored episode remains the reproducible pilot source.
+
+Install [Rhubarb Lip Sync](https://github.com/DanielSWolf/rhubarb-lip-sync/releases/tag/v1.14.0) and put it on PATH or set `RHUBARB_BIN`. On this Mac, the release binary was tested at `.cache/animation-tools/Rhubarb-Lip-Sync-1.14.0-macOS/rhubarb`. English uses the existing Kokoro setup. Vietnamese is optional and isolated in `.cache/animation-vi`: create the venv with Python 3.11, install `vieneu==3.8.4`, and set `ANIMATION_VI_PYTHON` if using another path. The first Vietnamese run downloads public model weights. Use `HF_HUB_OFFLINE=1` after caching them. Voices, rates and pronunciation overrides are in `animation-studio/configs/cast.json`; delivery notes guide editing and do not enable model emotion controls.
+
+```bash
+npm run animation:studio
+npm run animation:create -- --gates
+npm run animation:create -- --pilot
+npm run animation:create -- --episode animation-studio/episodes/pilot.json --validate
+npm run animation:create -- --review output/animated-pilot-episode.mp4
+```
+
+To generate a new episode, start a local Ollama instance with an installed model, then run:
+
+```bash
+npm run animation:create -- --topic "A chaotic neighborhood restaurant" --duration 75 --language en
+```
+
+Use `--model` to select another installed local model. The authoring step fails on invalid model output and never calls a hosted API. Use `--validate` for script-only review, or `--prepare-only` to generate the per-line WAVs, mouth cues and mix before rendering. The generated storyboard is cached under `.cache/animation/stories`. Use `--episode FILE` to render a reviewed script. Dialogue, lip sync and per-scene H.264 pictures are reused by their content hashes. Mixing and verification run again when packaging the final MP4.
+
+Reference observations, tool choices and deployment boundaries are in [the stack audit](animation-studio/docs/stack-and-reference.md). The [series bible](animation-studio/docs/series-bible.md) and `npm run animation:create -- --assets` define the recurring cast and reusable layer pack.
